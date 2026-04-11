@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best International Movers & Logistics</title>
+    <meta name="description" content="Premium international moving and logistics services from Pakistan. Serving Rawalpindi, Islamabad, Lahore & Peshawar.">
+    
+    <!-- Google tag (gtag.js) - Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+
+      // Track Quote Form Submit
+      document.addEventListener('DOMContentLoaded', function() {
+        var form = document.querySelector('form');
+        if(form) {
+          form.addEventListener('submit', function() {
+            gtag('event', 'form_submit', {
+              'event_category': 'Quote Form',
+              'event_label': 'Free Quote Request'
+            });
+          });
+        }
+
+        // Track WhatsApp Click
+        var waBtn = document.querySelector('a[href*="whatsapp"]');
+        if(waBtn) {
+          waBtn.addEventListener('click', function() {
+            gtag('event', 'click', {
+              'event_category': 'WhatsApp',
+              'event_label': 'WhatsApp Button Click'
+            });
+          });
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

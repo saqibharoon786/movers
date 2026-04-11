@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# WWW to non-WWW
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+# Clean URLs — .html hata do
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
+
+# React Router catch-all
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
+
+# 404 Error handling
+ErrorDocument 404 /404.html
