@@ -44,6 +44,13 @@ import HouseShiftingRawalpindi from "./pages/HouseShiftingRawalpindi.tsx";
 import VehicleImportGuidePakistan from "./pages/VehicleImportGuidePakistan.tsx";
 import PackersMoversIslamabad from "./pages/PackersMoversIslamabad.tsx";
 import PackersMoversLahore from "./pages/PackersMoversLahore.tsx";
+import PackersMoversRawalpindi from "./pages/PackersMoversRawalpindi.tsx";
+import HomeShiftingIslamabad from "./pages/HomeShiftingIslamabad.tsx";
+import HomeShiftingRawalpindi from "./pages/HomeShiftingRawalpindi.tsx";
+import InternationalCargoIslamabad from "./pages/InternationalCargoIslamabad.tsx";
+import ShippingCompaniesPakistan from "./pages/ShippingCompaniesPakistan.tsx";
+import PakistanCargoServices from "./pages/PakistanCargoServices.tsx";
+import CustomDutyCalculator from "./pages/CustomDutyCalculator.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import Blog1 from "./pages/Blog1.tsx";
 import Blog2 from "./pages/Blog2.tsx";
@@ -110,6 +117,13 @@ const App = () => (
           <Route path="/vehicle-import-guide-pakistan" element={<VehicleImportGuidePakistan />} />
           <Route path="/packers-and-movers-islamabad" element={<PackersMoversIslamabad />} />
           <Route path="/packers-and-movers-lahore" element={<PackersMoversLahore />} />
+          <Route path="/packers-and-movers-rawalpindi" element={<PackersMoversRawalpindi />} />
+          <Route path="/home-shifting-islamabad" element={<HomeShiftingIslamabad />} />
+          <Route path="/home-shifting-rawalpindi" element={<HomeShiftingRawalpindi />} />
+          <Route path="/international-cargo-islamabad" element={<InternationalCargoIslamabad />} />
+          <Route path="/shipping-companies-pakistan" element={<ShippingCompaniesPakistan />} />
+          <Route path="/pakistan-cargo-services" element={<PakistanCargoServices />} />
+          <Route path="/custom-duty-calculator" element={<CustomDutyCalculator />} />
 
           <Route path="/:citySlug" element={<LocationPage />} />
           <Route path="*" element={<NotFound />} />

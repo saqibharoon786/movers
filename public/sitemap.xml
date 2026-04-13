@@ -323,4 +323,50 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- New City Pages -->
+  <url>
+    <loc>https://bestinternationalmovers.com/packers-and-movers-rawalpindi/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bestinternationalmovers.com/home-shifting-islamabad/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bestinternationalmovers.com/home-shifting-rawalpindi/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bestinternationalmovers.com/international-cargo-islamabad/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- New Service Pages -->
+  <url>
+    <loc>https://bestinternationalmovers.com/shipping-companies-pakistan/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bestinternationalmovers.com/pakistan-cargo-services/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bestinternationalmovers.com/custom-duty-calculator/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

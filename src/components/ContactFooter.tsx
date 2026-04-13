@@ -126,8 +126,9 @@ const ContactFooter = () => {
                 <li><Link to="/movers-peshawar" className="hover:text-gold transition-colors">Movers Peshawar</Link></li>
                 <li><Link to="/packers-and-movers-islamabad" className="hover:text-gold transition-colors">Packers &amp; Movers Islamabad</Link></li>
                 <li><Link to="/packers-and-movers-lahore" className="hover:text-gold transition-colors">Packers &amp; Movers Lahore</Link></li>
-                <li><Link to="/house-shifting-islamabad" className="hover:text-gold transition-colors">House Shifting Islamabad</Link></li>
-                <li><Link to="/house-shifting-rawalpindi" className="hover:text-gold transition-colors">House Shifting Rawalpindi</Link></li>
+                <li><Link to="/packers-and-movers-rawalpindi" className="hover:text-gold transition-colors">Packers &amp; Movers Rawalpindi</Link></li>
+                <li><Link to="/home-shifting-islamabad" className="hover:text-gold transition-colors">Home Shifting Islamabad</Link></li>
+                <li><Link to="/home-shifting-rawalpindi" className="hover:text-gold transition-colors">Home Shifting Rawalpindi</Link></li>
               </ul>
             </div>
             <div>
@@ -160,6 +161,10 @@ const ContactFooter = () => {
                 <li><Link to="/container-shipping-pakistan" className="hover:text-gold transition-colors">Container Shipping Pakistan</Link></li>
                 <li><Link to="/goods-transportation-pakistan" className="hover:text-gold transition-colors">Goods Transportation</Link></li>
                 <li><Link to="/door-to-door-cargo-pakistan" className="hover:text-gold transition-colors">Door to Door Cargo</Link></li>
+                <li><Link to="/international-cargo-islamabad" className="hover:text-gold transition-colors">International Cargo Islamabad</Link></li>
+                <li><Link to="/shipping-companies-pakistan" className="hover:text-gold transition-colors">Shipping Companies Pakistan</Link></li>
+                <li><Link to="/pakistan-cargo-services" className="hover:text-gold transition-colors">Pakistan Cargo Services</Link></li>
+                <li><Link to="/custom-duty-calculator" className="hover:text-gold transition-colors">Custom Duty Calculator</Link></li>
               </ul>
             </div>
             <div>

@@ -24,9 +24,16 @@ const locations = [
 
 const localLandingPages = [
   { label: "Packers & Movers Islamabad", to: "/packers-and-movers-islamabad" },
-  { label: "Packers & Movers Lahore", to: "/packers-and-movers-lahore" },
-  { label: "House Shifting Islamabad", to: "/house-shifting-islamabad" },
-  { label: "House Shifting Rawalpindi", to: "/house-shifting-rawalpindi" },
+  { label: "Packers Movers Lahore", to: "/packers-and-movers-lahore" },
+  { label: "Packers Movers Rawalpindi", to: "/packers-and-movers-rawalpindi" },
+  { label: "Home Shifting Islamabad", to: "/home-shifting-islamabad" },
+  { label: "Home Shifting Rawalpindi", to: "/home-shifting-rawalpindi" },
+  { label: "Movers Lahore", to: "/movers-lahore" },
+  { label: "Movers Peshawar", to: "/movers-peshawar" },
+  { label: "Cargo Service Islamabad", to: "/international-cargo-islamabad" },
+  { label: "Shipping Companies Pakistan", to: "/shipping-companies-pakistan" },
+  { label: "Pakistan Cargo Services", to: "/pakistan-cargo-services" },
+  { label: "Custom Duty Calculator", to: "/custom-duty-calculator" },
   { label: "Container Shipping Pakistan", to: "/container-shipping-pakistan" },
   { label: "Door to Door Cargo", to: "/door-to-door-cargo-pakistan" },
   { label: "Goods Transportation", to: "/goods-transportation-pakistan" },
@@ -112,10 +119,16 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((l) =>
             l.dropdown ? (
-              <div key={l.href} className="relative" ref={dropdownRef}>
+              <div 
+                key={l.href} 
+                className="lg:static relative group" 
+                ref={dropdownRef}
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                  className="text-sm font-medium text-muted-foreground hover:text-gold transition-colors duration-300 flex items-center gap-1"
+                  className="text-sm font-medium text-muted-foreground hover:text-gold transition-colors duration-300 flex items-center gap-1 py-2"
                 >
                   {l.label} <ChevronDown size={14} className={`transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
                 </button>
@@ -126,70 +139,72 @@ const Navbar = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[min(94vw,960px)] bg-navy-light/98 backdrop-blur-xl border border-border rounded-xl shadow-2xl p-6 z-50"
+                      className="absolute top-full left-0 right-0 mx-auto w-full max-w-[1200px] px-4 pt-2 z-50 pointer-events-auto"
                     >
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div>
-                          <p className="text-xs font-bold text-gold tracking-widest uppercase mb-3">Our Services</p>
-                          <div className="space-y-1">
-                            {services.map((s) => (
-                              <Link
-                                key={s.slug}
-                                to={`/services/${s.slug}`}
-                                className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gold/10 transition-colors group"
-                              >
-                                <s.icon size={18} className="text-gold" />
-                                <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">{s.label}</span>
-                              </Link>
-                            ))}
+                      <div className="bg-navy-light/98 backdrop-blur-xl border border-border rounded-xl shadow-2xl p-6 md:p-8 max-h-[85vh] overflow-y-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                          <div>
+                            <p className="text-xs font-bold text-gold tracking-widest uppercase mb-4">Our Services</p>
+                            <div className="space-y-2">
+                              {services.map((s) => (
+                                <Link
+                                  key={s.slug}
+                                  to={`/services/${s.slug}`}
+                                  className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gold/10 transition-colors group/item"
+                                >
+                                  <s.icon size={18} className="text-gold shrink-0" />
+                                  <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors">{s.label}</span>
+                                </Link>
+                              ))}
+                            </div>
                           </div>
-                        </div>
-                        <div>
-                          <p className="text-xs font-bold text-gold tracking-widest uppercase mb-3">Destination Services</p>
-                          <div className="space-y-1">
-                            {destinationServices.map((d) => (
-                              <Link
-                                key={d.to}
-                                to={d.to}
-                                className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gold/10 transition-colors group"
-                              >
-                                <Globe size={18} className="text-gold" />
-                                <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">{d.label}</span>
-                              </Link>
-                            ))}
+                          <div>
+                            <p className="text-xs font-bold text-gold tracking-widest uppercase mb-4">Destination Services</p>
+                            <div className="space-y-2">
+                              {destinationServices.map((d) => (
+                                <Link
+                                  key={d.to}
+                                  to={d.to}
+                                  className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gold/10 transition-colors group/item"
+                                >
+                                  <Globe size={18} className="text-gold shrink-0" />
+                                  <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors">{d.label}</span>
+                                </Link>
+                              ))}
+                            </div>
                           </div>
-                        </div>
-                        <div>
-                          <p className="text-xs font-bold text-gold tracking-widest uppercase mb-3">Our Locations</p>
-                          <div className="space-y-1">
-                            {locations.map((loc) => (
-                              <Link
-                                key={loc.slug}
-                                to={`/${loc.slug}`}
-                                className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gold/10 transition-colors group"
-                              >
-                                <MapPin size={18} className="text-gold" />
-                                <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">{loc.city}</span>
-                              </Link>
-                            ))}
+                          <div>
+                            <p className="text-xs font-bold text-gold tracking-widest uppercase mb-4">Our Locations</p>
+                            <div className="space-y-2">
+                              {locations.map((loc) => (
+                                <Link
+                                  key={loc.slug}
+                                  to={`/${loc.slug}`}
+                                  className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gold/10 transition-colors group/item"
+                                >
+                                  <MapPin size={18} className="text-gold shrink-0" />
+                                  <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors">{loc.city}</span>
+                                </Link>
+                              ))}
+                            </div>
+                            <div className="mt-6 pt-4 border-t border-border">
+                              <Link to="/services" className="text-gold text-sm font-medium hover:underline flex items-center gap-1">View All Services →</Link>
+                            </div>
                           </div>
-                          <div className="mt-4 pt-4 border-t border-border">
-                            <Link to="/services" className="text-gold text-sm font-medium hover:underline">View All Services →</Link>
-                          </div>
-                        </div>
-                        <div>
-                          <p className="text-xs font-bold text-gold tracking-widest uppercase mb-3">Local &amp; guides</p>
-                          <div className="space-y-1">
-                            {localLandingPages.map((p) => (
-                              <Link
-                                key={p.to}
-                                to={p.to}
-                                className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gold/10 transition-colors group"
-                              >
-                                <Home size={18} className="text-gold" />
-                                <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">{p.label}</span>
-                              </Link>
-                            ))}
+                          <div className="lg:col-span-2">
+                            <p className="text-xs font-bold text-gold tracking-widest uppercase mb-4">Local &amp; Guides</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
+                              {localLandingPages.map((p) => (
+                                <Link
+                                  key={p.to}
+                                  to={p.to}
+                                  className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gold/10 transition-colors group/item"
+                                >
+                                  <Home size={18} className="text-gold shrink-0" />
+                                  <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors break-words line-clamp-2">{p.label}</span>
+                                </Link>
+                              ))}
+                            </div>
                           </div>
                         </div>
                       </div>
