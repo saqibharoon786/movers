@@ -25,7 +25,10 @@ const BlogSection = () => {
             <motion.article key={i} initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: i * 0.1, duration: 0.5 }}>
               <Link to={`/blog/${p.slug}`} className="glass-card rounded-xl overflow-hidden group cursor-pointer hover:border-gold/30 transition-all block">
                 <div className="overflow-hidden">
-                  <img src={p.img} alt={p.title} loading="lazy" width={640} height={360} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <picture>
+                    <source srcSet={`${p.img}&fm=webp`} type="image/webp" />
+                    <img src={p.img} alt={p.title} loading="lazy" width={640} height={360} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </picture>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">

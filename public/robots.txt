@@ -1,10 +1,5 @@
 User-agent: *
 Allow: /
-
 Disallow: /admin/
-Disallow: /dashboard/
-Disallow: /login/
-Disallow: /temp/
-Disallow: /backup/
 
-Sitemap: https://bestinternationalmovers.com/sitemap.xml
+Sitemap: https://bestintlmovers.com/sitemap.xml

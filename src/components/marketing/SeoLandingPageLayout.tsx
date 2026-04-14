@@ -80,10 +80,10 @@ const SeoLandingPageLayout = ({
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 leading-tight">{h1}</h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">{heroSubtext}</p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 w-full">
               <Link
                 to="/contact"
-                className="inline-flex px-6 py-3 rounded-lg gold-gradient-bg text-primary-foreground font-bold items-center gap-2"
+                className="inline-flex w-full sm:w-auto justify-center px-6 py-3 rounded-lg gold-gradient-bg text-primary-foreground font-bold items-center gap-2"
               >
                 Get Free Quote <ArrowRight size={18} />
               </Link>
@@ -91,11 +91,11 @@ const SeoLandingPageLayout = ({
                 href={WA}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex px-6 py-3 rounded-lg border border-border bg-navy-mid font-bold items-center gap-2"
+                className="inline-flex w-full sm:w-auto justify-center px-6 py-3 rounded-lg border border-border bg-navy-mid font-bold items-center gap-2"
               >
                 WhatsApp Us
               </a>
-              <a href="tel:03009130211" className="inline-flex px-6 py-3 rounded-lg border border-gold/30 text-gold font-semibold items-center gap-2">
+              <a href="tel:03009130211" className="inline-flex w-full sm:w-auto justify-center px-6 py-3 rounded-lg border border-gold/30 text-gold font-semibold items-center gap-2">
                 <Phone size={18} /> {PHONE}
               </a>
             </div>

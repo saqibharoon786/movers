@@ -14,8 +14,7 @@ export const islamabadMoversConfig: CityMoversStandaloneConfig = {
   cargoPagePath: "/cargo-service-islamabad",
   seo: {
     title: "Movers and Packers Islamabad | Best International Movers",
-    description:
-      "Top movers and packers in Islamabad. Home shifting, office relocation & international moving. Serving F-sectors, G-sectors, DHA, Blue Area. Get free quote!",
+    description: "Professional movers and packers in Islamabad. Home shifting, office relocation. All F, G sectors, DHA, Bahria Enclave covered. Get free quote!",
     keywords: "movers islamabad, packers islamabad, home shifting islamabad, office relocation islamabad",
   },
   h1: "Movers and Packers in Islamabad",

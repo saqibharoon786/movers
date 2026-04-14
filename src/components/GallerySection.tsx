@@ -36,7 +36,10 @@ const GallerySection = () => {
               transition={{ delay: i * 0.1, duration: 0.5 }}
               className="group relative rounded-xl overflow-hidden cursor-pointer"
             >
-              <img src={p.img} alt={p.title} loading="lazy" width={640} height={400} className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700" />
+              <picture>
+                <source srcSet={`${p.img}&fm=webp`} type="image/webp" />
+                <img src={p.img} alt={p.title} loading="lazy" width={640} height={400} className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700" />
+              </picture>
               <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
                 <h3 className="font-display font-semibold text-foreground">{p.title}</h3>
                 <p className="text-gold text-sm">{p.location}</p>

@@ -12,7 +12,7 @@ const locationData: Record<string, any> = {
     city: "Rawalpindi",
     title: "Movers and Packers in Rawalpindi",
     metaTitle: "Movers and Packers Rawalpindi | Best International Movers",
-    metaDesc: "Top movers and packers in Rawalpindi. Local & international shifting, packing, storage services. Serving Bahria Town, Satellite Town & all areas. Call now!",
+    metaDesc: "Top movers and packers in Rawalpindi. Home shifting, office relocation & international moving. Bahria Town, Satellite Town, Askari. Get free quote now!",
     metaKeywords: "movers and packers rawalpindi, shifting services rawalpindi, movers rawalpindi, packers rawalpindi",
     highlight: "Professional Moving Services in the Heart of Potohar",
     description: "Looking for reliable and experienced movers and packers in Rawalpindi? Global Glide Studio offers top-tier house shifting, office relocation, and professional packing services across Rawalpindi. With years of experience moving families and businesses safely, we ensure your belongings are transported with utmost care. From tightly packed commercial avenues to expansive residential societies, our local expertise guarantees a stress-free move.",
@@ -193,7 +193,10 @@ const LocationPage = () => {
       <div className="pt-32 pb-16 relative overflow-hidden bg-navy-light border-b border-border">
         {/* Abstract Background Overlay */}
         <div className="absolute inset-0 z-0">
-          <img src={location.heroImg} alt={location.title} className="w-full h-full object-cover opacity-[0.15]" />
+          <picture>
+            <source srcSet={`${location.heroImg}&fm=webp`} type="image/webp" />
+            <img src={location.heroImg} alt={location.title} fetchpriority="high" loading="eager" width="1920" height="1080" className="w-full h-full object-cover opacity-[0.15]" />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
         </div>
         
@@ -208,24 +211,28 @@ const LocationPage = () => {
               <span className="text-sm font-medium text-gold tracking-wide uppercase">{location.highlight}</span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-tight">
               {location.title}
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto mb-10">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto mb-10">
               {location.description}
             </p>
             
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <a href={`https://wa.me/923009130211?text=Hello!%20I%20am%20looking%20for%20movers%20and%20packers%20in%20${location.city}.%20Can%20you%20provide%20a%20quote?`} target="_blank" rel="noopener noreferrer" className="inline-flex px-8 py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold text-lg items-center gap-2 hover:shadow-[0_0_40px_-5px_hsl(var(--gold)/0.5)] transition-all transform hover:-translate-y-1">
-                Book Your Move <ArrowRight size={18} />
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 w-full px-2 sm:px-0">
+              <a href={`https://wa.me/923009130211?text=Hello!%20I%20am%20looking%20for%20movers%20and%20packers%20in%20${location.city}.%20Can%20you%20provide%20a%20quote?`} target="_blank" rel="noopener noreferrer" className="inline-flex w-full sm:w-auto justify-center px-6 sm:px-8 py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold text-lg items-center gap-2 hover:shadow-[0_0_40px_-5px_hsl(var(--gold)/0.5)] transition-all transform hover:-translate-y-1">
+                Book Your Move <ArrowRight size={18} className="shrink-0" />
               </a>
-              <a href="tel:03009130211" className="inline-flex px-8 py-4 rounded-lg border border-border bg-navy-light/50 text-foreground font-bold text-lg items-center gap-2 hover:bg-navy-light transition-all">
-                <Phone size={18} className="text-gold" /> Call Now
+              <a href="tel:03009130211" className="inline-flex w-full sm:w-auto justify-center px-6 sm:px-8 py-4 rounded-lg border border-border bg-navy-light/50 text-foreground font-bold text-lg items-center gap-2 hover:bg-navy-light transition-all">
+                <Phone size={18} className="text-gold shrink-0" /> Call Now
               </a>
             </div>
 
             <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-              <img src={location.heroImg} alt={`Movers and Packers team in ${location.city}`} className="w-full h-64 md:h-96 lg:h-[450px] object-cover" />
+              <picture>
+                <source srcSet={`${location.heroImg}&fm=webp&w=800`} media="(max-width: 768px)" type="image/webp" />
+                <source srcSet={`${location.heroImg}&fm=webp`} type="image/webp" />
+                <img src={location.heroImg} alt={`Movers and Packers team in ${location.city}`} fetchpriority="high" loading="eager" width="1024" height="450" className="w-full h-64 md:h-96 lg:h-[450px] object-cover" />
+              </picture>
             </motion.div>
           </motion.div>
         </div>
@@ -406,8 +413,8 @@ const LocationPage = () => {
           <div className="mt-24 text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Ready to Move in {location.city}?</h2>
             <p className="text-xl text-muted-foreground mb-10">Get in touch with our moving experts today for a free, no-obligation quote and completely hassle-free logistics planning.</p>
-            <Link to="/contact" className="inline-flex px-10 py-5 rounded-full gold-gradient-bg text-primary-foreground font-bold text-xl items-center gap-3 hover:shadow-[0_0_50px_-10px_hsl(var(--gold)/0.6)] transition-all transform hover:-translate-y-1">
-              Request Your Free Quote <ArrowRight size={22} />
+            <Link to="/contact" className="inline-flex px-6 sm:px-10 py-4 sm:py-5 rounded-full gold-gradient-bg text-primary-foreground font-bold text-lg sm:text-xl items-center gap-2 sm:gap-3 hover:shadow-[0_0_50px_-10px_hsl(var(--gold)/0.6)] transition-all transform hover:-translate-y-1 w-full sm:w-auto justify-center">
+              Request Your Free Quote <ArrowRight size={22} className="shrink-0" />
             </Link>
           </div>
 

@@ -31,7 +31,10 @@ const AboutPage = () => {
       {/* Hero Section */}
       <div className="pt-32 pb-20 relative overflow-hidden bg-navy-light border-b border-border">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1920" alt="Team collaborating" className="w-full h-full object-cover opacity-[0.1]" />
+          <picture>
+            <source srcSet="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1920&fm=webp" type="image/webp" />
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1920" alt="Team collaborating" fetchpriority="high" loading="eager" width="1920" height="1080" className="w-full h-full object-cover opacity-[0.1]" />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-background/50"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
@@ -50,7 +53,10 @@ const AboutPage = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800" alt="Office planning" className="rounded-2xl shadow-xl w-full" />
+              <picture>
+                <source srcSet="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800&fm=webp" type="image/webp" />
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800" alt="Office planning" loading="lazy" width="800" height="600" className="rounded-2xl shadow-xl w-full" />
+              </picture>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
               <h2 className="text-3xl font-display font-bold">A Legacy of <span className="gold-gradient-text">Trust & Care</span></h2>
@@ -112,7 +118,10 @@ const AboutPage = () => {
             {teamMembers.map((member, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center group">
                 <div className="relative mb-6 overflow-hidden rounded-2xl aspect-square border border-white/10">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <picture>
+                    <source srcSet={`${member.image}&fm=webp`} type="image/webp" />
+                    <img src={member.image} alt={member.name} loading="lazy" width="400" height="400" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <h4 className="text-lg font-display font-bold text-foreground mb-1">{member.name}</h4>

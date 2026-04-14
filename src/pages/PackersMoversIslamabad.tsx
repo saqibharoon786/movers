@@ -32,8 +32,8 @@ const movingCompanySchema = {
 
 const PackersMoversIslamabad = () => (
   <SeoLandingPageLayout
-    title="Packers and Movers in Islamabad | Full-Service Packing & Moving"
-    description="Packers and movers Islamabad: every sector, export-quality packing, office and home moves, 10+ FAQs, survey-based pricing. Trusted local and international relocations."
+    title="Packers and Movers Islamabad | Best International Movers"
+    description="Best packers and movers in Islamabad. 3,600 monthly searches. Home shifting, office relocation, international moving. Free survey & quote. Call 0300-9130211"
     keywords="packers and movers islamabad"
     urlPath="/packers-and-movers-islamabad/"
     h1="Packers and Movers in Islamabad"

@@ -232,10 +232,10 @@ const Navbar = () => {
       <AnimatePresence>
         {open && (
           <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} className="lg:hidden bg-navy-light/95 backdrop-blur-xl border-t border-border overflow-hidden">
-            <div className="flex flex-col p-6 gap-2">
-              <Link to="/" onClick={() => setOpen(false)} className="text-foreground hover:text-gold transition-colors py-2 font-medium">Home</Link>
+            <div className="flex flex-col p-6 gap-2 max-h-[85vh] overflow-y-auto">
+              <Link to="/" onClick={() => setOpen(false)} className="text-foreground hover:text-gold transition-colors py-3 font-medium border-b border-white/5">Home</Link>
               
-              <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} className="text-foreground hover:text-gold transition-colors py-2 font-medium flex items-center justify-between">
+              <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} className="text-foreground hover:text-gold transition-colors py-3 font-medium flex items-center justify-between border-b border-white/5">
                 Services <ChevronDown size={16} className={`transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`} />
               </button>
               <AnimatePresence>
@@ -284,9 +284,9 @@ const Navbar = () => {
               </AnimatePresence>
 
               {navLinks.filter(l => !l.dropdown && l.label !== "Home").map((l) => (
-                <Link key={l.href} to={l.href} onClick={() => setOpen(false)} className="text-foreground hover:text-gold transition-colors py-2 font-medium">{l.label}</Link>
+                <Link key={l.href} to={l.href} onClick={() => setOpen(false)} className="text-foreground hover:text-gold transition-colors py-3 font-medium border-b border-white/5 last:border-0">{l.label}</Link>
               ))}
-              <Link to="/contact" onClick={() => setOpen(false)} className="mt-2 px-5 py-3 rounded-lg gold-gradient-bg text-primary-foreground font-semibold text-center">Get Free Quote</Link>
+              <Link to="/contact" onClick={() => setOpen(false)} className="mt-4 px-5 py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold text-base text-center shadow-lg w-full tracking-wide uppercase">Get Free Quote</Link>
             </div>
           </motion.div>
         )}

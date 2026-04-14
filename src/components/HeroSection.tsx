@@ -43,7 +43,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-screen min-h-[700px] overflow-hidden">
+    <section id="home" className="relative h-screen min-h-[700px] overflow-hidden" style={{ minHeight: "700px" }}>
       {/* Background images */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -55,7 +55,10 @@ const HeroSection = () => {
           className="absolute inset-0"
           style={{ transform: `translateY(${scrollY * 0.3}px)` }}
         >
-          <img src={images[current]} alt="Professional international movers packing boxes in Pakistan" className="w-full h-[120%] object-cover" width={1920} height={1080} />
+          <picture>
+            <source srcSet={images[current]} type="image/webp" />
+            <img src={images[current]} alt="Professional international movers packing boxes in Pakistan" fetchpriority="high" loading="eager" className="w-full h-[120%] object-cover" width="1920" height="1080" />
+          </picture>
         </motion.div>
       </AnimatePresence>
 
@@ -92,31 +95,31 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight max-w-5xl mb-6 flex flex-col items-center"
+          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight max-w-5xl mb-6 flex flex-col items-center"
         >
-          <span className="text-xl sm:text-2xl text-gold mb-4 uppercase tracking-widest font-semibold block w-full text-center">International Movers & Logistics Pakistan</span>
-          <span>Moving Your World, <span className="gold-gradient-text">Seamlessly Across Borders</span></span>
+          <span className="text-lg sm:text-2xl text-gold mb-4 uppercase tracking-widest font-semibold block w-full text-center">International Movers & Logistics Pakistan</span>
+          <span>Moving Your World, <br className="sm:hidden" /><span className="gold-gradient-text">Seamlessly Across Borders</span></span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10"
+          className="text-lg md:text-xl text-muted-foreground max-w-3xl mb-10"
         >
-          Professional International Relocation & Logistics Services | Door-to-Door | 100+ Countries
+          Pakistan's Most Trusted International Movers & Logistics | Door-to-Door Service | 100+ Countries | Rawalpindi | Islamabad | Lahore | Peshawar
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="flex flex-col sm:flex-row gap-4"
+          className="flex flex-col sm:flex-row gap-4 w-full px-2 sm:w-auto"
         >
-          <button onClick={() => setShowQuoteForm(true)} className="group px-8 py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold text-lg flex items-center gap-2 hover:shadow-[0_0_40px_-5px_hsl(var(--gold)/0.5)] transition-all duration-300">
+          <button onClick={() => setShowQuoteForm(true)} className="group px-6 py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold text-lg flex items-center justify-center gap-2 hover:shadow-[0_0_40px_-5px_hsl(var(--gold)/0.5)] transition-all duration-300 w-full sm:w-auto">
             Get a Free Quote <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </button>
-          <a href="https://wa.me/923009130211?text=Hello!%20I%20need%20a%20quote%20for%20international%20moving." target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-lg border border-foreground/20 text-foreground font-semibold flex items-center gap-2 hover:border-gold/50 hover:text-gold transition-all duration-300 bg-foreground/5 backdrop-blur-sm">
+          <a href="https://wa.me/923009130211?text=Hello!%20I%20need%20a%20quote%20for%20international%20moving." target="_blank" rel="noopener noreferrer" className="px-6 py-4 rounded-lg border border-foreground/20 text-foreground font-semibold flex items-center justify-center gap-2 hover:border-gold/50 hover:text-gold transition-all duration-300 bg-foreground/5 backdrop-blur-sm w-full sm:w-auto">
             <Play size={20} /> WhatsApp Us
           </a>
         </motion.div>
@@ -158,7 +161,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative w-full max-w-2xl bg-navy/95 border border-border/50 rounded-2xl shadow-2xl overflow-hidden p-8"
+              className="relative w-full max-w-2xl bg-navy/95 border border-border/50 rounded-2xl shadow-2xl overflow-y-auto overflow-x-hidden p-6 sm:p-8 max-h-[90vh]"
             >
               <button 
                 onClick={() => setShowQuoteForm(false)}

@@ -10,9 +10,8 @@ const statsDefault = [
 export const dubaiMovingConfig: DestinationMovingConfig = {
   urlPath: "/pakistan-to-dubai-movers",
   seo: {
-    title: "Movers from Pakistan to Dubai UAE | Best International Movers",
-    description:
-      "Professional moving & cargo services from Pakistan to Dubai. Door-to-door relocation, sea freight, air cargo, customs clearance from Rawalpindi, Islamabad, Lahore & Peshawar. Free quote!",
+    title: "Pakistan to Dubai Movers & Cargo Service | Best International",
+    description: "Door-to-door moving from Pakistan to Dubai. Sea freight & air cargo to all UAE cities. From Rawalpindi, Islamabad, Lahore. Get free quote!",
     keywords:
       "pakistan to dubai movers, dubai cargo from pakistan, movers islamabad to dubai, sea freight dubai, air cargo uae",
   },
@@ -169,9 +168,8 @@ export const dubaiMovingConfig: DestinationMovingConfig = {
 export const ukMovingConfig: DestinationMovingConfig = {
   urlPath: "/pakistan-to-uk-movers",
   seo: {
-    title: "Movers from Pakistan to UK | Best International Movers",
-    description:
-      "Professional moving & cargo services from Pakistan to UK. Sea freight, air cargo, door-to-door delivery to London, Manchester, Birmingham. From Rawalpindi, Islamabad, Lahore. Free quote!",
+    title: "Pakistan to UK Movers & Cargo | Best International Movers",
+    description: "Professional moving from Pakistan to UK. Sea freight to London, Manchester, Birmingham. From Islamabad, Rawalpindi, Lahore. Free quote!",
     keywords:
       "pakistan to uk movers, london movers from pakistan, uk customs household goods, sea freight uk from pakistan",
   },
