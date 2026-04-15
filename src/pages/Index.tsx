@@ -1,4 +1,5 @@
-import { useSEO } from "@/hooks/useSEO";
+import SEO from "@/components/SEO";
+import { seoConfig } from "@/seoConfig";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -17,76 +18,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import HowItWorksTimeline from "@/components/HowItWorksTimeline";
 
 const Index = () => {
-  useSEO({
-    title: "International Movers Pakistan | Best International Movers & Logistics",
-    description: "Pakistan's trusted international movers. Door-to-door moving to 100+ countries. Sea freight, air cargo, customs clearance. Offices in Rawalpindi, Islamabad, Lahore & Peshawar. Get free quote!",
-    keywords: "international movers pakistan, movers and packers rawalpindi, international relocation pakistan, moving company pakistan",
-    urlPath: "/",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "MovingCompany",
-      "name": "Best International Movers & Logistics",
-      "url": "https://bestintlmovers.com",
-      "logo": "https://bestintlmovers.com/logo.png",
-      "description": "Professional international moving and logistics services from Pakistan to 100+ countries. Door-to-door service, customs clearance and packing.",
-      "telephone": "+923009130211",
-      "email": "saqibharoonharoon@gmail.com",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "Commercial Market, Satellite Town",
-          "addressLocality": "Rawalpindi",
-          "addressRegion": "Punjab",
-          "postalCode": "46000",
-          "addressCountry": "PK"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "Blue Area, Jinnah Avenue",
-          "addressLocality": "Islamabad",
-          "addressCountry": "PK"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "Main Boulevard, Gulberg III",
-          "addressLocality": "Lahore",
-          "addressCountry": "PK"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "University Road",
-          "addressLocality": "Peshawar",
-          "addressCountry": "PK"
-        }
-      ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-          "opens": "08:00",
-          "closes": "20:00"
-        }
-      ],
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "33.5651",
-        "longitude": "73.0169"
-      },
-      "areaServed": ["Rawalpindi","Islamabad","Lahore","Peshawar","Pakistan"],
-      "sameAs": [
-        "https://facebook.com/bestintlmovers",
-        "https://instagram.com/bestintlmovers"
-      ],
-      "priceRange": "$$",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "127"
-      }
-    }
-  });
   return (
     <div className="min-h-screen bg-background">
+      <SEO {...seoConfig.home} />
       <Navbar />
       <HeroSection />
       

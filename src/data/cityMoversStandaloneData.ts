@@ -217,3 +217,61 @@ export const peshawarMoversConfig: CityMoversStandaloneConfig = {
     "Reach us at saqibharoonharoon@gmail.com or 0300-9130211. Mon–Sat 8:00 AM – 8:00 PM | Sun: Emergency only.",
   ],
 };
+
+export const rawalpindiMoversConfig: CityMoversStandaloneConfig = {
+  urlPath: "/movers-rawalpindi",
+  cityName: "Rawalpindi",
+  breadcrumbPage: "Movers Rawalpindi",
+  cargoPagePath: "/cargo-service-rawalpindi",
+  seo: {
+    title: "Movers and Packers Rawalpindi | Best International Movers",
+    description:
+      "Professional movers and packers in Rawalpindi. Home shifting, office relocation & moving. Serving Bahria Town, Askari, PWD, Chaklala. Get free quote!",
+    keywords: "movers rawalpindi, packers rawalpindi, bahria town movers, askari housing shifting",
+  },
+  h1: "Movers and Packers in Rawalpindi",
+  heroDescription:
+    "Trusted moving and relocation services across Rawalpindi—serving gated communities like Bahria Town and Askari Housing with expertise in military family relocations and secure transport.",
+  stats,
+  services: [
+    { title: "Home Shifting Rawalpindi", description: "Professional packing and transport for residential moves across all Rawalpindi neighborhoods." },
+    { title: "Office Relocation Rawalpindi", description: "Efficient commercial moves with minimal workplace disruption and equipment care." },
+    { title: "International Moving from Rawalpindi", description: "Export documentation and coordinated freight for families relocating abroad." },
+    { title: "Gated Community Moves", description: "Specialized experience with Bahria Town, Askari, PWD Housing protocols and security requirements." },
+    { title: "Storage Rawalpindi", description: "Secure short-term storage when move timelines don't align perfectly." },
+    { title: "Corporate Relocation Rawalpindi", description: "Dedicated coordination for employee moves and office transitions." },
+  ],
+  whyHeading: "Why Trust Us in Rawalpindi",
+  whyPoints: [
+    "Expert knowledge of Bahria Town, Askari Housing, and PWD regulations.",
+    "Experienced moving military families and government employees.",
+    "Twin-city coordination with Islamabad office for seamless transitions.",
+    "Reliable crews who understand gated-community access requirements.",
+  ],
+  areasHeading: "Areas We Serve in Rawalpindi",
+  areasText:
+    "Bahria Town (all phases), Askari Housing Scheme (1-14), PWD Housing, Chaklala Scheme, Satellite Town, Commercial Market, Westridge, Airport Housing, Peshawar Road area.",
+  officeHeading: "Our Rawalpindi Office",
+  officeAddress: "Bahria Town, Phase IV, Rawalpindi",
+  mapEmbedUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105752.67227769024!2d72.76783662300821!3d33.56443278399269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfb2a35d1dc8ff%3A0x4279a10129fdb1d4!2sRawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1711234567894!5m2!1sen!2s",
+  faqs: [
+    { q: "Do you provide services in Bahria Town Rawalpindi?", a: "Yes—gated community access and regulations are core to our Rawalpindi service." },
+    { q: "Can you handle Askari Housing moves?", a: "Yes, including coordination with military housing authorities and complex-specific rules." },
+    { q: "What about international moves from Rawalpindi?", a: "We can arrange sea and air freight with customs documentation support." },
+    { q: "How do I schedule a survey?", a: "Call 0300-9130211 or WhatsApp wa.me/923009130211. Surveys available same-day or next-day." },
+  ],
+  testimonialsHeading: "Rawalpindi Client Reviews",
+  reviews: [
+    { name: "Colonel Tahir", quote: "Bahria Town villa move—professional team, gated community protocols perfectly managed." },
+    { name: "Rabia A.", quote: "Askari 10 move to Islamabad twin-city coordination was flawless." },
+    { name: "Shahid K.", quote: "PWD Housing move—reliable, on-time, zero damage to furniture." },
+  ],
+  ctaHeading: "Ready to Move in Rawalpindi?",
+  ctaSub: "Expert movers for gated communities and military family relocations—get free quote today.",
+  introParagraphs: [
+    "Rawalpindi's gated communities—Bahria Town, Askari Housing, PWD—require movers who understand military regulations, society protocols, and access requirements. Best International Movers & Logistics brings 15+ years of experience managing sensitive relocations with discipline, security protocols, and transparent pricing.",
+    "From twin-city Islamabad–Rawalpindi moves to international family relocations, we coordinate smoothly with security teams, follow every regulation, and deliver peace of mind. Our crews are background-verified, equipment is well-maintained, and packing standards are export-grade regardless of domestic or international destination.",
+    "Contact us at saqibharoonharoon@gmail.com or 0300-9130211 for scheduling. Mon–Sat 8:00 AM – 8:00 PM | Sun: Emergency support.",
+  ],
+};

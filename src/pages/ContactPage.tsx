@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useSEO } from "@/hooks/useSEO";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ContactFooter from "@/components/ContactFooter";
@@ -13,15 +12,11 @@ const offices = [
   { city: "Peshawar", address: "University Road, Peshawar", phone: "0300-9130211" },
 ];
 
+import SEO from "@/components/SEO";
+import { seoConfig } from "@/seoConfig";
+
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
-
-  useSEO({
-    title: "Contact Us | Best International Movers & Logistics Pakistan",
-    description: "Contact Best International Movers & Logistics. Offices in Rawalpindi, Islamabad, Lahore & Peshawar. Call 0300-9130211 or WhatsApp for free quote. Available Mon-Sat 8AM-8PM.",
-    keywords: "contact best international movers, movers contact pakistan, moving company contact rawalpindi",
-    urlPath: "/contact/"
-  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -31,6 +26,7 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO {...seoConfig.contact} />
       <Navbar />
       <div className="pt-32 pb-20">
         <div className="container mx-auto px-4">

@@ -1,11 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
-import { useSEO } from "@/hooks/useSEO";
 import { Globe, Package, Warehouse, Car, Plane, Ship, FileCheck, Truck, ArrowRight, MapPin, Phone, CheckCircle2, ShieldCheck, Award, Users, ChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ContactFooter from "@/components/ContactFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
+import { seoConfig } from "@/seoConfig";
 
 const allServices = [
   { slug: "international-moving", icon: Globe, title: "International Moving", desc: "Complete door-to-door relocation services across 100+ countries with expert handling.", longDesc: "Our international moving service provides a comprehensive, end-to-end relocation experience. From the moment you contact us, our dedicated move coordinators handle every detail — from packing and loading at your current home to customs clearance, shipping, and delivery at your new destination. We specialize in household goods, personal effects, and full home relocations across 100+ countries.", features: ["Door-to-door service worldwide", "Dedicated move coordinator", "Full packing & unpacking", "Customs clearance included", "Insurance coverage", "Real-time shipment tracking"], heroImg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1920", faqs: [{q:"How long does international moving take?", a:"It varies by destination and freight method. Air freight takes 5-10 days, while sea freight can take 4-8 weeks."}, {q:"Do you handle customs clearance?", a:"Yes, we provide completely managed customs clearance services in both the origin and destination countries."}, {q:"What items cannot be shipped?", a:"Restrictions vary by country, but generally forbid perishables, hazardous materials, and certain plants/animals."}], related: ["professional-packing", "customs-clearance"] },
@@ -29,57 +29,10 @@ const ServicesPage = () => {
   const { slug } = useParams();
   const service = allServices.find(s => s.slug === slug);
 
-  const title = service ? `${service.title} Services Pakistan | Best International Movers` : "Our Services | Best International Movers";
-  const desc = service 
-    ? `Expert ${service.title.toLowerCase()} services in Pakistan. Complete door-to-door relocation, packing & customs clearance. Get free quote today!`
-    : "Professional international moving and logistics services from Pakistan. Sea freight, air freight, packing, and customs clearance.";
-
-  useSEO({
-    title,
-    description: desc,
-    keywords: `${service ? service.title.toLowerCase() : 'international moving'} pakistan, professional relocation pakistan, moving company`,
-    urlPath: service ? `/services/${service.slug}/` : "/services/",
-    schema: service ? [
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": `${service.title} Services`,
-        "provider": {
-          "@type": "MovingCompany",
-          "name": "Best International Movers & Logistics"
-        },
-        "description": service.desc,
-        "areaServed": {
-          "@type": "Country",
-          "name": "Pakistan"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": service.title,
-          "itemListElement": service.features.map(f => ({
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": f }
-          }))
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": service.faqs.map(faq => ({
-          "@type": "Question",
-          "name": faq.q,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.a
-          }
-        }))
-      }
-    ] : undefined
-  });
-
   if (!service) {
     return (
       <div className="min-h-screen bg-background">
+        <SEO {...seoConfig.services} />
         <Navbar />
         <div className="pt-32 pb-20 container mx-auto px-4">
           <h1 className="text-4xl font-display font-bold text-center mb-8">Our <span className="gold-gradient-text">Services</span></h1>
@@ -120,6 +73,7 @@ const ServicesPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title={`${service.title} Services Pakistan | Best International Movers`} description={`Expert ${service.title.toLowerCase()} services in Pakistan. Complete door-to-door relocation, packing & customs clearance. Get free quote today!`} />
       <Navbar />
       <div className="pt-32 pb-20">
         <div className="container mx-auto px-4">

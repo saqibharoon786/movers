@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import ContactFooter from "@/components/ContactFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
-import { useSEO } from "@/hooks/useSEO";
 
 const partners = ["Maersk Line", "Emirates SkyCargo", "MSC Shipping", "DHL Global", "Hapag-Lloyd", "DB Schenker"];
 
@@ -16,25 +15,13 @@ const offices = [
   { city: "Peshawar", address: "University Road, Peshawar" },
 ];
 
-const AboutUs = () => {
-  useSEO({
-    title: "About Us | Best International Movers & Logistics Pakistan",
-    description:
-      "Learn about Best International Movers & Logistics - Pakistan's trusted international moving company. 15+ years, 5000+ happy families, offices in Rawalpindi, Islamabad, Lahore & Peshawar.",
-    keywords: "about best international movers pakistan, international movers rawalpindi, logistics company pakistan",
-    urlPath: "/about-us/",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Best International Movers & Logistics",
-      url: "https://bestinternationalmovers.com/",
-      telephone: "+923009130211",
-      email: "saqibharoonharoon@gmail.com",
-    },
-  });
+import SEO from "@/components/SEO";
+import { seoConfig } from "@/seoConfig";
 
+const AboutUs = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO {...seoConfig.about} />
       <Navbar />
       <section className="pt-28 lg:pt-36 pb-16 bg-navy-light border-b border-border">
         <div className="container mx-auto px-4">

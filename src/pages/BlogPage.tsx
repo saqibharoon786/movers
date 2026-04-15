@@ -1,6 +1,5 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useSEO } from "@/hooks/useSEO";
 import { Calendar, ArrowRight, ArrowLeft, User, Clock } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ContactFooter from "@/components/ContactFooter";
@@ -163,20 +162,18 @@ const blogs = [
   },
 ];
 
+import SEO from "@/components/SEO";
+import { seoConfig } from "@/seoConfig";
+import { BlogSchema } from "@/components/BlogSchema";
+
 const BlogPage = () => {
   const { slug } = useParams();
   const blog = blogs.find(b => b.slug === slug);
 
-  useSEO({
-    title: blog ? `${blog.title} | Best International Movers` : "Moving & Logistics Blog | Best International Movers Pakistan",
-    description: blog ? blog.excerpt : "Expert tips on international moving, customs regulations, packing guides & logistics insights. Read our latest articles to make your move stress-free.",
-    keywords: "moving tips pakistan, international moving guide, customs regulations pakistan, packing tips",
-    urlPath: blog ? `/blog/${blog.slug}/` : "/blog/",
-  });
-
   if (!blog) {
     return (
       <div className="min-h-screen bg-background">
+        <SEO {...seoConfig.blog} />
         <Navbar />
         <div className="pt-32 pb-20 container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
@@ -214,6 +211,8 @@ const BlogPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title={blog.title} description={blog.excerpt} />
+      <BlogSchema title={blog.title} date={blog.date} />
       <Navbar />
       <div className="pt-32 pb-20">
         <div className="container mx-auto px-4 max-w-3xl">

@@ -22,7 +22,7 @@ const ContactFooter = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-center mb-16">
             <span className="text-gold font-semibold text-sm tracking-widest uppercase">Contact Us</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold mt-3 mb-4">Get Your <span className="gold-gradient-text">Free Quote</span></h2>
-            <p className="text-muted-foreground max-w-xl mx-auto">Fill out the form and our team will get back to you within 24 hours.</p>
+            <p className="text-muted-foreground max-w-xl mx-auto">Fill outs the form and our teams will get back to you within 24 hours.</p>
           </motion.div>
 
           <div className="grid lg:grid-cols-5 gap-12">
