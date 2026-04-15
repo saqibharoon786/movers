@@ -24,9 +24,9 @@ const ServicesSection = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-gold/5 blur-[120px]" />
       <div className="container mx-auto relative">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-center mb-16">
-          <span className="text-gold font-semibold text-sm tracking-widest uppercase">What We Offer</span>
+          <span className="text-gold font-semibold text-sm tracking-widest uppercase">What We Offers</span>
           <h2 className="text-3xl md:text-5xl font-display font-bold mt-3 mb-4">Our <span className="gold-gradient-text">Premium Services</span></h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">Comprehensive logistics solutions tailored to make your international move seamless and stress-free.</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Comprehensive logistics solution tailored to make your international move seamless and stress-free.</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
