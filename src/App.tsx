@@ -10,6 +10,10 @@ const ServicesPage = lazy(() => import("./pages/ServicesPage.tsx"));
 const WhyUsPage = lazy(() => import("./pages/WhyUsPage.tsx"));
 const ProcessPage = lazy(() => import("./pages/ProcessPage.tsx"));
 const FAQPage = lazy(() => import("./pages/FAQPage.tsx"));
+const FaqHubPakistan = lazy(() => import("./pages/FaqHubPakistan.tsx"));
+const InternationalMoversPakistan = lazy(() => import("./pages/InternationalMoversPakistan.tsx"));
+const CargoServicesPakistan = lazy(() => import("./pages/CargoServicesPakistan.tsx"));
+const LogisticsServicesPakistan = lazy(() => import("./pages/LogisticsServicesPakistan.tsx"));
 const ContactPage = lazy(() => import("./pages/ContactPage.tsx"));
 const BlogPage = lazy(() => import("./pages/BlogPage.tsx"));
 const LocationPage = lazy(() => import("./pages/LocationPage.tsx"));
@@ -58,6 +62,11 @@ const Blog1 = lazy(() => import("./pages/Blog1.tsx"));
 const Blog2 = lazy(() => import("./pages/Blog2.tsx"));
 const Blog3 = lazy(() => import("./pages/Blog3.tsx"));
 const Blog4 = lazy(() => import("./pages/Blog4.tsx"));
+const MovingCostPakistanBlog = lazy(() => import("./pages/blog/MovingCostPakistanBlog.tsx"));
+const PackingTipsHouseShiftingBlog = lazy(() => import("./pages/blog/PackingTipsHouseShiftingBlog.tsx"));
+const MistakesDuringHouseShiftingBlog = lazy(() => import("./pages/blog/MistakesDuringHouseShiftingBlog.tsx"));
+const AirVsSeaFreightPakistanBlog = lazy(() => import("./pages/blog/AirVsSeaFreightPakistanBlog.tsx"));
+const HowToChoosePackersMoversBlog = lazy(() => import("./pages/blog/HowToChoosePackersMoversBlog.tsx"));
 const InternationalMoversIslamabad = lazy(() => import("./pages/InternationalMoversIslamabad.tsx"));
 const InternationalMoversLahore = lazy(() => import("./pages/InternationalMoversLahore.tsx"));
 
@@ -81,12 +90,24 @@ const App = () => (
           <Route path="/why-us" element={<WhyUsPage />} />
           <Route path="/process" element={<ProcessPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/faqs-packers-movers-pakistan" element={<FaqHubPakistan />} />
+          <Route path="/faqs-packers-movers-pakistan/" element={<FaqHubPakistan />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/tips-for-stress-free-international-move" element={<Blog1 />} />
           <Route path="/blog/air-freight-vs-sea-freight-pakistan" element={<Blog2 />} />
           <Route path="/blog/customs-regulations-pakistan-2025" element={<Blog3 />} />
           <Route path="/blog/moving-from-pakistan-to-dubai-guide" element={<Blog4 />} />
+          <Route path="/blog/moving-cost-pakistan" element={<Navigate to="/blog/moving-cost-pakistan/" replace />} />
+          <Route path="/blog/moving-cost-pakistan/" element={<MovingCostPakistanBlog />} />
+          <Route path="/blog/packing-tips-house-shifting" element={<Navigate to="/blog/packing-tips-house-shifting/" replace />} />
+          <Route path="/blog/packing-tips-house-shifting/" element={<PackingTipsHouseShiftingBlog />} />
+          <Route path="/blog/mistakes-during-house-shifting" element={<Navigate to="/blog/mistakes-during-house-shifting/" replace />} />
+          <Route path="/blog/mistakes-during-house-shifting/" element={<MistakesDuringHouseShiftingBlog />} />
+          <Route path="/blog/air-vs-sea-freight-pakistan" element={<Navigate to="/blog/air-vs-sea-freight-pakistan/" replace />} />
+          <Route path="/blog/air-vs-sea-freight-pakistan/" element={<AirVsSeaFreightPakistanBlog />} />
+          <Route path="/blog/how-to-choose-packers-movers" element={<Navigate to="/blog/how-to-choose-packers-movers/" replace />} />
+          <Route path="/blog/how-to-choose-packers-movers/" element={<HowToChoosePackersMoversBlog />} />
           <Route path="/blog/:slug" element={<BlogPage />} />
 
           <Route path="/pakistan-to-dubai-movers" element={<PakistanToDubai />} />
@@ -132,6 +153,12 @@ const App = () => (
           <Route path="/shipping-companies-pakistan" element={<ShippingCompaniesPakistan />} />
           <Route path="/pakistan-cargo-services" element={<PakistanCargoServices />} />
           <Route path="/custom-duty-calculator" element={<CustomDutyCalculator />} />
+          <Route path="/international-movers-pakistan" element={<Navigate to="/international-movers-pakistan/" replace />} />
+          <Route path="/international-movers-pakistan/" element={<InternationalMoversPakistan />} />
+          <Route path="/cargo-services-pakistan" element={<Navigate to="/cargo-services-pakistan/" replace />} />
+          <Route path="/cargo-services-pakistan/" element={<CargoServicesPakistan />} />
+          <Route path="/logistics-services-pakistan" element={<Navigate to="/logistics-services-pakistan/" replace />} />
+          <Route path="/logistics-services-pakistan/" element={<LogisticsServicesPakistan />} />
 
           <Route path="/:citySlug" element={<LocationPage />} />
           <Route path="*" element={<NotFound />} />

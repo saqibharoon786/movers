@@ -34,6 +34,7 @@ const localLandingPages = [
   { label: "Shipping Companies Pakistan", to: "/shipping-companies-pakistan" },
   { label: "Pakistan Cargo Services", to: "/pakistan-cargo-services" },
   { label: "Custom Duty Calculator", to: "/custom-duty-calculator" },
+  { label: "FAQ Hub Pakistan", to: "/faqs-packers-movers-pakistan" },
   { label: "Container Shipping Pakistan", to: "/container-shipping-pakistan" },
   { label: "Door to Door Cargo", to: "/door-to-door-cargo-pakistan" },
   { label: "Goods Transportation", to: "/goods-transportation-pakistan" },

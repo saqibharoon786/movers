@@ -181,6 +181,51 @@ const SeoLandingPageLayout = ({
           </div>
         </section>
 
+        <section className="mt-12 not-prose">
+          <h2 className="text-3xl font-display font-bold text-foreground mb-6">Our Clients</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
+            {["Household Relocation Clients", "SME Trade Businesses", "Corporate HR Teams", "Frequent Exporters"].map((item) => (
+              <div key={item} className="rounded-lg border border-border px-4 py-3">
+                {item}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12 not-prose">
+          <h2 className="text-3xl font-display font-bold text-foreground mb-6">Customer Reviews</h2>
+          <div className="grid md:grid-cols-3 gap-4 text-sm">
+            <blockquote className="rounded-xl border border-border p-5">
+              "Professional team and clear communication. Our Islamabad move was smooth from packing to handover."
+            </blockquote>
+            <blockquote className="rounded-xl border border-border p-5">
+              "Reliable cargo services in Pakistan with realistic timelines. Strong documentation and no confusion."
+            </blockquote>
+            <blockquote className="rounded-xl border border-border p-5">
+              "International relocation experts who explained each step and handled our shipment carefully."
+            </blockquote>
+          </div>
+        </section>
+
+        <section className="mt-12 not-prose">
+          <h2 className="text-3xl font-display font-bold text-foreground mb-6">How It Works</h2>
+          <div className="grid md:grid-cols-4 gap-3 text-sm">
+            {[
+              "1) Free survey and scope planning",
+              "2) Packing and documentation setup",
+              "3) Controlled transport and updates",
+              "4) Delivery, handover, and support",
+            ].map((step) => (
+              <div key={step} className="rounded-lg border border-border px-4 py-3">
+                {step}
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-muted-foreground text-sm">
+            Trusted operations across Islamabad, Lahore, Rawalpindi, and Karachi.
+          </p>
+        </section>
+
         <section className="mt-16 not-prose glass-card rounded-2xl p-8 border border-gold/20 text-center">
           <h2 className="text-2xl font-display font-bold text-foreground mb-3">Ready to get started?</h2>
           <p className="text-muted-foreground mb-6">

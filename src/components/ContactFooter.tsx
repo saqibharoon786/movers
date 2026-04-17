@@ -101,6 +101,9 @@ const ContactFooter = () => {
                 <li><Link to="/services/international-moving" className="hover:text-gold transition-colors">International Moving</Link></li>
                 <li><Link to="/services/air-freight" className="hover:text-gold transition-colors">Air Freight</Link></li>
                 <li><Link to="/services/sea-freight" className="hover:text-gold transition-colors">Sea Freight</Link></li>
+                <li><Link to="/international-movers-pakistan/" className="hover:text-gold transition-colors">International Movers Pakistan</Link></li>
+                <li><Link to="/cargo-services-pakistan/" className="hover:text-gold transition-colors">Cargo Services Pakistan</Link></li>
+                <li><Link to="/logistics-services-pakistan/" className="hover:text-gold transition-colors">Logistics Services Pakistan</Link></li>
                 <li><Link to="/services/vehicle-shipping" className="hover:text-gold transition-colors">Vehicle Shipping</Link></li>
                 <li><Link to="/services/secure-storage" className="hover:text-gold transition-colors">Storage Solutions</Link></li>
               </ul>
@@ -112,8 +115,14 @@ const ContactFooter = () => {
                 <li><Link to="/why-us" className="hover:text-gold transition-colors">Why Choose Us</Link></li>
                 <li><Link to="/process" className="hover:text-gold transition-colors">How It Works</Link></li>
                 <li><Link to="/blog" className="hover:text-gold transition-colors">Blog</Link></li>
+                <li><Link to="/blog/moving-cost-pakistan/" className="hover:text-gold transition-colors">Moving Cost Pakistan Guide</Link></li>
+                <li><Link to="/blog/packing-tips-house-shifting/" className="hover:text-gold transition-colors">Packing Tips House Shifting</Link></li>
+                <li><Link to="/blog/mistakes-during-house-shifting/" className="hover:text-gold transition-colors">House Shifting Mistakes</Link></li>
+                <li><Link to="/blog/air-vs-sea-freight-pakistan/" className="hover:text-gold transition-colors">Air vs Sea Freight Pakistan</Link></li>
+                <li><Link to="/blog/how-to-choose-packers-movers/" className="hover:text-gold transition-colors">How to Choose Packers Movers</Link></li>
                 <li><Link to="/vehicle-import-guide-pakistan" className="hover:text-gold transition-colors">Vehicle Import Guide</Link></li>
                 <li><Link to="/faq" className="hover:text-gold transition-colors">FAQ</Link></li>
+                <li><Link to="/faqs-packers-movers-pakistan" className="hover:text-gold transition-colors">FAQ Hub Pakistan</Link></li>
                 <li><Link to="/contact" className="hover:text-gold transition-colors">Contact</Link></li>
               </ul>
             </div>
