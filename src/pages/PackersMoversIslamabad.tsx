@@ -8,16 +8,16 @@ const serviceSchema = {
   description:
     "Professional packers and movers in Islamabad for homes and offices: full and partial packing, furniture handling, and sector-wide coverage.",
   serviceType: "Moving and packing services",
-  provider: { "@id": "https://bestinternationalmovers.com/#organization" },
+  provider: { "@id": "https://bestintlmovers.com/#organization" },
   areaServed: { "@type": "City", name: "Islamabad" },
 };
 
 const movingCompanySchema = {
   "@context": "https://schema.org",
   "@type": "MovingCompany",
-  "@id": "https://bestinternationalmovers.com/#organization",
+  "@id": "https://bestintlmovers.com/#organization",
   name: "Best International Movers & Logistics",
-  url: "https://bestinternationalmovers.com/",
+  url: "https://bestintlmovers.com/",
   telephone: "+923009130211",
   email: "saqibharoonharoon@gmail.com",
   address: {

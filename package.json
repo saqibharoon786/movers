@@ -8,10 +8,11 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
+    "seo:internal-links": "node scripts/check-internal-links.js",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "postbuild": "node scripts/generate-sitemap.js"
+    "postbuild": "react-snap && node scripts/generate-sitemap.js"
   },
   "reactSnap": {
     "sitemapHostname": "https://bestintlmovers.com",
@@ -19,7 +20,26 @@
     "puppeteerArgs": [
       "--no-sandbox"
     ],
-    "renderAfterDocumentEvent": "render-event"
+    "renderAfterDocumentEvent": "render-event",
+    "include": [
+      "/",
+      "/about-us",
+      "/services",
+      "/why-us",
+      "/process",
+      "/faq",
+      "/contact",
+      "/blog",
+      "/custom-duty-calculator",
+      "/movers-lahore",
+      "/movers-peshawar",
+      "/pakistan-to-dubai-movers",
+      "/pakistan-to-uk-movers",
+      "/pakistan-to-canada-movers",
+      "/pakistan-to-usa-movers",
+      "/international-movers-from-islamabad",
+      "/international-movers-in-lahore"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

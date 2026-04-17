@@ -13,7 +13,7 @@ const serviceSchema = {
     name: "Best International Movers & Logistics",
     telephone: "+923009130211",
     email: "saqibharoonharoon@gmail.com",
-    url: "https://bestinternationalmovers.com/",
+    url: "https://bestintlmovers.com/",
   },
   areaServed: { "@type": "City", name: "Rawalpindi" },
 };

@@ -144,6 +144,21 @@ const AboutUs = () => {
           </div>
         </section>
 
+        <section className="glass-card rounded-2xl p-8 border border-border">
+          <h2 className="text-3xl font-display font-bold mb-4">Explore Our Service Hubs</h2>
+          <p className="text-muted-foreground mb-6">
+            Use these pages to compare city movers, destination routes, and planning tools before requesting a quote.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+            <Link to="/movers-islamabad" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">Islamabad movers and packers</Link>
+            <Link to="/movers-rawalpindi" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">Rawalpindi relocation experts</Link>
+            <Link to="/movers-lahore" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">Lahore moving company page</Link>
+            <Link to="/movers-peshawar" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">Home shifting in Peshawar</Link>
+            <Link to="/pakistan-to-dubai-movers" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">Dubai relocation from Pakistan</Link>
+            <Link to="/custom-duty-calculator" className="rounded-lg border border-gold/30 px-4 py-3 text-gold hover:bg-gold/10">Import duty estimate tool</Link>
+          </div>
+        </section>
+
         <section className="text-center glass-card rounded-3xl p-12 border border-border">
           <h2 className="text-3xl font-display font-bold mb-4">Get Your Free Quote</h2>
           <p className="text-muted-foreground mb-8">Talk to our team about international moving, air and sea freight, and customs support.</p>

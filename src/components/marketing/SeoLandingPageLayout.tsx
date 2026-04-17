@@ -157,6 +157,30 @@ const SeoLandingPageLayout = ({
           </section>
         )}
 
+        <section className="mt-16 not-prose">
+          <h2 className="text-3xl font-display font-bold text-foreground mb-6">Helpful Related Pages</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+            <Link to="/custom-duty-calculator" className="rounded-lg border border-gold/30 px-4 py-3 text-gold hover:bg-gold/10">
+              Check estimated import duties
+            </Link>
+            <Link to="/services/international-moving" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+              Overseas relocation services
+            </Link>
+            <Link to="/services/customs-clearance" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+              Customs documentation support
+            </Link>
+            <Link to="/movers-lahore" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+              Movers in Lahore
+            </Link>
+            <Link to="/movers-peshawar" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+              Movers in Peshawar
+            </Link>
+            <Link to="/blog" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+              Moving guides and blog articles
+            </Link>
+          </div>
+        </section>
+
         <section className="mt-16 not-prose glass-card rounded-2xl p-8 border border-gold/20 text-center">
           <h2 className="text-2xl font-display font-bold text-foreground mb-3">Ready to get started?</h2>
           <p className="text-muted-foreground mb-6">

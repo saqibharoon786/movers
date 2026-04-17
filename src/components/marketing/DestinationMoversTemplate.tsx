@@ -36,7 +36,7 @@ const DestinationMoversTemplate = ({ config }: Props) => {
       name: "Best International Movers & Logistics",
       telephone: "+923009130211",
       email: "saqibharoonharoon@gmail.com",
-      url: "https://bestinternationalmovers.com/",
+      url: "https://bestintlmovers.com/",
     },
     areaServed: config.serviceSchemaAreaServed.map((name) => ({
       "@type": "AdministrativeArea",
@@ -311,6 +311,33 @@ const DestinationMoversTemplate = ({ config }: Props) => {
                   </div>
                 ))}
               </div>
+            </div>
+          </section>
+
+          <section className="glass-card rounded-2xl p-8 border border-border">
+            <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">Route Planning & Related Services</h2>
+            <p className="text-muted-foreground mb-6">
+              Use these pages to compare freight options, customs prep, and duty estimates for your destination.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+              <Link to="/custom-duty-calculator" className="rounded-lg border border-gold/30 px-4 py-3 text-gold hover:bg-gold/10">
+                Estimate customs duty in Pakistan
+              </Link>
+              <Link to="/services/air-freight" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Air freight from Pakistan
+              </Link>
+              <Link to="/services/sea-freight" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Sea freight from Pakistan
+              </Link>
+              <Link to="/services/customs-clearance" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Export and customs handling
+              </Link>
+              <Link to="/blog/air-freight-vs-sea-freight-pakistan" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Air vs sea freight guide
+              </Link>
+              <Link to="/blog/customs-regulations-pakistan-2025" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Customs rules for Pakistan shipments
+              </Link>
             </div>
           </section>
 

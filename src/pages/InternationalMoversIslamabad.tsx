@@ -8,16 +8,16 @@ const serviceSchema = {
   description:
     "Professional international moving services from Islamabad to 100+ countries. Expert customs handling, air & sea freight, insurance, and real-time tracking.",
   serviceType: "International relocation and freight services",
-  provider: { "@id": "https://bestinternationalmovers.com/#organization" },
+  provider: { "@id": "https://bestintlmovers.com/#organization" },
   areaServed: { "@type": "City", name: "Islamabad" },
 };
 
 const movingCompanySchema = {
   "@context": "https://schema.org",
   "@type": "MovingCompany",
-  "@id": "https://bestinternationalmovers.com/#organization",
+  "@id": "https://bestintlmovers.com/#organization",
   name: "Best International Movers & Logistics",
-  url: "https://bestinternationalmovers.com/",
+  url: "https://bestintlmovers.com/",
   telephone: "+923009130211",
   email: "saqibharoonharoon@gmail.com",
   address: {

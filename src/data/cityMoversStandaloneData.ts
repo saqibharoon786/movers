@@ -19,8 +19,8 @@ export const islamabadMoversConfig: CityMoversStandaloneConfig = {
     keywords:
       "movers in islamabad, movers islamabad, packers islamabad, house shifting islamabad, home shifting islamabad, office relocation islamabad, dha islamabad movers, bahria enclave movers, blue area office relocation",
   },
-  heroImageUrl: "https://images.unsplash.com/photo-1620287103233-a309f7a9af31?auto=format&fit=crop&q=80&w=1920",
-  ogImageUrl: "https://images.unsplash.com/photo-1620287103233-a309f7a9af31?auto=format&fit=crop&q=80&w=1200&h=630",
+  heroImageUrl: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920",
+  ogImageUrl: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630",
   ogImageAlt: "Movers and packers team serving Islamabad sectors and societies",
   h1: "Movers and Packers in Islamabad",
   heroDescription:
@@ -164,8 +164,8 @@ export const lahoreMoversConfig: CityMoversStandaloneConfig = {
     keywords:
       "movers in lahore, movers lahore, packers and movers in lahore, dha lahore movers, gulberg movers lahore, bahria town lahore moving, model town shifting, office relocation lahore",
   },
-  heroImageUrl: "https://images.unsplash.com/photo-1574360341773-45eb72fe5fc3?auto=format&fit=crop&q=80&w=1920",
-  ogImageUrl: "https://images.unsplash.com/photo-1574360341773-45eb72fe5fc3?auto=format&fit=crop&q=80&w=1200&h=630",
+  heroImageUrl: "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1920",
+  ogImageUrl: "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630",
   ogImageAlt: "Professional movers and packers team in Lahore handling home shifting",
   h1: "Movers and Packers in Lahore",
   heroDescription:

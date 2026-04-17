@@ -45,7 +45,7 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
       name: "Best International Movers & Logistics",
       telephone: "+923009130211",
       email: "saqibharoonharoon@gmail.com",
-      url: "https://bestinternationalmovers.com/",
+      url: "https://bestintlmovers.com/",
     },
     areaServed: { "@type": "City", name: config.cityName },
   };
@@ -264,6 +264,33 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
                 </div>
               </div>
             </motion.div>
+          </section>
+
+          <section className="glass-card rounded-2xl p-8 border border-border">
+            <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">Related City & Planning Links</h2>
+            <p className="text-muted-foreground mb-6">
+              Compare nearby service areas and use our tools before finalizing your move plan.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+              <Link to="/movers-islamabad" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Islamabad moving and packing
+              </Link>
+              <Link to="/movers-rawalpindi" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Rawalpindi home relocation
+              </Link>
+              <Link to="/movers-lahore" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Packers and movers Lahore
+              </Link>
+              <Link to="/movers-peshawar" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Movers and packers Peshawar
+              </Link>
+              <Link to="/custom-duty-calculator" className="rounded-lg border border-gold/30 px-4 py-3 text-gold hover:bg-gold/10">
+                Calculate duties before shipping
+              </Link>
+              <Link to="/blog/tips-for-stress-free-international-move" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+                Stress-free moving checklist
+              </Link>
+            </div>
           </section>
 
           <section>

@@ -16,8 +16,12 @@ interface SEOProps {
   noindex?: boolean;
 }
 
+const SITE_URL = "https://bestintlmovers.com";
 const DEFAULT_SOCIAL_IMAGE =
   "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200";
+const BUSINESS_PHONE = "+92-300-9130211";
+const BUSINESS_EMAIL = "saqibharoonharoon@gmail.com";
+const BUSINESS_HOURS = ["Mo-Sa 08:00-20:00"];
 
 export const useSEO = ({
   title,
@@ -50,7 +54,7 @@ export const useSEO = ({
     setMeta('robots', noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large');
     
     // Canonical
-    const fullUrl = `https://bestinternationalmovers.com${urlPath || window.location.pathname}`;
+    const fullUrl = `${SITE_URL}${urlPath || window.location.pathname}`;
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement('link');
@@ -82,44 +86,66 @@ export const useSEO = ({
     const oldSchema = document.getElementById('page-schema');
     if (oldSchema) oldSchema.remove();
     
-    if (schema) {
-      // Create breadcrumbs automatically
-      const breadcrumbs = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://bestinternationalmovers.com/"
-          }
-        ]
-      };
-      
-      let itemNumber = 2;
-      const paths = (urlPath || window.location.pathname).split('/').filter(p => p);
-      let currentPath = '';
-      
-      paths.forEach((p) => {
-        currentPath += `/${p}`;
-        breadcrumbs.itemListElement.push({
+    // Create breadcrumbs automatically
+    const breadcrumbs = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
           "@type": "ListItem",
-          "position": itemNumber++,
-          "name": p.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
-          "item": `https://bestinternationalmovers.com${currentPath}/`
-        } as any);
-      });
+          position: 1,
+          name: "Home",
+          item: `${SITE_URL}/`,
+        },
+      ],
+    };
 
-      const combinedSchema = Array.isArray(schema) 
-        ? [...schema, breadcrumbs] 
-        : [schema, breadcrumbs];
+    let itemNumber = 2;
+    const paths = (urlPath || window.location.pathname).split("/").filter((p) => p);
+    let currentPath = "";
 
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.id = 'page-schema';
-      script.text = JSON.stringify(combinedSchema);
-      document.head.appendChild(script);
-    }
+    paths.forEach((p) => {
+      currentPath += `/${p}`;
+      breadcrumbs.itemListElement.push({
+        "@type": "ListItem",
+        position: itemNumber++,
+        name: p.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase()),
+        item: `${SITE_URL}${currentPath}/`,
+      } as any);
+    });
+
+    // Keep business identity consistent across all pages for snippets.
+    const organizationSchema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "Best International Movers & Logistics",
+      url: `${SITE_URL}/`,
+      telephone: BUSINESS_PHONE,
+      email: BUSINESS_EMAIL,
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: BUSINESS_PHONE,
+          email: BUSINESS_EMAIL,
+          contactType: "customer service",
+          areaServed: "PK",
+          availableLanguage: ["en", "ur"],
+        },
+      ],
+      openingHours: BUSINESS_HOURS,
+    };
+
+    const combinedSchema = [
+      ...(schema ? (Array.isArray(schema) ? schema : [schema]) : []),
+      organizationSchema,
+      breadcrumbs,
+    ];
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "page-schema";
+    script.text = JSON.stringify(combinedSchema);
+    document.head.appendChild(script);
   }, [title, description, keywords, urlPath, schema, ogImage, ogImageAlt, twitterImage, noindex]);
 };

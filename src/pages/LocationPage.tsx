@@ -52,7 +52,7 @@ const locationData: Record<string, any> = {
     description: "Discover premium movers and packers in Islamabad for residential, corporate, and diplomatic relocations. We understand the specific, high-security needs of moving within the capital city and provide tailored, VIP packing and moving solutions. Whether you are moving nearby within the sectors or relocating across the country, our elite logistics team ensures maximum protection and efficiency.",
     coverage: "Sector F-6, F-7, F-8, F-10, F-11, E-7, G-9, G-10, G-11, G-13, Blue Area, DHA Islamabad, Bahria Enclave, D-12, Bani Gala, and Park View City.",
     address: "Blue Area, Jinnah Avenue, Islamabad",
-    heroImg: "https://images.unsplash.com/photo-1620287103233-a309f7a9af31?auto=format&fit=crop&q=80&w=1920",
+    heroImg: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106260.67230491025!2d72.97746471842817!3d33.68442017329525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1711234567891!5m2!1sen!2s",
     services: [
       { icon: Briefcase, title: "VIP Diplomatic Moves", desc: "Specialized, high-security moving services tailored for diplomats, embassies, and high-profile executives in Islamabad." },
@@ -120,7 +120,7 @@ const locationData: Record<string, any> = {
     description: "Experience effortless relocating with the top-rated movers and packers in Lahore serving everywhere from DHA and Gulberg to Bahria Town and beyond. We provide round-the-clock moving services to make your transition in Lahore completely hassle-free. Our well-trained fleet ensures that the bustling traffic of Lahore never delays your important moving schedule.",
     coverage: "DHA Lahore (All Phases), Gulberg, Bahria Town Lahore, Model Town, Johar Town, Cantt, Askari, WAPDA Town, Allama Iqbal Town, and Valencia.",
     address: "Main Boulevard, Gulberg III, Lahore",
-    heroImg: "https://images.unsplash.com/photo-1574360341773-45eb72fe5fc3?auto=format&fit=crop&q=80&w=1920",
+    heroImg: "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1920",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217759.99380854497!2d74.19430582260655!3d31.483103657497673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1711234567893!5m2!1sen!2s",
     services: [
       { icon: Truck, title: "DHA & Bahria Moving", desc: "Specialized residential moving designed efficiently for gated communities requiring swift entry/exit protocols." },
