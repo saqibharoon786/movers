@@ -1,21 +1,20 @@
-import { Helmet } from "react-helmet-async";
+import { useSEO } from "@/hooks/useSEO";
 
 interface SEOProps {
   title: string;
   description: string;
   schema?: Record<string, unknown> | Record<string, unknown>[];
+  keywords?: string;
+  urlPath?: string;
 }
 
-export default function SEO({ title, description, schema }: SEOProps) {
-  return (
-    <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      {schema && (
-        <script type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
-      )}
-    </Helmet>
-  );
+export default function SEO({ title, description, schema, keywords, urlPath }: SEOProps) {
+  useSEO({
+    title,
+    description,
+    schema,
+    keywords: keywords || title.toLowerCase().replace(/\s*\|\s*/g, ", "),
+    urlPath,
+  });
+  return null;
 }

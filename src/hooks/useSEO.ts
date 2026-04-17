@@ -23,6 +23,31 @@ const BUSINESS_PHONE = "+92-300-9130211";
 const BUSINESS_EMAIL = "saqibharoonharoon@gmail.com";
 const BUSINESS_HOURS = ["Mo-Sa 08:00-20:00"];
 
+const toTitleCase = (value: string) =>
+  value
+    .split(" ")
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+const pathToLabel = (path: string) => {
+  const trimmed = path.replace(/^\/|\/$/g, "");
+  if (!trimmed) return "Pakistan";
+  const segments = trimmed.split("/").filter(Boolean);
+  const last = segments[segments.length - 1].replace(/-/g, " ");
+  return toTitleCase(last);
+};
+
+const clip = (value: string, max: number) => {
+  if (value.length <= max) return value;
+  return `${value.slice(0, max - 1).trimEnd()}…`;
+};
+
+const normalizePath = (path: string) => {
+  if (path === "/") return path;
+  return path.endsWith("/") ? path : `${path}/`;
+};
+
 export const useSEO = ({
   title,
   description,
@@ -35,11 +60,34 @@ export const useSEO = ({
   noindex,
 }: SEOProps) => {
   useEffect(() => {
+    const normalizedPath = normalizePath(urlPath || window.location.pathname);
+    const routeLabel = pathToLabel(normalizedPath);
+
+    const titleHasRoute = title.toLowerCase().includes(routeLabel.toLowerCase());
+    const seoTitleBase = titleHasRoute || normalizedPath === "/" ? title : `${title} | ${routeLabel}`;
+    const seoTitle = clip(seoTitleBase, 60);
+
+    const cta = "Call or WhatsApp 0300-9130211.";
+    const descriptionHasRoute = description.toLowerCase().includes(routeLabel.toLowerCase());
+    const descriptionWithRoute =
+      normalizedPath === "/" || descriptionHasRoute
+        ? description
+        : `${description} ${routeLabel} relocation support in Pakistan.`;
+    const descriptionWithCta = descriptionWithRoute.includes("0300-9130211")
+      ? descriptionWithRoute
+      : `${descriptionWithRoute} ${cta}`;
+    const seoDescription = clip(descriptionWithCta, 160);
+
     // Basic Meta
-    document.title = title;
+    document.title = seoTitle;
     
     const setMeta = (name: string, content: string, property = false) => {
-      let tag = document.querySelector(property ? `meta[property="${name}"]` : `meta[name="${name}"]`);
+      const selector = property ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+      const existing = Array.from(document.head.querySelectorAll(selector));
+      let tag = existing[0] as HTMLMetaElement | undefined;
+      for (let i = 1; i < existing.length; i += 1) {
+        existing[i].remove();
+      }
       if (!tag) {
         tag = document.createElement('meta');
         if (property) tag.setAttribute('property', name);
@@ -49,13 +97,17 @@ export const useSEO = ({
       tag.setAttribute('content', content);
     };
 
-    setMeta('description', description);
+    setMeta('description', seoDescription);
     setMeta('keywords', keywords);
     setMeta('robots', noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large');
     
     // Canonical
-    const fullUrl = `${SITE_URL}${urlPath || window.location.pathname}`;
-    let canonical = document.querySelector('link[rel="canonical"]');
+    const fullUrl = `${SITE_URL}${normalizedPath}`;
+    const canonicalNodes = Array.from(document.head.querySelectorAll('link[rel="canonical"]'));
+    let canonical = canonicalNodes[0] as HTMLLinkElement | undefined;
+    for (let i = 1; i < canonicalNodes.length; i += 1) {
+      canonicalNodes[i].remove();
+    }
     if (!canonical) {
       canonical = document.createElement('link');
       canonical.setAttribute('rel', 'canonical');
@@ -66,8 +118,8 @@ export const useSEO = ({
     // Open Graph
     setMeta('og:type', 'website', true);
     setMeta('og:url', fullUrl, true);
-    setMeta('og:title', title, true);
-    setMeta('og:description', description, true);
+    setMeta('og:title', seoTitle, true);
+    setMeta('og:description', seoDescription, true);
     const selectedOgImage = ogImage || DEFAULT_SOCIAL_IMAGE;
     setMeta('og:image', selectedOgImage, true);
     setMeta('og:image:width', '1200', true);
@@ -78,8 +130,8 @@ export const useSEO = ({
     
     // Twitter/WhatsApp
     setMeta('twitter:card', 'summary_large_image');
-    setMeta('twitter:title', title);
-    setMeta('twitter:description', description);
+    setMeta('twitter:title', seoTitle);
+    setMeta('twitter:description', seoDescription);
     setMeta('twitter:image', twitterImage || selectedOgImage);
     
     // Schema Logic
@@ -101,7 +153,7 @@ export const useSEO = ({
     };
 
     let itemNumber = 2;
-    const paths = (urlPath || window.location.pathname).split("/").filter((p) => p);
+    const paths = normalizedPath.split("/").filter((p) => p);
     let currentPath = "";
 
     paths.forEach((p) => {

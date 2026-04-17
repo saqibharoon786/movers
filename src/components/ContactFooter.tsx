@@ -102,6 +102,7 @@ const ContactFooter = () => {
                 <li><Link to="/services/air-freight" className="hover:text-gold transition-colors">Air Freight</Link></li>
                 <li><Link to="/services/sea-freight" className="hover:text-gold transition-colors">Sea Freight</Link></li>
                 <li><Link to="/international-movers-pakistan/" className="hover:text-gold transition-colors">International Movers Pakistan</Link></li>
+                <li><Link to="/packers-and-movers-pakistan/" className="hover:text-gold transition-colors">Packers &amp; Movers Pakistan</Link></li>
                 <li><Link to="/cargo-services-pakistan/" className="hover:text-gold transition-colors">Cargo Services Pakistan</Link></li>
                 <li><Link to="/logistics-services-pakistan/" className="hover:text-gold transition-colors">Logistics Services Pakistan</Link></li>
                 <li><Link to="/services/vehicle-shipping" className="hover:text-gold transition-colors">Vehicle Shipping</Link></li>
@@ -120,6 +121,12 @@ const ContactFooter = () => {
                 <li><Link to="/blog/mistakes-during-house-shifting/" className="hover:text-gold transition-colors">House Shifting Mistakes</Link></li>
                 <li><Link to="/blog/air-vs-sea-freight-pakistan/" className="hover:text-gold transition-colors">Air vs Sea Freight Pakistan</Link></li>
                 <li><Link to="/blog/how-to-choose-packers-movers/" className="hover:text-gold transition-colors">How to Choose Packers Movers</Link></li>
+                <li><Link to="/blog/best-movers-islamabad-vs-lahore/" className="hover:text-gold transition-colors">Islamabad vs Lahore Movers</Link></li>
+                <li><Link to="/blog/office-relocation-checklist-pakistan/" className="hover:text-gold transition-colors">Office Relocation Checklist</Link></li>
+                <li><Link to="/blog/international-shipping-cost-pakistan/" className="hover:text-gold transition-colors">International Shipping Cost</Link></li>
+                <li><Link to="/blog/goods-transport-vs-cargo-services/" className="hover:text-gold transition-colors">Goods Transport vs Cargo</Link></li>
+                <li><Link to="/blog/packing-fragile-items-guide/" className="hover:text-gold transition-colors">Packing Fragile Items Guide</Link></li>
+                <li><Link to="/blog/cheap-movers-tips-pakistan/" className="hover:text-gold transition-colors">Cheap Movers Tips Pakistan</Link></li>
                 <li><Link to="/vehicle-import-guide-pakistan" className="hover:text-gold transition-colors">Vehicle Import Guide</Link></li>
                 <li><Link to="/faq" className="hover:text-gold transition-colors">FAQ</Link></li>
                 <li><Link to="/faqs-packers-movers-pakistan" className="hover:text-gold transition-colors">FAQ Hub Pakistan</Link></li>

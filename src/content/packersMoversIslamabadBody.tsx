@@ -28,7 +28,7 @@ const SECTIONS: { h2: string; paras: string[] }[] = [
     h2: "Why Choose Us (USP)",
     paras: [
       "Most movers Islamabad options look similar online, but outcomes are very different on the ground. Our first differentiator is survey-led planning. We inspect access, lift timings, truck parking, furniture dimensions, and packing depth before final quotation. This prevents hidden costs and allows us to assign the right crew size from day one.",
-      "Second, our process is documentation-first. Every key zone is labelled, high-value items are noted, and handover verification is done room by room. Third, our team is trained for real Islamabad conditions: high-security gates, tight service lanes, high-rise restrictions, and traffic windows that can delay unmanaged crews. We schedule around these constraints, not after them.",
+      "Second, our process is documentation-first. Every key zone is labelled, high-value items are noted, and handover verification is done room by room. Our team is trained for real Islamabad conditions and schedules around constraints before move day.",
       "Fourth, trust signals are measurable. We bring 15+ years of experience, 5,000+ served clients, and a strong referral base across Islamabad, Rawalpindi, Lahore, and Peshawar. Fifth, we combine emotional care with operational discipline. We know moving is stressful, especially for families with children, elderly parents, or urgent office timelines. That is why our supervisors keep communication clear throughout the move instead of leaving clients uncertain.",
     ],
   },
@@ -60,8 +60,7 @@ const SECTIONS: { h2: string; paras: string[] }[] = [
     h2: "FAQs (SEO optimized)",
     paras: [
       "Do you provide packing services Islamabad for fragile items only? Yes, partial packing is available for kitchens, glassware, artwork, and electronics. Can you handle same-day moves? In some cases yes, subject to crew and truck availability. Is insurance available? Transit coverage options are discussed in writing at quotation stage.",
-      "Do you move offices as well? Yes, we manage office relocation with labelled workstation flow and weekend/night execution where required. How early should I book? Ideally 7-14 days before your planned date, especially in peak summer periods. Which items are restricted? Cash, jewellery, hazardous materials, and illegal goods are excluded from standard movement scope.",
-      "For complete question coverage, review the dedicated FAQ module on this page and visit our related guides for house shifting Islamabad, movers Islamabad, and broader relocation services Islamabad planning.",
+      "Do you move offices as well? Yes, we manage office relocation with labelled workstation flow and weekend/night execution where required. How early should I book? Ideally 7-14 days before your planned date, especially in peak summer periods.",
     ],
   },
   {
@@ -77,7 +76,7 @@ export function PackersMoversIslamabadBody() {
   return (
     <>
       <p className="lead text-xl text-foreground/90 not-prose mb-8">
-        <strong>Packers and movers in Islamabad</strong> should make your life easier, not more stressful. If you are worried about breakage, delayed trucks, unclear prices, or unreliable labour, you are not alone. Our team solves these exact problems with survey-based planning, trained movers, clear documentation, and polite on-ground execution. Also see{" "}
+        <strong>Packers and movers in Islamabad</strong> should make your life easier, not more stressful. Our team solves breakage risk, delays, and unclear pricing with survey-based planning, trained movers, and clear documentation. Also see{" "}
         <Link to="/house-shifting-islamabad">house shifting Islamabad</Link> and{" "}
         <Link to="/movers-islamabad">movers Islamabad</Link>.
       </p>

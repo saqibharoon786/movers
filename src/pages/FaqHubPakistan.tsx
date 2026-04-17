@@ -37,6 +37,7 @@ const relatedLinks = [
   { to: "/packers-and-movers-islamabad", label: "Packers and Movers in Islamabad" },
   { to: "/packers-and-movers-lahore", label: "Packers and Movers in Lahore" },
   { to: "/packers-and-movers-rawalpindi", label: "Movers and Packers in Rawalpindi" },
+  { to: "/packers-and-movers-pakistan/", label: "Packers and Movers in Pakistan" },
   { to: "/international-movers-pakistan/", label: "International Movers Pakistan" },
   { to: "/cargo-services-pakistan/", label: "Reliable Cargo Services in Pakistan" },
   { to: "/logistics-services-pakistan/", label: "Logistics Services Pakistan" },

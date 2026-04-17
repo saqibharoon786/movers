@@ -3,6 +3,7 @@ import { ShieldCheck, Globe2, Headphones, TrendingUp, Award, Clock, CheckCircle2
 import Navbar from "@/components/Navbar";
 import ContactFooter from "@/components/ContactFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 
 const reasons = [
   { icon: ShieldCheck, title: "Fully Insured", desc: "Every shipment is covered by comprehensive transit insurance. We offer basic to full replacement value coverage, so your belongings are always protected against loss or damage." },
@@ -19,6 +20,12 @@ const reasons = [
 const WhyUsPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Why Choose Our Movers Pakistan | Trusted Experts"
+        description="Discover why clients choose our movers in Pakistan: safe handling, transparent pricing, and expert teams. Call or WhatsApp 0300-9130211."
+        keywords="trusted movers pakistan, best relocation experts pakistan, safe movers pakistan"
+        urlPath="/why-us/"
+      />
       <Navbar />
       <div className="pt-32 pb-20">
         <div className="container mx-auto px-4">

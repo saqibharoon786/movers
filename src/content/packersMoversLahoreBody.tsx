@@ -77,13 +77,6 @@ const SECTIONS: { h2: string; paras: string[] }[] = [
     ],
   },
   {
-    h2: "Humidity, smog season, and wedding calendars",
-    paras: [
-      "Post-monsoon humidity keeps adhesives temperamental; we use tape brands rated for tropical climates and double-strip carton bases when weight is high. November smog days reduce visibility—night moves are not default, but we may suggest earlier starts when air quality advisories spike.",
-      "Winter wedding season stacks demand for DHA and Bahria villas on Thursdays and Sundays. If your date locks to a shaadi weekend, reserve crews at least two weeks ahead or accept narrower time windows.",
-    ],
-  },
-  {
     h2: "Commercial moves without Monday chaos",
     paras: [
       "Retail rollouts in MM Alam and corporate floors in Gulberg II need cable photos before disconnect, numbered monitor maps, and IT sign-off sequences. We colour-code departments, shrink-wrap chair stacks, and label server-room cages so Monday morning helpdesks recognise their world again.",
@@ -91,38 +84,10 @@ const SECTIONS: { h2: string; paras: string[] }[] = [
     ],
   },
   {
-    h2: "Forgotten items and landlord handovers",
-    paras: [
-      "Roof tanks, geysers with live connections, hidden in-wall safes, and PEL inverter batteries confuse handovers. Decide early what sells with the house versus what moves. Meter photos and paint touch-up kits should live in your car, not in sealed cartons on the truck.",
-      "If you are exiting a DHA or Bahria rental, gate passes and society move slips sometimes need submission 24–48 hours ahead. We align truck arrival with your approved window so security does not send crews looping the block while the clock burns.",
-    ],
-  },
-  {
     h2: "Comparing quotes: apples to apples",
     paras: [
       "Two-page quotations that look cheaper often omit cartons, stair labour, or night premiums. Ask whether the rate assumes you packed everything, whether blankets are included, and whether the truck is covered. A higher subtotal with transparent line items frequently lands below a vague “package deal” once reality adds up.",
       "We encourage clients to share competitor quotes—when ethical, we explain material differences without trashing rivals. Your goal is predictable total cost, not a heroic Day 1 number that unravels when the crew discovers a fourth-floor walk-up not mentioned on WhatsApp. Ask whether fuel surcharges or return-empty legs are embedded—Lahore’s sprawl makes deadhead kilometres a real cost driver.",
-    ],
-  },
-  {
-    h2: "Why cheapest hourly labour often costs more",
-    paras: [
-      "Untrained teams save rupees per hour but consume more hours, damage more corners, and rarely insure. Professional packers and movers in Lahore invest in training, supervision, and repeat clients; that overhead pays for itself when your dining table’s veneer survives and your electronics cartons do not look like they fell off a rickshaw.",
-      "If budget is tight, shrink scope, not quality—have us pack only kitchen and fragile rooms while you handle clothes. Partial professional beats full amateur every time for resale-value homes.",
-    ],
-  },
-  {
-    h2: "Post-move: settling in faster",
-    paras: [
-      "Unpack order matters: beds first, then kitchen basics, then wardrobes. If you paid for unpack service, we stage cartons in labelled zones so you are not hunting for kettle while children hunt for chargers. Debris walks reduce stress—walk through with a supervisor before signing completion.",
-      "Within a week, note anything that shifted in transit; photographic inventories from loading day make good-faith resolutions straightforward. We want repeat referrals across Lahore’s neighbourhoods; hiding from small issues is bad long-term arithmetic.",
-    ],
-  },
-  {
-    h2: "Narrow lanes, older homes, and shuttle loads",
-    paras: [
-      "Not every Lahore address welcomes a container truck to the doorstep. In tighter galis or revitalised inner-city homes, we plan shuttle trucks: a large vehicle stages on a main road while smaller mazdas rotate goods in guarded batches. That costs more in labour minutes than a single straight load but prevents scraped archways and angry neighbours.",
-      "Heritage wooden staircases and fragile jharokas need pad distribution and sometimes custom skids. Tell us during survey if banisters are decorative load-bearing art, not modern railings—crew choreography changes when we cannot brace against a stud wall.",
     ],
   },
   {

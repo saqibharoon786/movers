@@ -3,6 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Navbar from "@/components/Navbar";
 import ContactFooter from "@/components/ContactFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 
 const faqs = [
   { q: "How long does an international move typically take?", a: "Depending on the destination, sea freight takes 4-8 weeks while air freight can be as fast as 5-10 days. We provide a detailed timeline during your consultation." },
@@ -22,6 +23,12 @@ const faqs = [
 const FAQPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Packers Movers FAQ Pakistan | Trusted Support"
+        description="Packers and movers FAQ in Pakistan for pricing, insurance, timelines, and city coverage. Call or WhatsApp 0300-9130211 for expert guidance."
+        keywords="packers movers faq pakistan, moving questions pakistan, relocation help pakistan"
+        urlPath="/faq/"
+      />
       <Navbar />
       <div className="pt-32 pb-20">
         <div className="container mx-auto px-4 max-w-3xl">

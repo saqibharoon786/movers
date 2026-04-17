@@ -9,6 +9,7 @@ import { useSEO } from "@/hooks/useSEO";
 
 const WA = "https://wa.me/923009130211";
 const PHONE = "0300-9130211";
+const SITE_URL = "https://bestintlmovers.com";
 
 export type LandingFaq = { q: string; a: string };
 
@@ -65,13 +66,34 @@ const SeoLandingPageLayout = ({
         }
       : null;
 
-  let combinedSchema: Record<string, unknown> | Record<string, unknown>[] | undefined;
-  if (faqSchema) {
-    const base = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
-    combinedSchema = [...base, faqSchema];
-  } else {
-    combinedSchema = schema;
-  }
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Best International Movers & Logistics",
+    url: `${SITE_URL}${path}`,
+    telephone: "+92-300-9130211",
+    email: "saqibharoonharoon@gmail.com",
+    areaServed: ["Islamabad", "Rawalpindi", "Lahore", "Karachi", "Pakistan"],
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "PK",
+      addressLocality: "Islamabad",
+    },
+  };
+
+  const base = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+  const combinedSchema: Record<string, unknown>[] = [...base, localBusinessSchema];
+  if (faqSchema) combinedSchema.push(faqSchema);
+
+  const trackLead = (eventName: string) => {
+    const win = window as Window & { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void };
+    if (Array.isArray(win.dataLayer)) {
+      win.dataLayer.push({ event: eventName, page_path: path });
+    }
+    if (typeof win.gtag === "function") {
+      win.gtag("event", eventName, { page_path: path });
+    }
+  };
 
   useSEO({
     title,
@@ -104,11 +126,16 @@ const SeoLandingPageLayout = ({
                 href={WA}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackLead("whatsapp_click")}
                 className="inline-flex w-full sm:w-auto justify-center px-6 py-3 rounded-lg border border-border bg-navy-mid font-bold items-center gap-2"
               >
                 WhatsApp Us
               </a>
-              <a href="tel:03009130211" className="inline-flex w-full sm:w-auto justify-center px-6 py-3 rounded-lg border border-gold/30 text-gold font-semibold items-center gap-2">
+              <a
+                href="tel:03009130211"
+                onClick={() => trackLead("call_click")}
+                className="inline-flex w-full sm:w-auto justify-center px-6 py-3 rounded-lg border border-gold/30 text-gold font-semibold items-center gap-2"
+              >
                 <Phone size={18} /> {PHONE}
               </a>
             </div>

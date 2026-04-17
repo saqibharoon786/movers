@@ -3,6 +3,7 @@ import { PhoneCall, ClipboardCheck, PackageCheck, Truck, Home, ThumbsUp, ArrowRi
 import Navbar from "@/components/Navbar";
 import ContactFooter from "@/components/ContactFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 
 const steps = [
   { icon: PhoneCall, title: "Request a Quote", desc: "Contact us via phone, WhatsApp, or our online form. Share your moving details and we'll provide a free, no-obligation estimate within 24 hours." },
@@ -16,6 +17,12 @@ const steps = [
 const ProcessPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Moving Process Pakistan | Safe Relocation Steps"
+        description="See our safe moving process in Pakistan from survey to delivery. Call or WhatsApp 0300-9130211 for a fast, transparent relocation plan."
+        keywords="moving process pakistan, relocation steps pakistan, safe shifting process"
+        urlPath="/process/"
+      />
       <Navbar />
       <div className="pt-32 pb-20">
         <div className="container mx-auto px-4">
