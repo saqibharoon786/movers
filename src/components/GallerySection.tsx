@@ -1,18 +1,38 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import hero4 from "@/assets/hero-4.jpg";
-import hero5 from "@/assets/hero-5.jpg";
 
+// Reuse the same real-world portfolio visuals as ProjectsPage
 const projects = [
-  { img: hero2, title: "Luxury Home Relocation", location: "New York → London" },
-  { img: hero1, title: "Corporate Office Move", location: "Dubai → Singapore" },
-  { img: hero3, title: "Air Cargo Shipment", location: "Tokyo → Los Angeles" },
-  { img: hero4, title: "Warehouse Consolidation", location: "Frankfurt Hub" },
-  { img: hero5, title: "Family Relocation", location: "Sydney → Vancouver" },
-  { img: hero1, title: "Sea Freight Container", location: "Shanghai → Rotterdam" },
+  {
+    img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
+    title: "Multinational Corporate Relocation",
+    location: "Blue Area, Islamabad",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    title: "Luxury Villa Move",
+    location: "DHA Phase 6, Lahore",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+    title: "Commercial Goods Warehousing",
+    location: "Rawalpindi Industrial Area",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=80&w=800",
+    title: "Overseas Container Shipping",
+    location: "Karachi Port → Dubai",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800",
+    title: "Urgent Medical Equipment Transport",
+    location: "Peshawar → London",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800",
+    title: "Multi-Vehicle Intercity Transport",
+    location: "Islamabad → Karachi",
+  },
 ];
 
 const GallerySection = () => {

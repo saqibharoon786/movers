@@ -65,7 +65,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-  const [mobileDestOpen, setMobileDestOpen] = useState(false);
+  const [mobileDestOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
@@ -88,7 +88,6 @@ const Navbar = () => {
   useEffect(() => {
     setOpen(false);
     setDropdownOpen(false);
-    setMobileDestOpen(false);
   }, [location]);
 
   return (
@@ -96,7 +95,9 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-navy/95 backdrop-blur-xl shadow-2xl border-b border-border" : "bg-transparent"
+        scrolled || dropdownOpen
+          ? "bg-navy/95 backdrop-blur-xl shadow-2xl border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <div className="hidden lg:flex items-center justify-center gap-6 py-2 bg-navy-light/80 text-xs text-muted-foreground border-b border-border">
@@ -105,7 +106,7 @@ const Navbar = () => {
         <span>Mon - Sat: 8:00 AM - 8:00 PM</span>
       </div>
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+        <Link to="/" className="relative z-10 flex items-center gap-3 hover:opacity-80 transition-opacity">
           <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center shadow-[inset_0_0_10px_rgba(234,179,8,0.2)] relative overflow-hidden">
             <div className="absolute top-0 right-0 w-4 h-4 bg-gold rounded-full blur-md opacity-40 translate-x-1 -translate-y-1"></div>
             <Globe className="text-gold w-5 h-5 md:w-6 md:h-6 relative z-10" />
@@ -141,7 +142,7 @@ const Navbar = () => {
                       transition={{ duration: 0.2 }}
                       className="absolute top-full left-0 right-0 mx-auto w-full max-w-[1200px] px-4 pt-2 z-50 pointer-events-auto"
                     >
-                      <div className="bg-navy-light/98 backdrop-blur-xl border border-border rounded-xl shadow-2xl p-6 md:p-8 max-h-[85vh] overflow-y-auto">
+                      <div className="bg-navy border border-border rounded-xl shadow-2xl p-6 md:p-8 max-h-[85vh] overflow-y-auto">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                           <div>
                             <p className="text-xs font-bold text-gold tracking-widest uppercase mb-4">Our Services</p>
@@ -231,8 +232,13 @@ const Navbar = () => {
 
       <AnimatePresence>
         {open && (
-          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} className="lg:hidden bg-navy-light/95 backdrop-blur-xl border-t border-border overflow-hidden">
-            <div className="flex flex-col p-6 gap-2 max-h-[85vh] overflow-y-auto">
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="lg:hidden fixed inset-0 bg-navy border-t border-border z-50 overflow-y-auto"
+          >
+            <div className="flex flex-col p-6 pt-20 gap-2">
               <Link to="/" onClick={() => setOpen(false)} className="text-foreground hover:text-gold transition-colors py-3 font-medium border-b border-white/5">Home</Link>
               
               <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} className="text-foreground hover:text-gold transition-colors py-3 font-medium flex items-center justify-between border-b border-white/5">
@@ -240,39 +246,32 @@ const Navbar = () => {
               </button>
               <AnimatePresence>
                 {mobileServicesOpen && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="pl-4 space-y-1 overflow-hidden">
+                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="pl-4 space-y-3 overflow-hidden">
                     {services.map((s) => (
                       <Link key={s.slug} to={`/services/${s.slug}`} onClick={() => setOpen(false)} className="flex items-center gap-2 py-2 text-muted-foreground hover:text-gold text-sm">
                         <s.icon size={16} className="text-gold" /> {s.label}
                       </Link>
                     ))}
-                    <button
-                      type="button"
-                      onClick={() => setMobileDestOpen(!mobileDestOpen)}
-                      className="w-full text-left text-xs text-gold font-bold mb-1 mt-3 flex items-center justify-between"
-                    >
-                      Destination Services
-                      <ChevronDown size={14} className={`transition-transform ${mobileDestOpen ? "rotate-180" : ""}`} />
-                    </button>
-                    {mobileDestOpen && (
-                      <div className="pl-2 space-y-1 mb-2">
+                    <div className="border-t border-border pt-3 mt-2 space-y-2">
+                      <p className="text-xs text-gold font-bold">Destination Services</p>
+                      <div className="space-y-1">
                         {destinationServices.map((d) => (
                           <Link key={d.to} to={d.to} onClick={() => setOpen(false)} className="flex items-center gap-2 py-1 text-muted-foreground hover:text-gold text-sm">
                             <Globe size={14} className="text-gold" /> {d.label}
                           </Link>
                         ))}
                       </div>
-                    )}
-                    <div className="border-t border-border pt-2 mt-2">
-                      <p className="text-xs text-gold font-bold mb-1">Locations</p>
+                    </div>
+                    <div className="border-t border-border pt-3 mt-2">
+                      <p className="text-xs text-gold font-bold mb-1">City Movers</p>
                       {locations.map((loc) => (
                         <Link key={loc.slug} to={`/${loc.slug}`} onClick={() => setOpen(false)} className="flex items-center gap-2 py-1 text-muted-foreground hover:text-gold text-sm">
                           <MapPin size={14} className="text-gold" /> {loc.city}
                         </Link>
                       ))}
                     </div>
-                    <div className="border-t border-border pt-2 mt-2">
-                      <p className="text-xs text-gold font-bold mb-1">Local &amp; guides</p>
+                    <div className="border-t border-border pt-3 mt-2">
+                      <p className="text-xs text-gold font-bold mb-1">Local &amp; Guides</p>
                       {localLandingPages.map((p) => (
                         <Link key={p.to} to={p.to} onClick={() => setOpen(false)} className="flex items-center gap-2 py-1 text-muted-foreground hover:text-gold text-sm">
                           <Home size={14} className="text-gold" /> {p.label}

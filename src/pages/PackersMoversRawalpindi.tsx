@@ -30,6 +30,8 @@ const PackersMoversRawalpindi = () => {
       h1="Packers and Movers in Rawalpindi"
       heroSubtext="Top-notch residential and corporate shifting in Rawalpindi. Premium packing, safe transport & timely deliveries by experts."
       breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "Packers & Movers Rawalpindi" }]}
+      heroImageUrl="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1600"
+      heroImageAlt="Movers loading a truck in a gated community in Rawalpindi"
       schema={serviceSchema}
     >
       <h2>Top-Tier Packers and Movers in Rawalpindi</h2>

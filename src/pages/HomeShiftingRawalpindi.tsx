@@ -35,6 +35,8 @@ const HomeShiftingRawalpindi = () => {
       h1="Home Shifting Services in Rawalpindi"
       heroSubtext="Take the stress out of your local relocation in Rawalpindi. Premium quality moving with zero compromises on the safety of your goods."
       breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "Home Shifting Rawalpindi" }]}
+      heroImageUrl="https://images.unsplash.com/photo-1596075780750-81249df16d19?auto=format&fit=crop&q=80&w=1600"
+      heroImageAlt="Home shifting crew carrying packed boxes in Rawalpindi apartment building"
       schema={serviceSchema}
       faqs={faqs}
     >

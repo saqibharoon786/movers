@@ -6,11 +6,30 @@ interface SEOProps {
   keywords: string;
   urlPath?: string;
   schema?: any;
+  /** Absolute URL preferred. If omitted, falls back to default placeholder. */
+  ogImage?: string;
+  /** Alt text for OG image (optional). */
+  ogImageAlt?: string;
+  /** Absolute URL preferred. If omitted, uses ogImage (or placeholder). */
+  twitterImage?: string;
   /** When true, sets robots noindex,nofollow (e.g. legal pages). */
   noindex?: boolean;
 }
 
-export const useSEO = ({ title, description, keywords, urlPath, schema, noindex }: SEOProps) => {
+const DEFAULT_SOCIAL_IMAGE =
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200";
+
+export const useSEO = ({
+  title,
+  description,
+  keywords,
+  urlPath,
+  schema,
+  ogImage,
+  ogImageAlt,
+  twitterImage,
+  noindex,
+}: SEOProps) => {
   useEffect(() => {
     // Basic Meta
     document.title = title;
@@ -45,10 +64,11 @@ export const useSEO = ({ title, description, keywords, urlPath, schema, noindex 
     setMeta('og:url', fullUrl, true);
     setMeta('og:title', title, true);
     setMeta('og:description', description, true);
-    // Use a placeholder image or a specific image link
-    setMeta('og:image', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200', true);
+    const selectedOgImage = ogImage || DEFAULT_SOCIAL_IMAGE;
+    setMeta('og:image', selectedOgImage, true);
     setMeta('og:image:width', '1200', true);
     setMeta('og:image:height', '630', true);
+    if (ogImageAlt) setMeta('og:image:alt', ogImageAlt, true);
     setMeta('og:site_name', 'Best International Movers & Logistics', true);
     setMeta('og:locale', 'en_PK', true);
     
@@ -56,7 +76,7 @@ export const useSEO = ({ title, description, keywords, urlPath, schema, noindex 
     setMeta('twitter:card', 'summary_large_image');
     setMeta('twitter:title', title);
     setMeta('twitter:description', description);
-    setMeta('twitter:image', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200');
+    setMeta('twitter:image', twitterImage || selectedOgImage);
     
     // Schema Logic
     const oldSchema = document.getElementById('page-schema');
@@ -101,5 +121,5 @@ export const useSEO = ({ title, description, keywords, urlPath, schema, noindex 
       script.text = JSON.stringify(combinedSchema);
       document.head.appendChild(script);
     }
-  }, [title, description, keywords, urlPath, schema, noindex]);
+  }, [title, description, keywords, urlPath, schema, ogImage, ogImageAlt, twitterImage, noindex]);
 };

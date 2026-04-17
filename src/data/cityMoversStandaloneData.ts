@@ -13,10 +13,15 @@ export const islamabadMoversConfig: CityMoversStandaloneConfig = {
   breadcrumbPage: "Movers Islamabad",
   cargoPagePath: "/cargo-service-islamabad",
   seo: {
-    title: "Movers and Packers Islamabad | Best International Movers",
-    description: "Professional movers and packers in Islamabad. Home shifting, office relocation. All F, G sectors, DHA, Bahria Enclave covered. Get free quote!",
-    keywords: "movers islamabad, packers islamabad, home shifting islamabad, office relocation islamabad",
+    title: "Movers and Packers in Islamabad | Sector-Specific Home Shifting",
+    description:
+      "Professional movers and packers in Islamabad for F & G sectors, DHA, Bahria Enclave, and Blue Area. High-rise & diplomatic-zone expertise. Free survey. Call 0300-9130211.",
+    keywords:
+      "movers in islamabad, movers islamabad, packers islamabad, house shifting islamabad, home shifting islamabad, office relocation islamabad, dha islamabad movers, bahria enclave movers, blue area office relocation",
   },
+  heroImageUrl: "https://images.unsplash.com/photo-1620287103233-a309f7a9af31?auto=format&fit=crop&q=80&w=1920",
+  ogImageUrl: "https://images.unsplash.com/photo-1620287103233-a309f7a9af31?auto=format&fit=crop&q=80&w=1200&h=630",
+  ogImageAlt: "Movers and packers team serving Islamabad sectors and societies",
   h1: "Movers and Packers in Islamabad",
   heroDescription:
     "Trusted home shifting, office relocation, international moving, packing, storage, and corporate moves across Islamabad—with local expertise in sectors, high-rises, and diplomatic zones.",
@@ -61,6 +66,34 @@ export const islamabadMoversConfig: CityMoversStandaloneConfig = {
   officeAddress: "Blue Area, Jinnah Avenue, Islamabad",
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106260.67230491025!2d72.97746471842817!3d33.68442017329525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1711234567891!5m2!1sen!2s",
+  contentSections: [
+    {
+      heading: "Why Islamabad Moves Require Local Experience",
+      paragraphs: [
+        "Islamabad looks planned on the map, but moving inside the capital has its own constraints: gated society rules, high-rise lift scheduling, and time windows around office corridors like Blue Area.",
+        "We plan access, elevator coordination, packing sequences, and loading routes so your move stays on schedule and your furniture finishes stay protected—especially for villas and apartments with premium interiors.",
+      ],
+      bullets: [
+        "High-rise coordination for sectors with apartment blocks (lift protection + time slots).",
+        "Society gate protocols in DHA and Bahria Enclave (advance entry planning).",
+        "Diplomatic-zone sensitivity where documentation and timing matter.",
+        "Monsoon-aware packing and covered transport for weather protection.",
+      ],
+    },
+    {
+      heading: "What Determines Movers Cost in Islamabad?",
+      paragraphs: [
+        "Pricing depends on volume, floor levels, packing scope, access conditions, and the distance between pickup and drop-off. In Islamabad, elevator availability and parking restrictions can influence labor planning.",
+        "We provide a free survey and a written quote with clear scope—so you know what is included before move day.",
+      ],
+      bullets: [
+        "House size and inventory (e.g., 2-bed apartment vs 5-bed villa).",
+        "Packing depth (fragile packing, crating, wardrobes, appliances).",
+        "Building access (stairs vs lift, basement parking, loading distance).",
+        "Timing (weekends and month-end demand) and route planning.",
+      ],
+    },
+  ],
   faqs: [
     {
       q: "Do you provide moving services in all Islamabad sectors?",
@@ -77,6 +110,22 @@ export const islamabadMoversConfig: CityMoversStandaloneConfig = {
     {
       q: "What areas of Islamabad do you cover?",
       a: "We cover F-6 through F-11, G-9 through G-13, Blue Area, Diplomatic Enclave, DHA, Bahria Enclave, E-7, E-11, I-8, I-10, and Margalla Hills area—contact us if your pin is nearby.",
+    },
+    {
+      q: "Do you offer packing materials and cartons in Islamabad?",
+      a: "Yes. We bring export-grade cartons, bubble wrap, corrugated sheets, and protective wraps—matched to fragile décor, glassware, and electronics.",
+    },
+    {
+      q: "Can you handle weekend moves in Islamabad?",
+      a: "Yes. Weekend moves are common, so we recommend booking early—especially for societies that require approvals or time slots.",
+    },
+    {
+      q: "Do you provide storage options for Islamabad clients?",
+      a: "Yes. If possession dates do not align, we can coordinate short-term storage and schedule delivery when your new location is ready.",
+    },
+    {
+      q: "How do I get a quote for movers in Islamabad?",
+      a: "Call 0300-9130211 or WhatsApp us for a free survey. We share a written estimate based on inventory, access conditions, and move timing.",
     },
   ],
   testimonialsHeading: "Islamabad Client Reviews",
@@ -109,11 +158,15 @@ export const lahoreMoversConfig: CityMoversStandaloneConfig = {
   breadcrumbPage: "Movers Lahore",
   cargoPagePath: "/cargo-service-rawalpindi",
   seo: {
-    title: "Movers and Packers Lahore | Best International Movers",
+    title: "Movers and Packers in Lahore | DHA, Gulberg & Bahria Town Experts",
     description:
-      "Professional movers and packers in Lahore. Home shifting, office relocation & international moving. Serving DHA, Gulberg, Model Town, Johar Town. Get free quote!",
-    keywords: "movers lahore, packers lahore, dha lahore movers, gulberg shifting",
+      "Professional movers and packers in Lahore serving DHA, Gulberg, Model Town, Johar Town, and Bahria Town. Home shifting, office relocation, export packing. Free survey. Call 0300-9130211.",
+    keywords:
+      "movers in lahore, movers lahore, packers and movers in lahore, dha lahore movers, gulberg movers lahore, bahria town lahore moving, model town shifting, office relocation lahore",
   },
+  heroImageUrl: "https://images.unsplash.com/photo-1574360341773-45eb72fe5fc3?auto=format&fit=crop&q=80&w=1920",
+  ogImageUrl: "https://images.unsplash.com/photo-1574360341773-45eb72fe5fc3?auto=format&fit=crop&q=80&w=1200&h=630",
+  ogImageAlt: "Professional movers and packers team in Lahore handling home shifting",
   h1: "Movers and Packers in Lahore",
   heroDescription:
     "Full-service movers in Lahore for homes, offices, and international relocations—trusted across DHA, Gulberg, Bahria Town, and major residential hubs.",
@@ -140,11 +193,43 @@ export const lahoreMoversConfig: CityMoversStandaloneConfig = {
   officeAddress: "Main Boulevard, Gulberg III, Lahore",
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217759.99380854497!2d74.19430582260655!3d31.483103657497673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1711234567893!5m2!1sen!2s",
+  contentSections: [
+    {
+      heading: "Moving in Lahore: Traffic, Societies, and Timing",
+      paragraphs: [
+        "Lahore moves often come down to timing and planning—especially across DHA phases, Gulberg commercial corridors, and Bahria Town entry rules. We schedule the move to reduce delays and protect your items during loading and transit.",
+        "For offices, we can plan after-hours shifting so operations resume quickly the next morning.",
+      ],
+      bullets: [
+        "Society gate coordination for DHA and Bahria Town Lahore.",
+        "Packing suited for premium interiors (wood polish, glass, fixtures, décor).",
+        "Route planning to reduce peak-hour delays.",
+        "Weekend and month-end availability with early booking.",
+      ],
+    },
+    {
+      heading: "How We Reduce Damage Risk on Lahore Moves",
+      paragraphs: [
+        "Damage risk drops dramatically when packing is done systematically. We label cartons, separate fragile items, and use multi-layer protection for furniture corners and glass items.",
+        "On request, we can also provide extra protection for antiques, artwork, and electronics commonly found in Gulberg and DHA homes.",
+      ],
+      bullets: [
+        "Numbered cartons and basic inventory discipline for easier unloading.",
+        "Corner guards, stretch wrap, and reinforced cartons for heavy items.",
+        "Supervisor-led loading for large houses and corporate moves.",
+        "Covered transport for weather and dust exposure.",
+      ],
+    },
+  ],
   faqs: [
     { q: "Do you serve DHA and Bahria Town Lahore?", a: "Yes—gated-community moves are a core part of our Lahore operations." },
     { q: "Can you move large villas?", a: "Yes. We deploy larger crews and trucks sized to villa inventories." },
     { q: "Do you offer international shipping from Lahore?", a: "Yes, including air and sea options with customs support." },
     { q: "How fast can you schedule a survey?", a: "Usually within 24–48 hours—call 0300-9130211 or WhatsApp 923009130211." },
+    { q: "Which Lahore areas do you cover?", a: "We cover DHA, Gulberg, Model Town, Johar Town, Garden Town, Valencia, Cantt, Wapda Town, and nearby localities—contact us for your exact pin." },
+    { q: "Do you provide packing and unpacking in Lahore?", a: "Yes. We offer packing with materials and optional unpacking so you can settle faster." },
+    { q: "Can you handle office relocation in Gulberg or central Lahore?", a: "Yes. We plan structured packing for desks and equipment, and can schedule off-peak or after-hours moves to reduce downtime." },
+    { q: "How do I book movers in Lahore?", a: "Call 0300-9130211 or WhatsApp to request a free survey and written quote." },
   ],
   testimonialsHeading: "Lahore Client Reviews",
   reviews: [
@@ -167,11 +252,15 @@ export const peshawarMoversConfig: CityMoversStandaloneConfig = {
   breadcrumbPage: "Movers Peshawar",
   cargoPagePath: "/cargo-service-rawalpindi",
   seo: {
-    title: "Movers and Packers Peshawar | Best International Movers",
+    title: "Movers in Peshawar | Hayatabad & University Road Specialists",
     description:
-      "Trusted movers and packers in Peshawar. Home shifting, office relocation & international moving. Serving Hayatabad, University Road, Gulbahar. Get free quote!",
-    keywords: "movers peshawar, packers peshawar, hayatabad movers, university road shifting",
+      "Professional movers and packers in Peshawar for Hayatabad, University Road, Gulbahar, Saddar & Cantt. Heat-aware packing, secure transport. Free survey. Call 0300-9130211.",
+    keywords:
+      "movers in peshawar, packers and movers peshawar, hayatabad movers peshawar, university road movers, gulbahar movers, home shifting peshawar, office relocation peshawar, saddar cantt movers",
   },
+  heroImageUrl: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1920",
+  ogImageUrl: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1200&h=630",
+  ogImageAlt: "Movers and packers in Peshawar serving Hayatabad and University Road",
   h1: "Movers and Packers in Peshawar",
   heroDescription:
     "Reliable movers across Peshawar for residential shifting, commercial moves, and international freight—with teams familiar with KPK routes and housing layouts.",
@@ -197,11 +286,37 @@ export const peshawarMoversConfig: CityMoversStandaloneConfig = {
   officeAddress: "University Road, Peshawar",
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105658.07008323491!2d71.45520972338491!3d33.97732252445839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d917b90f0e79cf%3A0xa816b2637558a412!2sPeshawar%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1711234567892!5m2!1sen!2s",
+  contentSections: [
+    {
+      heading: "Peshawar Moving Challenges We Plan For",
+      paragraphs: [
+        "Peshawar moves can involve extreme heat, dust, and a wide range of access conditions—from broad roads near University Road to tighter lanes in older areas. Planning and packing quality make the biggest difference.",
+        "We align crew size, packing materials, and transport timing so your household goods arrive intact and your move day remains predictable.",
+      ],
+      bullets: [
+        "Heat-aware packing for electronics and fragile items during summer peaks.",
+        "Access planning for narrow lanes and parking constraints in dense areas.",
+        "Route familiarity across Hayatabad phases and major corridors.",
+        "Clear communication and supervised loading for delicate furniture.",
+      ],
+    },
+    {
+      heading: "What You Get With Our Movers in Peshawar",
+      paragraphs: [
+        "Our standard includes disciplined packing, careful loading, and transparent estimates. For many clients, the biggest win is reducing stress—because every carton is labeled and every fragile item is protected.",
+        "If you are planning an international relocation, we can coordinate export packing and documentation guidance as well.",
+      ],
+    },
+  ],
   faqs: [
     { q: "Do you cover Hayatabad and University Road?", a: "Yes—these are among our most frequent service areas." },
     { q: "Can you handle office moves?", a: "Yes, including retail and professional office relocations." },
     { q: "Do you ship internationally from Peshawar?", a: "Yes, we coordinate pickup in Peshawar and export via major gateways." },
     { q: "How do I book?", a: "Call 0300-9130211 or message WhatsApp wa.me/923009130211." },
+    { q: "Do you provide packing materials in Peshawar?", a: "Yes. We bring cartons, bubble wrap, and protective sheets based on your inventory and fragility level." },
+    { q: "Do you move in Saddar and Cantt areas?", a: "Yes. We cover Saddar and Cantt and plan timing around access and traffic conditions." },
+    { q: "Can you shift heavy furniture safely?", a: "Yes. We use trained crews and proper lifting practices to protect both your furniture and your property." },
+    { q: "How do I get a moving quote in Peshawar?", a: "Request a free survey via call or WhatsApp. We share a written estimate with clear inclusions." },
   ],
   testimonialsHeading: "Peshawar Client Reviews",
   reviews: [
@@ -224,11 +339,15 @@ export const rawalpindiMoversConfig: CityMoversStandaloneConfig = {
   breadcrumbPage: "Movers Rawalpindi",
   cargoPagePath: "/cargo-service-rawalpindi",
   seo: {
-    title: "Movers and Packers Rawalpindi | Best International Movers",
+    title: "Movers and Packers in Rawalpindi | Bahria Town & Askari Experts",
     description:
-      "Professional movers and packers in Rawalpindi. Home shifting, office relocation & moving. Serving Bahria Town, Askari, PWD, Chaklala. Get free quote!",
-    keywords: "movers rawalpindi, packers rawalpindi, bahria town movers, askari housing shifting",
+      "Professional movers and packers in Rawalpindi covering Bahria Town, Askari, PWD Housing, and Chaklala. Gated-community expertise. Free survey. Call 0300-9130211.",
+    keywords:
+      "movers in rawalpindi, packers and movers rawalpindi, bahria town rawalpindi movers, askari housing movers, home shifting rawalpindi, office relocation rawalpindi, chaklala movers, pwd housing movers",
   },
+  heroImageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1920",
+  ogImageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200&h=630",
+  ogImageAlt: "Movers and packers in Rawalpindi for Bahria Town and Askari housing",
   h1: "Movers and Packers in Rawalpindi",
   heroDescription:
     "Trusted moving and relocation services across Rawalpindi—serving gated communities like Bahria Town and Askari Housing with expertise in military family relocations and secure transport.",
@@ -255,11 +374,37 @@ export const rawalpindiMoversConfig: CityMoversStandaloneConfig = {
   officeAddress: "Bahria Town, Phase IV, Rawalpindi",
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105752.67227769024!2d72.76783662300821!3d33.56443278399269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfb2a35d1dc8ff%3A0x4279a10129fdb1d4!2sRawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1711234567894!5m2!1sen!2s",
+  contentSections: [
+    {
+      heading: "Rawalpindi Moving: Gated Communities and Security Protocols",
+      paragraphs: [
+        "Rawalpindi has a strong mix of gated communities and military housing. That means society entry rules, timing approvals, and disciplined execution matter more than generic moving promises.",
+        "We prepare access requirements in advance for Bahria Town and Askari, schedule crews accordingly, and keep the move process predictable from packing to unloading.",
+      ],
+      bullets: [
+        "Bahria Town phase-wise access planning and smooth gate entry.",
+        "Askari housing coordination with complex rules and timings.",
+        "Twin-city (Islamabad–Rawalpindi) relocation planning when required.",
+        "Transparent estimates to avoid last-minute surprises.",
+      ],
+    },
+    {
+      heading: "What A Professional Rawalpindi Move Looks Like",
+      paragraphs: [
+        "A good move is more than loading a truck. We start with a survey, decide packing depth, label cartons, and plan manpower so move day remains efficient.",
+        "If you need urgent shifting, we can also discuss priority scheduling—especially for short handover windows.",
+      ],
+    },
+  ],
   faqs: [
     { q: "Do you provide services in Bahria Town Rawalpindi?", a: "Yes—gated community access and regulations are core to our Rawalpindi service." },
     { q: "Can you handle Askari Housing moves?", a: "Yes, including coordination with military housing authorities and complex-specific rules." },
     { q: "What about international moves from Rawalpindi?", a: "We can arrange sea and air freight with customs documentation support." },
     { q: "How do I schedule a survey?", a: "Call 0300-9130211 or WhatsApp wa.me/923009130211. Surveys available same-day or next-day." },
+    { q: "Do you cover PWD and Chaklala schemes?", a: "Yes. We regularly serve PWD Housing, Chaklala schemes, Satellite Town, and nearby areas." },
+    { q: "Can you do Islamabad to Rawalpindi (twin city) moves?", a: "Yes. We coordinate routes, timing, and packing so the transition between the twin cities is smooth." },
+    { q: "Do you provide packing and unpacking?", a: "Yes. We offer packing with quality materials and optional unpacking/arrangement based on your preference." },
+    { q: "How do I book movers in Rawalpindi?", a: "Call 0300-9130211 or WhatsApp us to schedule a free survey and receive a written quote." },
   ],
   testimonialsHeading: "Rawalpindi Client Reviews",
   reviews: [

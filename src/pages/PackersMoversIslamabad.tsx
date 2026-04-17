@@ -39,6 +39,8 @@ const PackersMoversIslamabad = () => (
     h1="Packers and Movers in Islamabad"
     heroSubtext="Islamabad’s high-intent moving page—trained packers, numbered inventories, covered trucks, and sector expertise from F-6 to Bahria Enclave."
     breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "Packers & movers Islamabad" }]}
+    heroImageUrl="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1600"
+    heroImageAlt="Professional packers loading boxes for home shifting in Islamabad"
     schema={[movingCompanySchema, serviceSchema]}
     faqs={packersMoversIslamabadFaqs}
   >

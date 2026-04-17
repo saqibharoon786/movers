@@ -8,6 +8,13 @@ const testimonials = [
   { name: "Muhammad Raza", role: "Moved from Islamabad to London", rating: 5, text: "The attention to detail was incredible. From the initial survey to the final unpacking, every step was communicated and executed perfectly." },
   { name: "Usman Ali", role: "Moved from Rawalpindi to Toronto", rating: 5, text: "I've moved internationally three times, and this was by far the smoothest. The real-time tracking gave me total peace of mind for my belongings." },
   { name: "Zainab Tariq", role: "Moved from Peshawar to Sydney", rating: 5, text: "They packed our entire home in one day and had everything delivered across the world exactly when promised. truly top-tier service." },
+  { name: "Hassan Malik", role: "Moved from Islamabad to Dubai (DHA to Downtown)", rating: 5, text: "Best movers in Islamabad! They completed my office relocation in 3 days. Professional staff, safe packing, and reached Dubai with zero damage. Highly recommended." },
+  { name: "Hira Siddiqui", role: "Moved from Lahore to London (Defence to Notting Hill)", rating: 5, text: "Comparative cheaper than other international movers but superior service. Helped with customs clearance and delivered 2 weeks early. Outstanding team!" },
+  { name: "Samir Khan", role: "Moved from Rawalpindi to Saudi Arabia (Bahria Town)", rating: 5, text: "Most professional movers in Rawalpindi. Transparent pricing, no hidden charges. My furniture arrived in perfect condition. Worth every penny!" },
+  { name: "Ayesha Ahmed", role: "Moved from Karachi to USA (Clifton to New York)", rating: 5, text: "International moving from Karachi made easy. Expert handling of fragile items and complex customs documentation. Family happy with overall service." },
+  { name: "Ali Raza", role: "House shifting from Peshawar to Lahore (Hayatabad to Gulberg)", rating: 5, text: "Local moving between cities was hassle-free. Good packing materials, timely delivery, and reasonable rates. Used them twice already!" },
+  { name: "Nida Abbas", role: "Moved from Islamabad to Australia (Bahria Phase 7 to Sydney)", rating: 5, text: "Excellent experience with Best International Movers. From estimate to final delivery, everything was organized and transparent. Highly trustworthy company." },
+  { name: "Bilal Hassan", role: "Moved from Lahore to Canada (Phase 5 to Toronto)", rating: 5, text: "Smooth international relocation process. They handled all paperwork, insurance and shipping. Our belongings reached Canada safely and on schedule." },
 ];
 
 const TestimonialsSection = () => {

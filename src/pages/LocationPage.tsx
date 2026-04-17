@@ -195,7 +195,15 @@ const LocationPage = () => {
         <div className="absolute inset-0 z-0">
           <picture>
             <source srcSet={`${location.heroImg}&fm=webp`} type="image/webp" />
-            <img src={location.heroImg} alt={location.title} fetchpriority="high" loading="eager" width="1920" height="1080" className="w-full h-full object-cover opacity-[0.15]" />
+            <img
+              src={location.heroImg}
+              alt={location.title}
+              fetchpriority="high"
+              loading="eager"
+              width="1920"
+              height="1080"
+              className="w-full h-full object-cover opacity-[0.15]"
+            />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
         </div>
@@ -231,7 +239,14 @@ const LocationPage = () => {
               <picture>
                 <source srcSet={`${location.heroImg}&fm=webp&w=800`} media="(max-width: 768px)" type="image/webp" />
                 <source srcSet={`${location.heroImg}&fm=webp`} type="image/webp" />
-                <img src={location.heroImg} alt={`Movers and Packers team in ${location.city}`} fetchpriority="high" loading="eager" width="1024" height="450" className="w-full h-64 md:h-96 lg:h-[450px] object-cover" />
+                <img
+                  src={location.heroImg}
+                  alt={`Movers and Packers team in ${location.city}`}
+                  loading="lazy"
+                  width="1024"
+                  height="450"
+                  className="w-full h-64 md:h-96 lg:h-[450px] object-cover"
+                />
               </picture>
             </motion.div>
           </motion.div>

@@ -20,6 +20,12 @@ type Props = {
   h1: string;
   heroSubtext: string;
   breadcrumbItems: BreadcrumbItem[];
+  /** Optional hero illustration above content (city/service specific) */
+  heroImageUrl?: string;
+  heroImageAlt?: string;
+  /** Optional override for social images (defaults to heroImageUrl) */
+  ogImage?: string;
+  ogImageAlt?: string;
   /** Service, LocalBusiness, Article, or array; FAQPage added automatically when faqs set */
   schema?: Record<string, unknown> | Record<string, unknown>[];
   children: ReactNode;
@@ -35,6 +41,10 @@ const SeoLandingPageLayout = ({
   h1,
   heroSubtext,
   breadcrumbItems,
+  heroImageUrl,
+  heroImageAlt,
+  ogImage,
+  ogImageAlt,
   schema,
   children,
   faqs,
@@ -69,6 +79,9 @@ const SeoLandingPageLayout = ({
     keywords,
     urlPath: path,
     schema: combinedSchema,
+    ogImage: ogImage || heroImageUrl,
+    ogImageAlt,
+    twitterImage: ogImage || heroImageUrl,
   });
 
   return (
@@ -113,6 +126,22 @@ const SeoLandingPageLayout = ({
         >
           {children}
         </div>
+
+        {heroImageUrl && (
+          <section className="mt-12 not-prose">
+            <picture>
+              <source srcSet={`${heroImageUrl}&fm=webp&w=1200`} type="image/webp" />
+              <img
+                src={heroImageUrl}
+                alt={heroImageAlt || h1}
+                loading="lazy"
+                width={1200}
+                height={600}
+                className="w-full h-64 md:h-80 lg:h-96 object-cover rounded-2xl border border-border shadow-lg"
+              />
+            </picture>
+          </section>
+        )}
 
         {faqs && faqs.length > 0 && (
           <section className="mt-16 not-prose">

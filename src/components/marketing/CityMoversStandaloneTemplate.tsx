@@ -28,12 +28,6 @@ const WA = "https://wa.me/923009130211";
 const PHONE = "0300-9130211";
 
 const serviceIcons = [Home, Building2, Truck, Package, Warehouse, Briefcase];
-const cityCoverImages: Record<string, string> = {
-  Islamabad: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80')",
-  Lahore: "url('https://images.unsplash.com/photo-1519167758481-dc80ca1fc4da?w=1200&q=80')",
-  Peshawar: "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80')",
-  Rawalpindi: "url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80')",
-};
 
 type Props = { config: CityMoversStandaloneConfig };
 
@@ -72,6 +66,9 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
     keywords: config.seo.keywords,
     urlPath: path,
     schema: [serviceSchema, faqSchema],
+    ogImage: config.ogImageUrl || config.heroImageUrl,
+    ogImageAlt: config.ogImageAlt || `Professional movers and packers in ${config.cityName}`,
+    twitterImage: config.ogImageUrl || config.heroImageUrl,
   });
 
   return (
@@ -81,7 +78,7 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
       <section 
         className="pt-28 lg:pt-36 pb-16 bg-navy-light border-b border-border relative overflow-hidden"
         style={{
-          backgroundImage: cityCoverImages[config.cityName],
+          backgroundImage: `url('${config.heroImageUrl}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
@@ -102,7 +99,7 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
           />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-4 px-4 py-2 rounded-full bg-gold/20 border border-gold/40 text-gold text-sm font-semibold">
-              🌟 Professional Movers in {config.cityName}
+              Professional movers in {config.cityName}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6">{config.h1}</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">{config.heroDescription}</p>
@@ -163,6 +160,33 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
               .
             </p>
           </section>
+
+          {config.contentSections && config.contentSections.length > 0 && (
+            <section className="space-y-10">
+              {config.contentSections.map((s) => (
+                <div key={s.heading} className="glass-card rounded-2xl p-8 md:p-10 border border-border">
+                  <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-5">{s.heading}</h2>
+                  <div className="space-y-4">
+                    {s.paragraphs.map((p, idx) => (
+                      <p key={idx} className="text-muted-foreground leading-relaxed">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                  {s.bullets && s.bullets.length > 0 && (
+                    <ul className="mt-6 grid md:grid-cols-2 gap-x-8 gap-y-3">
+                      {s.bullets.map((b) => (
+                        <li key={b} className="flex gap-3 items-start text-muted-foreground">
+                          <ThumbsUp className="text-gold mt-1 shrink-0" size={18} />
+                          <span className="leading-relaxed">{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </section>
+          )}
 
           <section>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">

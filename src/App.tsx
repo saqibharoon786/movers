@@ -1,61 +1,65 @@
+import { Suspense, lazy } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
-import ServicesPage from "./pages/ServicesPage.tsx";
-import WhyUsPage from "./pages/WhyUsPage.tsx";
-import ProcessPage from "./pages/ProcessPage.tsx";
-import FAQPage from "./pages/FAQPage.tsx";
-import ContactPage from "./pages/ContactPage.tsx";
-import BlogPage from "./pages/BlogPage.tsx";
-import LocationPage from "./pages/LocationPage.tsx";
-import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.tsx";
-import TermsOfServicePage from "./pages/TermsOfServicePage.tsx";
-import PakistanToDubai from "./pages/PakistanToDubai.tsx";
-import PakistanToUK from "./pages/PakistanToUK.tsx";
-import PakistanToCanada from "./pages/PakistanToCanada.tsx";
-import PakistanToUSA from "./pages/PakistanToUSA.tsx";
-import PakistanToSaudi from "./pages/PakistanToSaudi.tsx";
-import PakistanToAustralia from "./pages/PakistanToAustralia.tsx";
-import PakistanToQatar from "./pages/PakistanToQatar.tsx";
-import PakistanToGermany from "./pages/PakistanToGermany.tsx";
-import PakistanToMalaysia from "./pages/PakistanToMalaysia.tsx";
-import MoversIslamabad from "./pages/MoversIslamabad.tsx";
-import MoversLahore from "./pages/MoversLahore.tsx";
-import MoversPeshawar from "./pages/MoversPeshawar.tsx";
-import CargoIslamabad from "./pages/CargoIslamabad.tsx";
-import CargoRawalpindi from "./pages/CargoRawalpindi.tsx";
-import AirFreightIslamabad from "./pages/AirFreightIslamabad.tsx";
-import SeaFreightIslamabad from "./pages/SeaFreightIslamabad.tsx";
-import AirFreightRawalpindi from "./pages/AirFreightRawalpindi.tsx";
-import SeaFreightRawalpindi from "./pages/SeaFreightRawalpindi.tsx";
-import CourierIslamabad from "./pages/CourierIslamabad.tsx";
-import CourierRawalpindi from "./pages/CourierRawalpindi.tsx";
-import FreightForwardingIslamabad from "./pages/FreightForwardingIslamabad.tsx";
-import CustomsClearanceIslamabad from "./pages/CustomsClearanceIslamabad.tsx";
-import ContainerShippingPakistan from "./pages/ContainerShippingPakistan.tsx";
-import GoodsTransportationPakistan from "./pages/GoodsTransportationPakistan.tsx";
-import DoorToDoorCargoPakistan from "./pages/DoorToDoorCargoPakistan.tsx";
-import HouseShiftingIslamabad from "./pages/HouseShiftingIslamabad.tsx";
-import HouseShiftingRawalpindi from "./pages/HouseShiftingRawalpindi.tsx";
-import VehicleImportGuidePakistan from "./pages/VehicleImportGuidePakistan.tsx";
-import PackersMoversIslamabad from "./pages/PackersMoversIslamabad.tsx";
-import PackersMoversLahore from "./pages/PackersMoversLahore.tsx";
-import PackersMoversRawalpindi from "./pages/PackersMoversRawalpindi.tsx";
-import HomeShiftingIslamabad from "./pages/HomeShiftingIslamabad.tsx";
-import HomeShiftingRawalpindi from "./pages/HomeShiftingRawalpindi.tsx";
-import InternationalCargoIslamabad from "./pages/InternationalCargoIslamabad.tsx";
-import ShippingCompaniesPakistan from "./pages/ShippingCompaniesPakistan.tsx";
-import PakistanCargoServices from "./pages/PakistanCargoServices.tsx";
-import CustomDutyCalculator from "./pages/CustomDutyCalculator.tsx";
-import AboutUs from "./pages/AboutUs.tsx";
-import Blog1 from "./pages/Blog1.tsx";
-import Blog2 from "./pages/Blog2.tsx";
-import Blog3 from "./pages/Blog3.tsx";
-import Blog4 from "./pages/Blog4.tsx";
+const Index = lazy(() => import("./pages/Index.tsx"));
+const NotFound = lazy(() => import("./pages/NotFound.tsx"));
+const ServicesPage = lazy(() => import("./pages/ServicesPage.tsx"));
+const WhyUsPage = lazy(() => import("./pages/WhyUsPage.tsx"));
+const ProcessPage = lazy(() => import("./pages/ProcessPage.tsx"));
+const FAQPage = lazy(() => import("./pages/FAQPage.tsx"));
+const ContactPage = lazy(() => import("./pages/ContactPage.tsx"));
+const BlogPage = lazy(() => import("./pages/BlogPage.tsx"));
+const LocationPage = lazy(() => import("./pages/LocationPage.tsx"));
+const PrivacyPolicyPage = lazy(() => import("./pages/PrivacyPolicyPage.tsx"));
+const TermsOfServicePage = lazy(() => import("./pages/TermsOfServicePage.tsx"));
+const PakistanToDubai = lazy(() => import("./pages/PakistanToDubai.tsx"));
+const PakistanToUK = lazy(() => import("./pages/PakistanToUK.tsx"));
+const PakistanToCanada = lazy(() => import("./pages/PakistanToCanada.tsx"));
+const PakistanToUSA = lazy(() => import("./pages/PakistanToUSA.tsx"));
+const PakistanToSaudi = lazy(() => import("./pages/PakistanToSaudi.tsx"));
+const PakistanToAustralia = lazy(() => import("./pages/PakistanToAustralia.tsx"));
+const PakistanToQatar = lazy(() => import("./pages/PakistanToQatar.tsx"));
+const PakistanToGermany = lazy(() => import("./pages/PakistanToGermany.tsx"));
+const PakistanToMalaysia = lazy(() => import("./pages/PakistanToMalaysia.tsx"));
+const MoversIslamabad = lazy(() => import("./pages/MoversIslamabad.tsx"));
+const MoversRawalpindi = lazy(() => import("./pages/MoversRawalpindi.tsx"));
+const MoversLahore = lazy(() => import("./pages/MoversLahore.tsx"));
+const MoversPeshawar = lazy(() => import("./pages/MoversPeshawar.tsx"));
+const CargoIslamabad = lazy(() => import("./pages/CargoIslamabad.tsx"));
+const CargoRawalpindi = lazy(() => import("./pages/CargoRawalpindi.tsx"));
+const AirFreightIslamabad = lazy(() => import("./pages/AirFreightIslamabad.tsx"));
+const SeaFreightIslamabad = lazy(() => import("./pages/SeaFreightIslamabad.tsx"));
+const AirFreightRawalpindi = lazy(() => import("./pages/AirFreightRawalpindi.tsx"));
+const SeaFreightRawalpindi = lazy(() => import("./pages/SeaFreightRawalpindi.tsx"));
+const CourierIslamabad = lazy(() => import("./pages/CourierIslamabad.tsx"));
+const CourierRawalpindi = lazy(() => import("./pages/CourierRawalpindi.tsx"));
+const FreightForwardingIslamabad = lazy(() => import("./pages/FreightForwardingIslamabad.tsx"));
+const CustomsClearanceIslamabad = lazy(() => import("./pages/CustomsClearanceIslamabad.tsx"));
+const ContainerShippingPakistan = lazy(() => import("./pages/ContainerShippingPakistan.tsx"));
+const GoodsTransportationPakistan = lazy(() => import("./pages/GoodsTransportationPakistan.tsx"));
+const DoorToDoorCargoPakistan = lazy(() => import("./pages/DoorToDoorCargoPakistan.tsx"));
+const HouseShiftingIslamabad = lazy(() => import("./pages/HouseShiftingIslamabad.tsx"));
+const HouseShiftingRawalpindi = lazy(() => import("./pages/HouseShiftingRawalpindi.tsx"));
+const VehicleImportGuidePakistan = lazy(() => import("./pages/VehicleImportGuidePakistan.tsx"));
+const PackersMoversIslamabad = lazy(() => import("./pages/PackersMoversIslamabad.tsx"));
+const PackersMoversLahore = lazy(() => import("./pages/PackersMoversLahore.tsx"));
+const PackersMoversRawalpindi = lazy(() => import("./pages/PackersMoversRawalpindi.tsx"));
+const HomeShiftingIslamabad = lazy(() => import("./pages/HomeShiftingIslamabad.tsx"));
+const HomeShiftingRawalpindi = lazy(() => import("./pages/HomeShiftingRawalpindi.tsx"));
+const InternationalCargoIslamabad = lazy(() => import("./pages/InternationalCargoIslamabad.tsx"));
+const ShippingCompaniesPakistan = lazy(() => import("./pages/ShippingCompaniesPakistan.tsx"));
+const PakistanCargoServices = lazy(() => import("./pages/PakistanCargoServices.tsx"));
+const CustomDutyCalculator = lazy(() => import("./pages/CustomDutyCalculator.tsx"));
+const AboutUs = lazy(() => import("./pages/AboutUs.tsx"));
+const Blog1 = lazy(() => import("./pages/Blog1.tsx"));
+const Blog2 = lazy(() => import("./pages/Blog2.tsx"));
+const Blog3 = lazy(() => import("./pages/Blog3.tsx"));
+const Blog4 = lazy(() => import("./pages/Blog4.tsx"));
+const InternationalMoversIslamabad = lazy(() => import("./pages/InternationalMoversIslamabad.tsx"));
+const InternationalMoversLahore = lazy(() => import("./pages/InternationalMoversLahore.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -65,6 +69,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -95,8 +100,11 @@ const App = () => (
           <Route path="/pakistan-to-malaysia-movers" element={<PakistanToMalaysia />} />
 
           <Route path="/movers-islamabad" element={<MoversIslamabad />} />
+          <Route path="/movers-rawalpindi" element={<MoversRawalpindi />} />
           <Route path="/movers-lahore" element={<MoversLahore />} />
           <Route path="/movers-peshawar" element={<MoversPeshawar />} />
+          <Route path="/international-movers-from-islamabad" element={<InternationalMoversIslamabad />} />
+          <Route path="/international-movers-in-lahore" element={<InternationalMoversLahore />} />
 
           <Route path="/cargo-service-islamabad" element={<CargoIslamabad />} />
           <Route path="/cargo-service-rawalpindi" element={<CargoRawalpindi />} />
@@ -128,6 +136,7 @@ const App = () => (
           <Route path="/:citySlug" element={<LocationPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

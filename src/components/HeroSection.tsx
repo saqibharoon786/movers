@@ -7,7 +7,8 @@ import hero3 from "@/assets/hero-3.jpg";
 import hero4 from "@/assets/hero-4.jpg";
 import hero5 from "@/assets/hero-5.jpg";
 
-const images = [hero1, hero2, hero3, hero4, hero5];
+// Single hero image for first paint to keep LCP fast.
+const heroImage = hero1;
 
 const trustItems = [
   { icon: Users, text: "5000+ Happy Families" },
@@ -17,7 +18,6 @@ const trustItems = [
 ];
 
 const HeroSection = () => {
-  const [current, setCurrent] = useState(0);
   const [scrollY, setScrollY] = useState(0);
   const [showQuoteForm, setShowQuoteForm] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -32,11 +32,6 @@ const HeroSection = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(() => setCurrent((p) => (p + 1) % images.length), 4000);
-    return () => clearInterval(timer);
-  }, []);
-
-  useEffect(() => {
     const onScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -44,23 +39,27 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative h-screen min-h-[700px] overflow-hidden" style={{ minHeight: "700px" }}>
-      {/* Background images */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={current}
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
-          className="absolute inset-0"
-          style={{ transform: `translateY(${scrollY * 0.3}px)` }}
-        >
-          <picture>
-            <source srcSet={images[current]} type="image/webp" />
-            <img src={images[current]} alt="Professional international movers packing boxes in Pakistan" fetchpriority="high" loading="eager" className="w-full h-[120%] object-cover" width="1920" height="1080" />
-          </picture>
-        </motion.div>
-      </AnimatePresence>
+      {/* Background image */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.0, ease: "easeInOut" }}
+        className="absolute inset-0"
+        style={{ transform: `translateY(${scrollY * 0.3}px)` }}
+      >
+        <picture>
+          <source srcSet={heroImage} type="image/webp" />
+          <img
+            src={heroImage}
+            alt="Professional international movers packing boxes in Pakistan"
+            fetchpriority="high"
+            loading="eager"
+            className="w-full h-[120%] object-cover"
+            width="1920"
+            height="1080"
+          />
+        </picture>
+      </motion.div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/60 to-navy/90" />
@@ -138,13 +137,6 @@ const HeroSection = () => {
             </div>
           ))}
         </motion.div>
-      </div>
-
-      {/* Slide indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-        {images.map((_, i) => (
-          <button key={i} onClick={() => setCurrent(i)} className={`h-1.5 rounded-full transition-all duration-500 ${i === current ? "w-8 bg-gold" : "w-4 bg-foreground/30"}`} />
-        ))}
       </div>
 
       {/* Quote Form Modal */}

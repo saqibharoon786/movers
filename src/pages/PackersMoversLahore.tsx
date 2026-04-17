@@ -36,6 +36,8 @@ const PackersMoversLahore = () => {
       h1="Packers and Movers in Lahore"
       heroSubtext="Premium packing and seamless moving services in Lahore. Trusted by diplomats, corporate executives, and thousands of happy families."
       breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "Packers & Movers Lahore" }]}
+    heroImageUrl="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1600"
+    heroImageAlt="Moving crew handling cartons and furniture for a family in Lahore"
       schema={serviceSchema}
       faqs={faqs}
     >

@@ -35,6 +35,8 @@ const HomeShiftingIslamabad = () => {
       h1="Home Shifting Services in Islamabad"
       heroSubtext="Redefining relocations with secure, fast, and transparent home shifting services in the capital city. Reach out today!"
       breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "Home Shifting Islamabad" }]}
+      heroImageUrl="https://images.unsplash.com/photo-1582719478250-cc99d3d44a21?auto=format&fit=crop&q=80&w=1600"
+      heroImageAlt="Family home shifting with professional movers in Islamabad"
       schema={serviceSchema}
       faqs={faqs}
     >

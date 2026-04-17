@@ -3,9 +3,9 @@ import { useRef } from "react";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 const posts = [
-  { img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80", slug: "tips-for-stress-free-international-move", title: "10 Tips for a Stress-Free International Move", date: "Mar 15, 2024", category: "Moving Tips" },
-  { img: "https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?auto=format&fit=crop&q=80", slug: "air-freight-vs-sea-freight-pakistan", title: "Air Freight vs Sea Freight: Which Is Right for You?", date: "Mar 8, 2024", category: "Logistics" },
-  { img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80", slug: "customs-regulations-guide-pakistan", title: "Complete Guide to Pakistan Customs Regulations 2024", date: "Feb 28, 2024", category: "Guides" },
+  { img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80", slug: "tips-for-stress-free-international-move", title: "10 Tips for a Stress-Free Pakistan to Dubai Move in 2025", date: "Apr 10, 2025", category: "Moving Tips" },
+  { img: "https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?auto=format&fit=crop&q=80", slug: "air-freight-vs-sea-freight-pakistan", title: "Air Freight vs Sea Freight from Pakistan: Cost & Speed Comparison", date: "Mar 28, 2025", category: "Logistics" },
+  { img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80", slug: "customs-regulations-guide-pakistan", title: "Pakistan Customs Import Regulations 2025: Complete Guide", date: "Mar 15, 2025", category: "Guides" },
 ];
 
 const BlogSection = () => {
