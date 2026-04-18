@@ -20,7 +20,7 @@ const BlogPage = lazy(() => import("./pages/BlogPage.tsx"));
 const LocationPage = lazy(() => import("./pages/LocationPage.tsx"));
 const PrivacyPolicyPage = lazy(() => import("./pages/PrivacyPolicyPage.tsx"));
 const TermsOfServicePage = lazy(() => import("./pages/TermsOfServicePage.tsx"));
-const PakistanToDubai = lazy(() => import("./pages/PakistanToDubai.tsx"));
+const PakistanToDubaiMovers = lazy(() => import("./pages/PakistanToDubaiMovers.tsx"));
 const PakistanToUK = lazy(() => import("./pages/PakistanToUK.tsx"));
 const PakistanToCanada = lazy(() => import("./pages/PakistanToCanada.tsx"));
 const PakistanToUSA = lazy(() => import("./pages/PakistanToUSA.tsx"));
@@ -129,7 +129,7 @@ const App = () => (
           <Route path="/blog/cheap-movers-tips-pakistan/" element={<CheapMoversTipsPakistanBlog />} />
           <Route path="/blog/:slug" element={<BlogPage />} />
 
-          <Route path="/pakistan-to-dubai-movers" element={<PakistanToDubai />} />
+          <Route path="/pakistan-to-dubai-movers" element={<PakistanToDubaiMovers />} />
           <Route path="/pakistan-to-uk-movers" element={<PakistanToUK />} />
           <Route path="/pakistan-to-canada-movers" element={<PakistanToCanada />} />
           <Route path="/pakistan-to-usa-movers" element={<PakistanToUSA />} />
