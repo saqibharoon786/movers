@@ -9,7 +9,7 @@ const serviceSchema = {
     "@type": "LocalBusiness",
     name: "Best International Movers & Logistics",
     telephone: "0300-9130211",
-    email: "saqibharoonharoon@gmail.com",
+    email: "info@bestintlmovers.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Rawalpindi",
@@ -56,7 +56,7 @@ const HomeShiftingRawalpindi = () => {
         <li><strong>Adyala Road & Murree Road Locations</strong></li>
       </ul>
       <p>
-        Having completed thousands of localized assignments successfully across 15+ years—operating 6 full days a week—we possess the exact formula to guarantee completely peaceful transformations safely. Your highly valued goods deserve the utmost respect. Call us directly using the WhatsApp button or our phone to initiate your free moving survey instantly!
+        Having completed thousands of localized assignments successfully across 15+ yearsâ€”operating 6 full days a weekâ€”we possess the exact formula to guarantee completely peaceful transformations safely. Your highly valued goods deserve the utmost respect. Call us directly using the WhatsApp button or our phone to initiate your free moving survey instantly!
       </p>
     </SeoLandingPageLayout>
   );

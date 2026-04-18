@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 interface SEOProps {
   title: string;
@@ -20,7 +20,7 @@ const SITE_URL = "https://bestintlmovers.com";
 const DEFAULT_SOCIAL_IMAGE =
   "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200";
 const BUSINESS_PHONE = "+92-300-9130211";
-const BUSINESS_EMAIL = "saqibharoonharoon@gmail.com";
+const BUSINESS_EMAIL = "info@bestintlmovers.com";
 const BUSINESS_HOURS = ["Mo-Sa 08:00-20:00"];
 
 const toTitleCase = (value: string) =>
@@ -59,12 +59,15 @@ export const useSEO = ({
   twitterImage,
   noindex,
 }: SEOProps) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     const normalizedPath = normalizePath(urlPath || window.location.pathname);
     const routeLabel = pathToLabel(normalizedPath);
 
+    /** Titles with a pipe are full SEO titles — do not append route suffix (avoids wrong tab titles on blog/service pages). */
+    const isFullSeoTitle = title.includes("|");
     const titleHasRoute = title.toLowerCase().includes(routeLabel.toLowerCase());
-    const seoTitleBase = titleHasRoute || normalizedPath === "/" ? title : `${title} | ${routeLabel}`;
+    const seoTitleBase =
+      isFullSeoTitle || titleHasRoute || normalizedPath === "/" ? title : `${title} | ${routeLabel}`;
     const seoTitle = clip(seoTitleBase, 60);
 
     const cta = "Call or WhatsApp 0300-9130211.";

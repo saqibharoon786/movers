@@ -10,130 +10,140 @@ const statsDefault = [
 export const dubaiMovingConfig: DestinationMovingConfig = {
   urlPath: "/pakistan-to-dubai-movers",
   seo: {
-    title: "Pakistan to Dubai Movers & Cargo Service | Best International",
-    description: "Door-to-door moving from Pakistan to Dubai. Sea freight & air cargo to all UAE cities. From Rawalpindi, Islamabad, Lahore. Get free quote!",
+    title: "Pakistan to Dubai Movers | Door-to-Door Moving Service | Best Intl Movers",
+    description:
+      "Moving from Pakistan to Dubai? Door-to-door relocation, sea & air freight to UAE. 1200+ moves on this route. Call 0300-9130211 for free quote.",
     keywords:
-      "pakistan to dubai movers, dubai cargo from pakistan, movers islamabad to dubai, sea freight dubai, air cargo uae",
+      "Pakistan to Dubai movers, door to door moving Pakistan Dubai, sea freight Pakistan Dubai, air freight UAE, international movers Pakistan",
   },
-  h1: "Pakistan to Dubai Movers & Cargo Service",
+  h1: "Pakistan to Dubai Movers — Door-to-Door International Moving Service",
   heroSubtext:
-    "Reliable door-to-door moving and cargo services from Pakistan to Dubai, Abu Dhabi, Sharjah and all UAE cities",
-  stats: statsDefault,
-  whyHeading: "Why Choose Us for Pakistan to Dubai Moving",
+    "Planning a move from Pakistan to Dubai for work, family, or business? We are Pakistan's most trusted partner on this route — with 1,200+ successful Dubai relocations and full support from survey to delivery.",
+  stats: [
+    { value: "1,200+", label: "Dubai Route Moves" },
+    { value: "5,000+", label: "Families Relocated" },
+    { value: "15+", label: "Years Experience" },
+    { value: "98%", label: "Client Satisfaction" },
+  ],
+  whyHeading: "Why Pakistan to Dubai Is Our Strongest Route",
   whyCards: [
     {
-      title: "Direct Routes to UAE",
-      description: "Regular shipments to Dubai, Abu Dhabi, Sharjah with predictable sailing and flight schedules.",
+      title: "Dubai Customs Expertise",
+      description:
+        "We understand Dubai Customs (Dubai Ports, Customs & Free Zone Corporation), documentation for personal effects, and how to avoid delays at Jebel Ali or Dubai Airport.",
     },
     {
-      title: "Sea & Air Options",
-      description: "FCL, LCL sea freight and express air cargo available for household and commercial cargo.",
+      title: "Optimized Sea & Air Lanes",
+      description:
+        "Sea freight via Karachi Port to Jebel Ali and air options from Islamabad and Lahore to Dubai International Airport — fewer surprises on timing and cost.",
     },
     {
-      title: "Customs Experts",
-      description: "We handle UAE customs documentation and coordinate clearance with licensed partners in the Emirates.",
+      title: "UAE Partner Network",
+      description:
+        "Our Dubai partner agent coordinates import clearance and last-mile delivery so you can focus on settling in, not paperwork.",
     },
     {
-      title: "Door to Door",
-      description: "Pickup from your home in Pakistan and delivery to your UAE address with tracked milestones.",
+      title: "Household & Corporate Moves",
+      description:
+        "From single-family homes to corporate offices — the same disciplined packing, inventory, and accountability on every shipment.",
     },
     {
-      title: "Real-Time Tracking",
-      description: "Track your shipment from Pakistan to Dubai with milestone updates from origin to final delivery.",
+      title: "Transparent Quotes",
+      description:
+        "Written quotes after survey, clear mode options (FCL/LCL/air), and no hidden surcharges on standard door-to-door scope.",
     },
     {
-      title: "Fully Insured",
-      description: "Complete insurance coverage options during transit for household goods and commercial cargo.",
+      title: "Insured, Tracked Shipments",
+      description:
+        "Insurance for your goods and milestone updates (including WhatsApp) from pickup in Pakistan through delivery in the UAE.",
     },
   ],
-  servicesHeading: "Our Pakistan to Dubai Services",
+  servicesHeading: "What Is Included in Our Pakistan to Dubai Moving Service",
   serviceCards: [
     {
-      title: "Sea Freight to Dubai",
-      description:
-        "FCL & LCL container shipping. Transit time 10-15 days for LCL groupage. Cost-effective for large volumes and full home moves.",
+      title: "Survey & Packing",
+      description: "Free home survey and professional packing at your Pakistan address with export-grade materials.",
     },
     {
-      title: "Air Freight to Dubai",
-      description: "Express air cargo. Transit time 3-5 business days. Best for urgent shipments and time-sensitive goods.",
+      title: "Inventory & Insurance",
+      description: "Inventory documentation and insurance coverage options for all goods in transit.",
     },
     {
-      title: "Household Moving",
-      description: "Complete home relocation service: packing, shipping, customs, and delivery to your new UAE residence.",
+      title: "Sea or Air Freight",
+      description: "Sea freight (FCL/LCL) or air freight — matched to your timeline, volume, and budget.",
     },
     {
-      title: "Excess Baggage",
-      description: "Send extra luggage and personal effects economically alongside your flight or as an unaccompanied shipment.",
+      title: "Export Clearance (PK)",
+      description: "Export customs clearance from Karachi, Lahore, Islamabad, and coordinated gateways as required.",
     },
     {
-      title: "Vehicle Shipping",
-      description: "Ship your car or motorcycle to UAE safely via container or RoRo with export and import documentation support.",
+      title: "Import Clearance (UAE)",
+      description: "Import customs clearance in Dubai / UAE with compliant personal-effects documentation.",
     },
     {
-      title: "Commercial Cargo",
-      description: "Business goods, samples, and commercial shipments to Dubai with compliant invoicing and packing lists.",
+      title: "Delivery & Optional Unpack",
+      description: "Delivery to your Dubai apartment, villa, or office — with optional unpacking and furniture placement.",
     },
   ],
-  transitHeading: "Pakistan to Dubai Transit Times",
+  transitHeading: "Pakistan to Dubai — Transit Times & Costs",
   transitRows: [
-    { mode: "Air Freight", time: "3-5 business days" },
-    { mode: "Sea Freight LCL", time: "10-15 days" },
-    { mode: "Sea Freight FCL", time: "12-18 days" },
-    { mode: "Express Courier", time: "2-3 days" },
+    { mode: "Sea Freight (LCL)", time: "15–20 days · best for small–medium / budget" },
+    { mode: "Sea Freight (FCL)", time: "18–25 days · full household or office" },
+    { mode: "Air Freight", time: "3–5 days · urgent, documents, valuables" },
   ],
   transitPricingNote:
-    "Contact us for exact pricing based on volume and service. We provide transparent quotes after a free survey from Rawalpindi, Islamabad, Lahore, or Peshawar.",
-  processHeading: "How It Works - Pakistan to Dubai",
+    "Exact cost depends on volume, access, and mode. Sea freight often falls in the PKR 80,000–250,000 range for typical household volumes; air freight can start near PKR 15,000 per carton. Call 0300-9130211 after a survey for a written quote.",
+  processHeading: "How It Works — Pakistan to Dubai",
   processSteps: [
     {
       title: "Step 1: Free Survey & Quote",
-      description: "We assess your goods and provide a detailed quote with shipping options and timelines.",
+      description: "We assess volume, fragility, and access, then recommend sea vs air with a fixed written quote.",
     },
     {
       title: "Step 2: Professional Packing",
-      description: "Expert packing with quality materials suited for sea or air transit to the UAE.",
+      description: "Export packing, labeling, and inventory aligned to UAE personal-effects requirements.",
     },
     {
-      title: "Step 3: Export Customs Pakistan",
-      description: "We handle Pakistan export documentation and coordinate inspections where required.",
+      title: "Step 3: Pakistan Export Clearance",
+      description: "We prepare and file export documentation and coordinate inspections where applicable.",
     },
     {
-      title: "Step 4: Shipping to Dubai",
-      description: "Sea or air freight to UAE hubs with carrier partners such as Maersk Line and Emirates SkyCargo.",
+      title: "Step 4: Main Carriage to UAE",
+      description: "Ocean or air movement with partners such as Maersk, MSC, Emirates SkyCargo, and DHL-aligned lanes where appropriate.",
     },
     {
-      title: "Step 5: UAE Customs & Delivery",
-      description: "Import clearance and door delivery in Dubai, Abu Dhabi, Sharjah, or other Emirates.",
+      title: "Step 5: UAE Clearance & Delivery",
+      description: "Our Dubai partner completes import clearance and delivers to your new address — villa, apartment, or office.",
     },
   ],
   routesHeading: "Cities We Ship From & To",
   fromCities: ["Rawalpindi", "Islamabad", "Lahore", "Peshawar", "Karachi", "Multan"],
   toCities: ["Dubai", "Abu Dhabi", "Sharjah", "Ajman", "Ras Al Khaimah", "Fujairah"],
-  faqHeading: "Pakistan to Dubai Moving FAQ",
+  faqHeading: "FAQ — Pakistan to Dubai Moving",
   faqs: [
     {
-      q: "How long does it take to move from Pakistan to Dubai?",
-      a: "Air freight takes 3-5 days, sea freight LCL takes 10-15 days, FCL takes 12-18 days.",
+      q: "How much does it cost to move from Pakistan to Dubai?",
+      a: "Sea freight typically costs PKR 80,000–250,000 depending on volume. Air freight can start from PKR 15,000 per carton. Call us for an exact quote based on your inventory after a survey.",
     },
     {
-      q: "What documents are needed to ship to Dubai?",
-      a: "Passport copy, packing list, invoice, and we handle all customs documentation.",
+      q: "Can I ship my car from Pakistan to Dubai?",
+      a: "Yes. We offer vehicle shipping via RoRo (Roll-on Roll-off) vessels where suitable, plus container options. Dubai allows imported used vehicles under certain conditions — we advise on documentation early.",
     },
     {
-      q: "Can you ship my car from Pakistan to Dubai?",
-      a: "Yes, we ship vehicles via RoRo or container to UAE.",
+      q: "Do I need to be present in Dubai during customs clearance?",
+      a: "No. Our Dubai partner agent can handle the process with your documents; physical presence is not always required.",
     },
     {
-      q: "Do you offer door to door service to Dubai?",
-      a: "Yes, we pickup from your home in Pakistan and deliver to your Dubai address.",
+      q: "How do I track my shipment?",
+      a: "We provide tracking references and real-time status updates via WhatsApp throughout the journey.",
     },
     {
-      q: "What items cannot be shipped to UAE?",
-      a: "Prohibited items include narcotics, weapons, pork products and certain medications.",
+      q: "What documents are usually required for personal effects?",
+      a: "Typical items include passport copy, employment visa where applicable, and a detailed packing list. We prepare the file set to reduce holds at Jebel Ali or Dubai Airport.",
     },
     {
-      q: "How much does it cost to ship to Dubai from Pakistan?",
-      a: "Cost depends on volume and service type. Contact us for a free quote.",
+      q: "What is not allowed through Dubai Customs?",
+      a: "Examples include alcohol, pork products, weapons, medications beyond personal-use quantities, and certain restricted electronics. Our team flags risks before packing.",
     },
   ],
   testimonialsHeading: "What Our Clients Say About Pakistan to Dubai Moves",
@@ -153,13 +163,13 @@ export const dubaiMovingConfig: DestinationMovingConfig = {
     },
   ],
   ctaHeading: "Ready to Move to Dubai?",
-  ctaSubtext: "Get a free no-obligation quote today",
+  ctaSubtext: "Get a free no-obligation quote today — 0300-9130211",
   breadcrumbCategory: "Destination Services",
   breadcrumbPageLabel: "Pakistan to Dubai",
   introParagraphs: [
-    "Moving from Pakistan to Dubai is one of the most common international relocation routes for families and professionals. Whether you are transferring for work, joining family in the UAE, or expanding a business footprint, you need a mover who understands Pakistan export procedures and UAE import requirements. Best International Movers & Logistics plans each shipment with clear milestones: survey, packing, export clearance in Pakistan, main carriage by sea or air, and delivery after UAE customs processes are completed.",
-    "Our teams in Rawalpindi, Islamabad, Lahore, and Peshawar regularly handle household goods, personal effects, vehicles, and commercial cargo bound for Dubai, Abu Dhabi, Sharjah, and other Emirates. We help you choose between economical sea freight for larger volumes and faster air freight when timing is critical. Throughout the journey, we emphasize careful packing, accurate documentation, and insurance options so your belongings are protected from door to door.",
-    "Dubai remains a major trade and logistics hub, which benefits clients shipping from Pakistan through competitive sailing schedules and frequent air connections. We coordinate with global partners including Maersk Line, Emirates SkyCargo, MSC Shipping, DHL Global, Hapag-Lloyd, and DB Schenker to align capacity with your move date. If you are comparing service levels, our team can walk you through air versus sea options using real sailing and flight schedules.",
+    "Are you planning to move from Pakistan to Dubai? Whether you are relocating for a new job, joining family, or starting a business in the UAE — Best International Movers & Logistics is Pakistan's most trusted partner for Pakistan to Dubai moving. We have completed over 1,200 successful moves on this route alone, making us experts in every detail of the Pakistan–UAE relocation process.",
+    "The UAE — especially Dubai — is the top destination for Pakistani expatriates. We understand the requirements of Dubai Customs (Dubai Ports, Customs & Free Zone Corporation), the best sea freight routes via Karachi Port to Jebel Ali, and the air freight options via Islamabad and Lahore airports to Dubai International Airport. This route-specific expertise means fewer delays, lower surprises on cost, and smoother delivery for you.",
+    "Dubai Customs has clear rules for personal effects. Household goods moved by an individual relocating to Dubai are generally exempt from customs duty when documentation is complete — including employment visa, passport copy, and a detailed packing list. Items that are not allowed include alcohol, pork products, weapons, medications above personal-use quantities, and certain electronic devices. Our customs team prepares documentation correctly to avoid delays at Jebel Ali port or Dubai airport.",
   ],
   regionLabel: "UAE / Dubai corridor",
   serviceSchemaAreaServed: ["Pakistan", "United Arab Emirates"],
@@ -227,7 +237,7 @@ export const ukMovingConfig: DestinationMovingConfig = {
   testimonials: [
     { name: "Hassan R.", quote: "Our household from Islamabad reached London on schedule. Clear updates throughout." },
     { name: "Ayesha K.", quote: "Sea freight to Manchester was well packed and fairly priced." },
-    { name: "Omar S.", quote: "Air cargo for urgent items and sea for furniture—great hybrid plan." },
+    { name: "Omar S.", quote: "Air cargo for urgent items and sea for furnitureâ€”great hybrid plan." },
   ],
   ctaHeading: "Planning a Move to the UK?",
   ctaSubtext: "Speak with our team for a no-obligation quote and timeline.",
@@ -236,7 +246,7 @@ export const ukMovingConfig: DestinationMovingConfig = {
   introParagraphs: [
     "Relocating from Pakistan to the United Kingdom involves long transit times, strict documentation expectations, and careful planning for household goods. Many Pakistani families choose the UK for education, professional opportunities, and community ties in cities like London, Manchester, Birmingham, Bradford, Leeds, Glasgow, and Edinburgh. Best International Movers & Logistics supports these moves with sea and air options, export clearance in Pakistan, and structured delivery planning on arrival.",
     "UK customs processes emphasize accurate valuation, clear inventory lists, and compliance with import rules for personal effects. While every case differs, our team helps you organize paperwork and understand typical steps so there are fewer surprises at destination. For larger homes, sea freight remains the most economical choice; for smaller shipments or urgent needs, air freight in the 5-7 day range is often preferred.",
-    "We proudly serve clients across Pakistan’s major cities and coordinate with global partners to maintain reliable sailing and flight schedules. If you are comparing modes, ask us for a side-by-side plan that matches your budget and arrival date.",
+    "We proudly serve clients across Pakistanâ€™s major cities and coordinate with global partners to maintain reliable sailing and flight schedules. If you are comparing modes, ask us for a side-by-side plan that matches your budget and arrival date.",
   ],
   regionLabel: "United Kingdom",
   serviceSchemaAreaServed: ["Pakistan", "United Kingdom"],
@@ -269,7 +279,7 @@ export const canadaMovingConfig: DestinationMovingConfig = {
     { title: "Household Relocation", description: "Packing, loading, export clearance, and destination delivery planning." },
     { title: "Vehicle Shipping", description: "Container options for cars and motorcycles with documentation guidance." },
     { title: "Commercial Shipments", description: "Business cargo with compliant commercial invoices." },
-    { title: "Storage Bridge", description: "Short-term storage in Pakistan if your Canadian home is not yet ready—see secure storage services." },
+    { title: "Storage Bridge", description: "Short-term storage in Pakistan if your Canadian home is not yet readyâ€”see secure storage services." },
   ],
   transitHeading: "Pakistan to Canada Transit Times",
   transitRows: [
@@ -301,7 +311,7 @@ export const canadaMovingConfig: DestinationMovingConfig = {
   ],
   testimonialsHeading: "What Our Clients Say About Canada Moves",
   testimonials: [
-    { name: "Faisal M.", quote: "Toronto delivery went smoothly—great communication from Islamabad pickup to arrival." },
+    { name: "Faisal M.", quote: "Toronto delivery went smoothlyâ€”great communication from Islamabad pickup to arrival." },
     { name: "Nadia L.", quote: "Sea freight to Vancouver saved us money versus air for our full home." },
     { name: "Imran T.", quote: "Professional packing and clear paperwork support." },
   ],
@@ -354,7 +364,7 @@ export const usaMovingConfig: DestinationMovingConfig = {
     { mode: "Sea Freight FCL", time: "38-50 days" },
     { mode: "Express Courier", time: "4-7 days" },
   ],
-  transitPricingNote: "Pricing varies by volume, US destination, and service level—request a detailed quote.",
+  transitPricingNote: "Pricing varies by volume, US destination, and service levelâ€”request a detailed quote.",
   processHeading: "How It Works - Pakistan to USA",
   processSteps: [
     { title: "Survey & Quote", description: "We capture volume, access, and your US delivery city." },
@@ -369,7 +379,7 @@ export const usaMovingConfig: DestinationMovingConfig = {
   faqHeading: "Pakistan to USA Moving FAQ",
   faqs: [
     { q: "How long does shipping to the USA take?", a: "Air commonly ranges 7-10 business days; sea often falls between 35-45 days depending on routing." },
-    { q: "What documents are typically important?", a: "Passport details, detailed packing list, and invoices where applicable—we guide you on standard patterns." },
+    { q: "What documents are typically important?", a: "Passport details, detailed packing list, and invoices where applicableâ€”we guide you on standard patterns." },
     { q: "Can you ship vehicles?", a: "Yes, containerized vehicle shipping is available." },
     { q: "Do you handle commercial cargo?", a: "Yes, with commercial invoices and packing lists." },
     { q: "Is door-to-door available?", a: "Yes, from Pakistan pickup to US delivery coordination." },
@@ -377,7 +387,7 @@ export const usaMovingConfig: DestinationMovingConfig = {
   ],
   testimonialsHeading: "What Our Clients Say About USA Moves",
   testimonials: [
-    { name: "Zain A.", quote: "Houston delivery was organized and on time—great sea freight experience." },
+    { name: "Zain A.", quote: "Houston delivery was organized and on timeâ€”great sea freight experience." },
     { name: "Maryam H.", quote: "Air freight to New York saved us during a tight relocation deadline." },
     { name: "Usman P.", quote: "Clear communication from Lahore pickup through US arrival." },
   ],
@@ -403,7 +413,7 @@ export const saudiMovingConfig: DestinationMovingConfig = {
     keywords: "pakistan to saudi movers, riyadh cargo pakistan, jeddah household move, gcc freight",
   },
   h1: "Pakistan to Saudi Arabia Movers & Cargo",
-  heroSubtext: "Popular route for Pakistani workers and families—sea and air to Riyadh, Jeddah, Dammam, and beyond",
+  heroSubtext: "Popular route for Pakistani workers and familiesâ€”sea and air to Riyadh, Jeddah, Dammam, and beyond",
   stats: statsDefault,
   whyHeading: "Why Choose Us for Pakistan to Saudi Arabia",
   whyCards: [
@@ -430,7 +440,7 @@ export const saudiMovingConfig: DestinationMovingConfig = {
     { mode: "Sea Freight FCL", time: "14-20 days" },
     { mode: "Express Courier", time: "2-4 days" },
   ],
-  transitPricingNote: "Exact pricing depends on volume, Saudi destination city, and service—request a quote.",
+  transitPricingNote: "Exact pricing depends on volume, Saudi destination city, and serviceâ€”request a quote.",
   processHeading: "How It Works - Pakistan to Saudi Arabia",
   processSteps: [
     { title: "Survey & Quote", description: "Assess goods and recommend sea or air." },
@@ -444,18 +454,18 @@ export const saudiMovingConfig: DestinationMovingConfig = {
   toCities: ["Riyadh", "Jeddah", "Dammam", "Mecca", "Medina", "Khobar", "Jubail"],
   faqHeading: "Pakistan to Saudi Arabia FAQ",
   faqs: [
-    { q: "Is this route common for Pakistani workers?", a: "Yes—many clients move for employment; we offer practical sea/air combinations." },
+    { q: "Is this route common for Pakistani workers?", a: "Yesâ€”many clients move for employment; we offer practical sea/air combinations." },
     { q: "How long does sea freight take?", a: "Typically 12-18 days depending on service and port." },
     { q: "Can you ship furniture?", a: "Yes, with export packing and inventory lists." },
     { q: "Do you offer air freight for urgent items?", a: "Yes, commonly 3-5 business days." },
     { q: "Is door-to-door available?", a: "Yes, from Pakistan pickup to Saudi delivery." },
-    { q: "How do I start?", a: "WhatsApp wa.me/923009130211 or email saqibharoonharoon@gmail.com." },
+    { q: "How do I start?", a: "WhatsApp wa.me/923009130211 or email info@bestintlmovers.com." },
   ],
   testimonialsHeading: "What Our Clients Say About Saudi Moves",
   testimonials: [
-    { name: "Khalid S.", quote: "Smooth move to Riyadh—clear guidance on paperwork." },
+    { name: "Khalid S.", quote: "Smooth move to Riyadhâ€”clear guidance on paperwork." },
     { name: "Rabia N.", quote: "Sea freight to Jeddah was economical for our full home." },
-    { name: "Tariq M.", quote: "Fast air cargo for essentials, sea for the rest—perfect combo." },
+    { name: "Tariq M.", quote: "Fast air cargo for essentials, sea for the restâ€”perfect combo." },
   ],
   ctaHeading: "Relocating to Saudi Arabia?",
   ctaSubtext: "Get a free quote tailored to your city and timeline.",
@@ -497,7 +507,7 @@ export const australiaMovingConfig: DestinationMovingConfig = {
     { title: "Household Relocation", description: "Full-service packing and delivery planning." },
     { title: "Commercial Cargo", description: "Business shipments with compliant documentation." },
     { title: "Vehicle Shipping", description: "Container options with export/import support." },
-    { title: "Packing for Quarantine", description: "Best-practice packing to reduce common quarantine triggers—consult us early." },
+    { title: "Packing for Quarantine", description: "Best-practice packing to reduce common quarantine triggersâ€”consult us early." },
   ],
   transitHeading: "Pakistan to Australia Transit Times",
   transitRows: [
@@ -506,7 +516,7 @@ export const australiaMovingConfig: DestinationMovingConfig = {
     { mode: "Sea Freight FCL", time: "28-40 days" },
     { mode: "Express Courier", time: "5-8 days" },
   ],
-  transitPricingNote: "Australia moves require careful planning—request a survey for accurate pricing.",
+  transitPricingNote: "Australia moves require careful planningâ€”request a survey for accurate pricing.",
   processHeading: "How It Works - Pakistan to Australia",
   processSteps: [
     { title: "Survey & Advice", description: "We review your inventory and highlight common biosecurity considerations." },
@@ -520,7 +530,7 @@ export const australiaMovingConfig: DestinationMovingConfig = {
   toCities: ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide"],
   faqHeading: "Pakistan to Australia FAQ",
   faqs: [
-    { q: "Why is biosecurity important?", a: "Australia inspects many shipments for organic matter and restricted items—accurate packing lists help." },
+    { q: "Why is biosecurity important?", a: "Australia inspects many shipments for organic matter and restricted itemsâ€”accurate packing lists help." },
     { q: "How long is sea freight?", a: "Typically 25-35 days depending on service and port." },
     { q: "When should I choose air?", a: "For smaller urgent shipments, air in 7-10 days is common." },
     { q: "Do you pick up in Islamabad?", a: "Yes, and across other major Pakistani cities." },
@@ -529,7 +539,7 @@ export const australiaMovingConfig: DestinationMovingConfig = {
   ],
   testimonialsHeading: "What Our Clients Say About Australia Moves",
   testimonials: [
-    { name: "Saima R.", quote: "Clear advice on packing—our Sydney move went smoothly." },
+    { name: "Saima R.", quote: "Clear advice on packingâ€”our Sydney move went smoothly." },
     { name: "Junaid K.", quote: "Sea freight to Melbourne saved us money for a full household." },
     { name: "Hina A.", quote: "Professional team from Lahore pickup through delivery." },
   ],
@@ -538,9 +548,9 @@ export const australiaMovingConfig: DestinationMovingConfig = {
   breadcrumbCategory: "Destination Services",
   breadcrumbPageLabel: "Pakistan to Australia",
   introParagraphs: [
-    "Australia’s import and biosecurity framework means international moves from Pakistan should be planned with detailed inventories and careful packing. Cities like Sydney, Melbourne, Brisbane, Perth, and Adelaide are common destinations for families and professionals. Best International Movers & Logistics offers sea freight typically in the 25-35 day range and air freight in the 7-10 business day window.",
+    "Australiaâ€™s import and biosecurity framework means international moves from Pakistan should be planned with detailed inventories and careful packing. Cities like Sydney, Melbourne, Brisbane, Perth, and Adelaide are common destinations for families and professionals. Best International Movers & Logistics offers sea freight typically in the 25-35 day range and air freight in the 7-10 business day window.",
     "Biosecurity inspections can affect items such as wooden furniture, outdoor equipment, and certain household goods. While outcomes depend on official inspection, we help you understand common preparation steps and labeling practices. Export clearance in Pakistan is coordinated with our standard documentation workflow.",
-    "Early planning helps avoid rushed packing decisions—contact us at least several weeks before your intended departure when possible.",
+    "Early planning helps avoid rushed packing decisionsâ€”contact us at least several weeks before your intended departure when possible.",
   ],
   regionLabel: "Australia",
   serviceSchemaAreaServed: ["Pakistan", "Australia"],
@@ -601,20 +611,20 @@ export const qatarMovingConfig: DestinationMovingConfig = {
     { q: "Do you offer door-to-door?", a: "Yes, from Pakistan to your Qatar address." },
     { q: "Can you move office equipment?", a: "Yes, with inventory lists and commercial documents as needed." },
     { q: "Do you serve Lahore?", a: "Yes, all major Pakistani cities." },
-    { q: "How do I get a quote?", a: "WhatsApp 923009130211 or email saqibharoonharoon@gmail.com." },
+    { q: "How do I get a quote?", a: "WhatsApp 923009130211 or email info@bestintlmovers.com." },
   ],
   testimonialsHeading: "What Our Clients Say About Qatar Moves",
   testimonials: [
     { name: "Adnan Q.", quote: "Doha delivery was punctual and professional." },
     { name: "Saba I.", quote: "Great rates on sea freight for furniture." },
-    { name: "Waleed F.", quote: "Air cargo arrived quickly—exactly as promised." },
+    { name: "Waleed F.", quote: "Air cargo arrived quicklyâ€”exactly as promised." },
   ],
   ctaHeading: "Moving to Qatar?",
   ctaSubtext: "Get a free no-obligation quote today.",
   breadcrumbCategory: "Destination Services",
   breadcrumbPageLabel: "Pakistan to Qatar",
   introParagraphs: [
-    "Qatar continues to attract professionals and families from Pakistan, with Doha, Al Wakrah, Al Khor, and Lusail among common destinations. Shorter transit times compared to Europe or North America make Gulf routing attractive—sea freight often falls in the 10-14 day window while air freight can be as fast as 3-4 business days.",
+    "Qatar continues to attract professionals and families from Pakistan, with Doha, Al Wakrah, Al Khor, and Lusail among common destinations. Shorter transit times compared to Europe or North America make Gulf routing attractiveâ€”sea freight often falls in the 10-14 day window while air freight can be as fast as 3-4 business days.",
     "Best International Movers & Logistics coordinates export packing in Pakistan, documentation, and main carriage with tracking updates. Door-to-door service simplifies relocations for busy households and businesses shipping commercial cargo.",
     "We can schedule pickups across Rawalpindi, Islamabad, Lahore, Peshawar, and Karachi to match your flight or job start date.",
   ],
@@ -658,7 +668,7 @@ export const germanyMovingConfig: DestinationMovingConfig = {
     { mode: "Sea Freight FCL", time: "30-40 days" },
     { mode: "Express Courier", time: "3-5 days" },
   ],
-  transitPricingNote: "EU moves vary by volume and destination—request a tailored quote.",
+  transitPricingNote: "EU moves vary by volume and destinationâ€”request a tailored quote.",
   processHeading: "How It Works - Pakistan to Germany",
   processSteps: [
     { title: "Survey & Quote", description: "Assess goods and recommend sea or air." },
@@ -673,15 +683,15 @@ export const germanyMovingConfig: DestinationMovingConfig = {
   faqHeading: "Pakistan to Germany FAQ",
   faqs: [
     { q: "How long is sea freight to Germany?", a: "Typically 28-35 days depending on service and port." },
-    { q: "Is air freight faster?", a: "Yes—commonly 5-7 business days." },
+    { q: "Is air freight faster?", a: "Yesâ€”commonly 5-7 business days." },
     { q: "Do you help with EU documentation?", a: "We assist with inventory preparation and standard import documentation patterns." },
     { q: "Door-to-door available?", a: "Yes." },
     { q: "Commercial cargo?", a: "Yes, with invoices and packing lists." },
-    { q: "Contact?", a: "0300-9130211 or saqibharoonharoon@gmail.com." },
+    { q: "Contact?", a: "0300-9130211 or info@bestintlmovers.com." },
   ],
   testimonialsHeading: "What Our Clients Say About Germany Moves",
   testimonials: [
-    { name: "Farhan B.", quote: "Frankfurt delivery was smooth—great packing from Islamabad." },
+    { name: "Farhan B.", quote: "Frankfurt delivery was smoothâ€”great packing from Islamabad." },
     { name: "Leena S.", quote: "Sea freight saved us money for our full apartment move." },
     { name: "Yasir H.", quote: "Clear updates throughout the journey." },
   ],
@@ -757,7 +767,7 @@ export const malaysiaMovingConfig: DestinationMovingConfig = {
   ],
   testimonialsHeading: "What Our Clients Say About Malaysia Moves",
   testimonials: [
-    { name: "Naveed A.", quote: "KL delivery was on time—excellent packing." },
+    { name: "Naveed A.", quote: "KL delivery was on timeâ€”excellent packing." },
     { name: "Priya D.", quote: "Air freight was quick for our urgent cartons." },
     { name: "Shahid M.", quote: "Great communication throughout the sea shipment." },
   ],

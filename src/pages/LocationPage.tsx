@@ -161,7 +161,7 @@ const LocationPage = () => {
       "name": `Best International Movers - ${location.city}`,
       "image": location.heroImg,
       "telephone": "0300-9130211",
-      "email": "saqibharoonharoon@gmail.com",
+      "email": "info@bestintlmovers.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": location.address,
@@ -213,7 +213,7 @@ const LocationPage = () => {
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl mx-auto text-center">
-            <Link to="/services" className="text-gold text-sm mb-6 inline-flex items-center gap-1 hover:underline">← Explore All Branches</Link>
+            <Link to="/services" className="text-gold text-sm mb-6 inline-flex items-center gap-1 hover:underline">â† Explore All Branches</Link>
             <div className="inline-flex items-center justify-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-gold/30 bg-gold/5">
               <MapPin size={16} className="text-gold" />
               <span className="text-sm font-medium text-gold tracking-wide uppercase">{location.highlight}</span>
@@ -396,7 +396,7 @@ const LocationPage = () => {
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold to-transparent opacity-30"></div>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">What Our Clients in <span className="text-gold">{location.city}</span> Say</h2>
-              <p className="text-muted-foreground text-lg">Don't just take our word for it—read our trusted reviews.</p>
+              <p className="text-muted-foreground text-lg">Don't just take our word for itâ€”read our trusted reviews.</p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8 relative z-10">

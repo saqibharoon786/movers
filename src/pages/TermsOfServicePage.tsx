@@ -8,7 +8,7 @@ import { useSEO } from "@/hooks/useSEO";
 const TermsOfServicePage = () => {
   useSEO({
     title: "Terms of Service | Best International Movers & Logistics",
-    description: "Terms of service for Best International Movers & Logistics—quotes, liability, insurance, payments, and cancellations.",
+    description: "Terms of service for Best International Movers & Logisticsâ€”quotes, liability, insurance, payments, and cancellations.",
     keywords: "terms of service, movers terms pakistan",
     urlPath: "/terms-of-service/",
     noindex: true,
@@ -98,14 +98,14 @@ const TermsOfServicePage = () => {
 
             <h2>12. Contact Information</h2>
             <p>
-              Best International Movers & Logistics — Phone: 0300-9130211 · WhatsApp: wa.me/923009130211 · Email:{" "}
-              <a href="mailto:saqibharoonharoon@gmail.com" className="text-gold hover:underline">saqibharoonharoon@gmail.com</a>
-              {" "}· Offices: Rawalpindi | Islamabad | Lahore | Peshawar.
+              Best International Movers & Logistics â€” Phone: 0300-9130211 Â· WhatsApp: wa.me/923009130211 Â· Email:{" "}
+              <a href="mailto:info@bestintlmovers.com" className="text-gold hover:underline">info@bestintlmovers.com</a>
+              {" "}Â· Offices: Rawalpindi | Islamabad | Lahore | Peshawar.
             </p>
           </div>
           
           <div className="mt-8 text-center">
-            <Link to="/" className="text-gold hover:underline">← Return to Home</Link>
+            <Link to="/" className="text-gold hover:underline">â† Return to Home</Link>
           </div>
         </div>
       </div>

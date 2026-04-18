@@ -22,7 +22,7 @@ const ContactFooter = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-center mb-16">
             <span className="text-gold font-semibold text-sm tracking-widest uppercase">Contact Us</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold mt-3 mb-4">Get Your <span className="gold-gradient-text">Free Quote</span></h2>
-            <p className="text-muted-foreground max-w-xl mx-auto">Fill outs the form and our teams will get back to you within 24 hours.</p>
+            <p className="text-muted-foreground max-w-xl mx-auto">Fill out the form and our team will get back to you within 24 hours.</p>
           </motion.div>
 
           <div className="grid lg:grid-cols-5 gap-12">
@@ -52,7 +52,7 @@ const ContactFooter = () => {
                 <input type="text" placeholder="Approximate Volume (CBM) or Number of Rooms" className="w-full bg-navy-mid border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-colors" />
                 <textarea rows={4} placeholder="Tell us about your move..." className="w-full bg-navy-mid border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-colors resize-none" />
                 <button type="submit" className="w-full py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold text-lg flex items-center justify-center gap-2 hover:shadow-[0_0_40px_-5px_hsl(var(--gold)/0.5)] transition-all duration-300">
-                  {submitted ? "Quote Requested! ✓" : <><Send size={18} /> Request Free Quote</>}
+                  {submitted ? "Quote Requested! âœ“" : <><Send size={18} /> Request Free Quote</>}
                 </button>
               </form>
             </motion.div>
@@ -61,8 +61,8 @@ const ContactFooter = () => {
               {[
                 { icon: MapPin, title: "Our Offices", text: "Rawalpindi | Islamabad | Lahore | Peshawar" },
                 { icon: Phone, title: "Call / WhatsApp", text: "0300-9130211" },
-                { icon: Mail, title: "Email Us", text: "saqibharoonharoon@gmail.com" },
-                { icon: Clock, title: "Working Hours", text: "Mon - Sat: 8:00 AM - 8:00 PM\nSun: Emergency Only" },
+                { icon: Mail, title: "Email Us", text: "info@bestintlmovers.com" },
+                { icon: Clock, title: "Hours", text: "Monday to Saturday 8:00 AM — 8:00 PM\nSunday: Emergency Only" },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 group">
                   <div className="w-12 h-12 flex-shrink-0 rounded-lg bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
@@ -150,15 +150,15 @@ const ContactFooter = () => {
             <div>
               <h4 className="font-display font-semibold text-foreground mb-4">Destinations</h4>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li><Link to="/pakistan-to-dubai-movers" className="hover:text-gold transition-colors">Pakistan → Dubai</Link></li>
-                <li><Link to="/pakistan-to-uk-movers" className="hover:text-gold transition-colors">Pakistan → UK</Link></li>
-                <li><Link to="/pakistan-to-canada-movers" className="hover:text-gold transition-colors">Pakistan → Canada</Link></li>
-                <li><Link to="/pakistan-to-usa-movers" className="hover:text-gold transition-colors">Pakistan → USA</Link></li>
-                <li><Link to="/pakistan-to-saudi-arabia-movers" className="hover:text-gold transition-colors">Pakistan → Saudi</Link></li>
-                <li><Link to="/pakistan-to-australia-movers" className="hover:text-gold transition-colors">Pakistan → Australia</Link></li>
-                <li><Link to="/pakistan-to-qatar-movers" className="hover:text-gold transition-colors">Pakistan → Qatar</Link></li>
-                <li><Link to="/pakistan-to-germany-movers" className="hover:text-gold transition-colors">Pakistan → Germany</Link></li>
-                <li><Link to="/pakistan-to-malaysia-movers" className="hover:text-gold transition-colors">Pakistan → Malaysia</Link></li>
+                <li><Link to="/pakistan-to-dubai-movers" className="hover:text-gold transition-colors">Pakistan â†’ Dubai</Link></li>
+                <li><Link to="/pakistan-to-uk-movers" className="hover:text-gold transition-colors">Pakistan â†’ UK</Link></li>
+                <li><Link to="/pakistan-to-canada-movers" className="hover:text-gold transition-colors">Pakistan â†’ Canada</Link></li>
+                <li><Link to="/pakistan-to-usa-movers" className="hover:text-gold transition-colors">Pakistan â†’ USA</Link></li>
+                <li><Link to="/pakistan-to-saudi-arabia-movers" className="hover:text-gold transition-colors">Pakistan â†’ Saudi</Link></li>
+                <li><Link to="/pakistan-to-australia-movers" className="hover:text-gold transition-colors">Pakistan â†’ Australia</Link></li>
+                <li><Link to="/pakistan-to-qatar-movers" className="hover:text-gold transition-colors">Pakistan â†’ Qatar</Link></li>
+                <li><Link to="/pakistan-to-germany-movers" className="hover:text-gold transition-colors">Pakistan â†’ Germany</Link></li>
+                <li><Link to="/pakistan-to-malaysia-movers" className="hover:text-gold transition-colors">Pakistan â†’ Malaysia</Link></li>
               </ul>
             </div>
             <div>
@@ -202,7 +202,7 @@ const ContactFooter = () => {
             </div>
           </div>
           <div className="border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-muted-foreground text-sm">© 2025 Best International Movers & Logistics. All rights reserved.</p>
+            <p className="text-muted-foreground text-sm">Â© 2025 Best International Movers & Logistics. All rights reserved.</p>
             <div className="flex gap-6 text-muted-foreground text-sm">
               <Link to="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>
               <Link to="/terms-of-service" className="hover:text-gold transition-colors">Terms of Service</Link>

@@ -225,7 +225,7 @@ Use this checklist for EACH city page (Islamabad, Rawalpindi, Lahore, Peshawar):
 - [ ] **LocalBusiness Schema**: Already implemented, verify details match Google Business Profile
   - Address: Local office address (if available)
   - Phone: 0300-9130211
-  - Email: saqibharoonharoon@gmail.com
+  - Email: info@bestintlmovers.com
   - Service Areas: List 10-15 key neighborhoods
   
 - [ ] **Service Areas Section**: Create rich list with descriptions

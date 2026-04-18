@@ -12,7 +12,7 @@ const serviceSchema = {
     "@type": "Organization",
     name: "Best International Movers & Logistics",
     telephone: "+923009130211",
-    email: "saqibharoonharoon@gmail.com",
+    email: "info@bestintlmovers.com",
     url: "https://bestintlmovers.com/",
   },
   areaServed: { "@type": "Country", name: "Pakistan" },
@@ -25,7 +25,7 @@ const ContainerShippingPakistan = () => (
     keywords="container shipping pakistan, FCL shipping pakistan, LCL container pakistan, 20ft container pakistan, 40ft container pakistan"
     urlPath="/container-shipping-pakistan/"
     h1="Container Shipping from Pakistan to Worldwide"
-    heroSubtext="Professional FCL and LCL sea freight with 20ft, 40ft, and 40HC containers—export packing, stuffing, documentation, and tracking to global ports."
+    heroSubtext="Professional FCL and LCL sea freight with 20ft, 40ft, and 40HC containersâ€”export packing, stuffing, documentation, and tracking to global ports."
     breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "Container shipping" }]}
     schema={serviceSchema}
     faqs={containerShippingPakistanFaqs}

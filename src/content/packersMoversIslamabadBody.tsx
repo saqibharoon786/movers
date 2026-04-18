@@ -3,17 +3,17 @@ import { Star } from "lucide-react";
 
 export const packersMoversIslamabadFaqs = [
   { q: "Who are the best packers and movers in Islamabad?", a: "Look for licensed teams with survey-backed quotes, trained packers, insured options, and clear contracts. Best International Movers & Logistics serves all major sectors with 15+ years of experience." },
-  { q: "Do you cover F-sectors and G-sectors?", a: "Yes—F-6, F-7, F-8, F-10, F-11, G-9, G-10, G-11, G-13, and surrounding areas." },
+  { q: "Do you cover F-sectors and G-sectors?", a: "Yesâ€”F-6, F-7, F-8, F-10, F-11, G-9, G-10, G-11, G-13, and surrounding areas." },
   { q: "Can you move high-rise apartments?", a: "Yes. We coordinate elevator timing, protected lifts, and manpower for stairs when needed." },
-  { q: "Do you offer international packing from Islamabad?", a: "Yes—export crates, ISPM-15 wood where required, and inventory lists for customs." },
-  { q: "How are rates calculated?", a: "Volume, access, packing depth, distance, and crew size—quotes follow a free survey." },
-  { q: "Is storage available?", a: "Yes—short-term bridging while possession dates shift." },
-  { q: "Can office and home moves both be handled?", a: "Yes—corporate relocations and household moves with separate project leads." },
+  { q: "Do you offer international packing from Islamabad?", a: "Yesâ€”export crates, ISPM-15 wood where required, and inventory lists for customs." },
+  { q: "How are rates calculated?", a: "Volume, access, packing depth, distance, and crew sizeâ€”quotes follow a free survey." },
+  { q: "Is storage available?", a: "Yesâ€”short-term bridging while possession dates shift." },
+  { q: "Can office and home moves both be handled?", a: "Yesâ€”corporate relocations and household moves with separate project leads." },
   { q: "What items will you not move?", a: "Cash, jewellery, hazardous materials, and illegal goods. Some liquids may be restricted." },
-  { q: "Do you dismantle and reassemble furniture?", a: "Yes—beds, wardrobes, and modular units with labelled hardware bags." },
-  { q: "How far in advance should I book?", a: "Ideally 1–2 weeks; peak summer fills faster." },
+  { q: "Do you dismantle and reassemble furniture?", a: "Yesâ€”beds, wardrobes, and modular units with labelled hardware bags." },
+  { q: "How far in advance should I book?", a: "Ideally 1â€“2 weeks; peak summer fills faster." },
   { q: "Are you insured?", a: "Transit coverage options are explained in writing during quotation." },
-  { q: "How do I contact you?", a: "0300-9130211, WhatsApp wa.me/923009130211, saqibharoonharoon@gmail.com." },
+  { q: "How do I contact you?", a: "0300-9130211, WhatsApp wa.me/923009130211, info@bestintlmovers.com." },
 ];
 
 const SECTIONS: { h2: string; paras: string[] }[] = [
@@ -21,7 +21,7 @@ const SECTIONS: { h2: string; paras: string[] }[] = [
     h2: "Services Offered",
     paras: [
       "When people search for packers and movers in Islamabad, they are usually not buying a truck only. They are buying certainty: their furniture should arrive without damage, documents should stay safe, and moving day should not become a family crisis. That is exactly how our service is designed. We offer full and partial packing, local house shifting Islamabad, office relocation services Islamabad, loading and unloading, furniture dismantling and reassembly, optional storage, and intercity/international transition support from the same operations desk.",
-      "For homes, we provide room-wise packing, fragile protection, mattress covers, wardrobe handling, and destination setup. For offices, we run labelled workstation plans, IT-safe movement protocols, and downtime-minimized execution windows. For clients relocating abroad later, our team can align local packing standards with export requirements so you do not repack twice. If your requirement is specific—kitchen-only packing, weekend move, high-rise access, or luxury furniture handling—we scope it clearly before move day so surprises stay out of your bill and timeline.",
+      "For homes, we provide room-wise packing, fragile protection, mattress covers, wardrobe handling, and destination setup. For offices, we run labelled workstation plans, IT-safe movement protocols, and downtime-minimized execution windows. For clients relocating abroad later, our team can align local packing standards with export requirements so you do not repack twice. If your requirement is specificâ€”kitchen-only packing, weekend move, high-rise access, or luxury furniture handlingâ€”we scope it clearly before move day so surprises stay out of your bill and timeline.",
     ],
   },
   {
@@ -93,10 +93,10 @@ export function PackersMoversIslamabadBody() {
         <h2 className="text-2xl font-display font-bold text-foreground mb-6">Islamabad client testimonials</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {[
-            { name: "Amina R.", area: "F-7", text: "They packed our entire duplex in a day—every carton numbered and placed in the right room at the new house." },
+            { name: "Amina R.", area: "F-7", text: "They packed our entire duplex in a dayâ€”every carton numbered and placed in the right room at the new house." },
             { name: "Farhan S.", area: "DHA Phase 2", text: "Professional dismantling of fitted wardrobes. Nothing scratched. Highly recommend these packers." },
-            { name: "Sadia M.", area: "G-11", text: "Fair quote after video survey. Crew was polite and fast—best packers and movers experience we have had in Islamabad." },
-            { name: "Khalid Y.", area: "Bahria Enclave", text: "Large villa move with heavy marble table—team used extra padding and still finished on schedule." },
+            { name: "Sadia M.", area: "G-11", text: "Fair quote after video survey. Crew was polite and fastâ€”best packers and movers experience we have had in Islamabad." },
+            { name: "Khalid Y.", area: "Bahria Enclave", text: "Large villa move with heavy marble tableâ€”team used extra padding and still finished on schedule." },
             { name: "Zara H.", area: "Blue Area office", text: "Weekend office relocation with minimal Monday disruption. IT benches labelled perfectly." },
           ].map((t) => (
             <div key={t.name} className="glass-card rounded-xl p-5 border border-border">

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 export const goodsTransportationFaqs = [
   { q: "What is goods transportation in Pakistan?", a: "It is the road movement of commercial cargo, pallets, exhibition goods, retail stock, and industrial materials using covered trucks and supervised loading." },
   { q: "Do you transport from Islamabad to Karachi?", a: "Yes, we coordinate long-haul linehaul with milestone updates and secure lashing for highway transit." },
-  { q: "Can you move heavy or oversized items?", a: "Subject to route permits and equipment availability—share dimensions and weight for feasibility." },
+  { q: "Can you move heavy or oversized items?", a: "Subject to route permits and equipment availabilityâ€”share dimensions and weight for feasibility." },
   { q: "Is insurance available for road transport?", a: "Yes, transit insurance can be quoted separately from freight charges." },
-  { q: "How are rates calculated?", a: "By distance, weight/volume, access, manpower, and urgency—request an itemised quote." },
-  { q: "Do you offer same-day local moves?", a: "Within city limits when crews are available—call 0300-9130211." },
+  { q: "How are rates calculated?", a: "By distance, weight/volume, access, manpower, and urgencyâ€”request an itemised quote." },
+  { q: "Do you offer same-day local moves?", a: "Within city limits when crews are availableâ€”call 0300-9130211." },
 ];
 
 export function GoodsTransportationPakistanBody() {
@@ -27,7 +27,7 @@ export function GoodsTransportationPakistanBody() {
 
       <h2>Road freight network across Pakistan</h2>
       <p>
-        Our <strong>goods transportation services</strong> connect major corridors—Islamabad–Rawalpindi to Lahore, Faisalabad, Multan, and Karachi—with options for full truckload (FTL) or shared space where compatible with commodity rules. Temperature-sensitive cargo may require specialised vehicles; hazardous goods require compliance review. For each booking we confirm vehicle type (covered Mazda, container chassis short-haul, or flatbed where appropriate), loading labour, and documentation such as gate passes for industrial estates.
+        Our <strong>goods transportation services</strong> connect major corridorsâ€”Islamabadâ€“Rawalpindi to Lahore, Faisalabad, Multan, and Karachiâ€”with options for full truckload (FTL) or shared space where compatible with commodity rules. Temperature-sensitive cargo may require specialised vehicles; hazardous goods require compliance review. For each booking we confirm vehicle type (covered Mazda, container chassis short-haul, or flatbed where appropriate), loading labour, and documentation such as gate passes for industrial estates.
       </p>
       <p>
         Corridor planning is not only about distance. We evaluate dispatch timing, road conditions, unloading restrictions, and consignee readiness before finalizing movement windows. This reduces idle time and minimizes the risk of rescheduling costs.
@@ -53,7 +53,7 @@ export function GoodsTransportationPakistanBody() {
 
       <h2>Equipment, securing, and safety</h2>
       <p>
-        Proper strapping, edge protectors, and anti-shift dunnage reduce claims on winding northern highways. We train crews on weight distribution—heavy cartons low and centred—to prevent axle overload fines at weigh stations. GPS sharing and supervisor contact numbers keep operations teams informed without chasing drivers ad hoc.
+        Proper strapping, edge protectors, and anti-shift dunnage reduce claims on winding northern highways. We train crews on weight distributionâ€”heavy cartons low and centredâ€”to prevent axle overload fines at weigh stations. GPS sharing and supervisor contact numbers keep operations teams informed without chasing drivers ad hoc.
       </p>
       <p>
         We also separate fragile and high-value inventory during loading and assign protected placement zones. This reduces impact risk during long-haul vibration and frequent stop-start traffic. For industrial cargo, we align loading method with center-of-gravity and lifting constraints to avoid handling incidents.
@@ -64,7 +64,7 @@ export function GoodsTransportationPakistanBody() {
 
       <h2>Pricing and quotations</h2>
       <p>
-        Quotes reference distance bands, manpower hours, fuel surcharges where applicable, and optional insurance. Photographs of cargo and pickup/drop pins improve accuracy. Email <strong>saqibharoonharoon@gmail.com</strong> or WhatsApp <strong>wa.me/923009130211</strong> with weight, dimensions, and photos for a same-day estimate when possible.
+        Quotes reference distance bands, manpower hours, fuel surcharges where applicable, and optional insurance. Photographs of cargo and pickup/drop pins improve accuracy. Email <strong>info@bestintlmovers.com</strong> or WhatsApp <strong>wa.me/923009130211</strong> with weight, dimensions, and photos for a same-day estimate when possible.
       </p>
       <p>
         A realistic quote should clearly show what is included: vehicle type, manpower, loading support, unloading support, and any special handling charges. This transparency helps you compare providers fairly and avoid budget surprises on move day.

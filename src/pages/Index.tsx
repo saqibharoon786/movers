@@ -3,6 +3,7 @@ import { seoConfig } from "@/seoConfig";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import StatsCounterSection from "@/components/StatsCounterSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ProcessSection from "@/components/ProcessSection";
@@ -18,18 +19,41 @@ import ContactFooter from "@/components/ContactFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import HowItWorksTimeline from "@/components/HowItWorksTimeline";
 
+const homepageMovingCompanyLd = {
+  "@context": "https://schema.org",
+  "@type": "MovingCompany",
+  name: "Best International Movers & Logistics",
+  url: "https://bestintlmovers.com",
+  telephone: "+92-300-9130211",
+  email: "info@bestintlmovers.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Rawalpindi",
+    addressRegion: "Punjab",
+    addressCountry: "PK",
+  },
+  openingHours: "Mo-Sa 08:00-20:00",
+  areaServed: ["Pakistan", "UAE", "UK", "USA", "Canada", "Saudi Arabia", "Australia"],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "5000",
+  },
+};
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <SEO {...seoConfig.home} />
+      <SEO {...seoConfig.home} urlPath="/" schema={homepageMovingCompanyLd} />
       <Navbar />
       <HeroSection />
-      
+      <StatsCounterSection />
+
       {/* SEO Content Section */}
       <section className="py-8 bg-background border-b border-border">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm text-muted-foreground/80 max-w-4xl mx-auto leading-relaxed">
-            Best International Movers & Logistics is Pakistan's premier international moving company serving Rawalpindi, Islamabad, Lahore and Peshawar. We provide professional door-to-door moving services to 100+ countries including UAE, UK, USA, Canada and Saudi Arabia. Our services include sea freight, air freight, professional packing, secure storage, vehicle shipping and customs clearance.
+            Best International Movers & Logistics has been Pakistan's most reliable moving partner for over 15 years. We have successfully relocated 5,000+ families and businesses across 100+ countries with zero compromise on safety, speed, or service. From professional packing in Pakistan to customs clearance and final delivery at your new home — we handle everything so you don't have to. We serve Rawalpindi, Islamabad, Lahore, and Peshawar with sea freight, air freight, packing, storage, vehicle shipping, and customs clearance.
           </p>
           <div className="mt-5 flex flex-wrap justify-center gap-3 text-sm">
             <Link to="/custom-duty-calculator" className="rounded-md border border-gold/30 px-3 py-2 text-gold hover:bg-gold/10">

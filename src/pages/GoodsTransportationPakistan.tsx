@@ -12,7 +12,7 @@ const serviceSchema = {
     "@type": "Organization",
     name: "Best International Movers & Logistics",
     telephone: "+923009130211",
-    email: "saqibharoonharoon@gmail.com",
+    email: "info@bestintlmovers.com",
     url: "https://bestintlmovers.com/",
   },
   areaServed: { "@type": "Country", name: "Pakistan" },
@@ -25,7 +25,7 @@ const GoodsTransportationPakistan = () => (
     keywords="goods transportation pakistan, goods transport islamabad, goods transportation rawalpindi"
     urlPath="/goods-transportation-pakistan/"
     h1="Goods Transportation Services Pakistan"
-    heroSubtext="Reliable road freight for commercial cargo, pallets, and industrial moves—Islamabad, Rawalpindi, and nationwide linehaul with documented handovers."
+    heroSubtext="Reliable road freight for commercial cargo, pallets, and industrial movesâ€”Islamabad, Rawalpindi, and nationwide linehaul with documented handovers."
     breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "Goods transportation" }]}
     schema={serviceSchema}
     faqs={goodsTransportationFaqs}

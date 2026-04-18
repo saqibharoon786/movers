@@ -25,7 +25,7 @@ const FreightForwardingIslamabad = () => {
         "@type": "Organization",
         name: "Best International Movers & Logistics",
         telephone: "+923009130211",
-        email: "saqibharoonharoon@gmail.com",
+        email: "info@bestintlmovers.com",
       },
       areaServed: "Islamabad",
     },
@@ -70,7 +70,7 @@ const FreightForwardingIslamabad = () => {
             With 15+ years of experience, 15,000+ shipments, and partnerships across Maersk Line, Emirates SkyCargo, MSC Shipping, DHL Global, Hapag-Lloyd, and DB Schenker, we assemble multimodal routes that match your budget and timeline. Our Islamabad desk supports pickups across sectors, Blue Area, DHA, and Bahria Enclave, with escalation paths for urgent cargo.
           </p>
           <p>
-            Forwarding is not only about moving boxes—it is about compliance. We help you prepare commercial invoices, packing lists, and certificates where applicable, and we coordinate with licensed clearing processes for export and import legs. For household relocations, forwarding connects naturally with our{" "}
+            Forwarding is not only about moving boxesâ€”it is about compliance. We help you prepare commercial invoices, packing lists, and certificates where applicable, and we coordinate with licensed clearing processes for export and import legs. For household relocations, forwarding connects naturally with our{" "}
             <Link to="/services/international-moving" className="text-gold hover:underline">
               international moving
             </Link>{" "}
@@ -81,7 +81,7 @@ const FreightForwardingIslamabad = () => {
             workflows.
           </p>
           <p>
-            Road freight segments often bridge Islamabad to Karachi port or air terminals, which means scheduling must account for transit time and secure handling. We communicate realistic ETAs and proactive delays rather than optimistic placeholders. Sun: emergency support only; Mon–Sat: 8:00 AM – 8:00 PM.
+            Road freight segments often bridge Islamabad to Karachi port or air terminals, which means scheduling must account for transit time and secure handling. We communicate realistic ETAs and proactive delays rather than optimistic placeholders. Sun: emergency support only; Monâ€“Sat: 8:00 AM â€“ 8:00 PM.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ const FreightForwardingIslamabad = () => {
             .
           </p>
           <Link to="/contact" className="inline-flex px-8 py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold">
-            Email saqibharoonharoon@gmail.com
+            Email info@bestintlmovers.com
           </Link>
         </div>
       </div>

@@ -12,7 +12,7 @@ const serviceSchema = {
     "@type": "Organization",
     name: "Best International Movers & Logistics",
     telephone: "+923009130211",
-    email: "saqibharoonharoon@gmail.com",
+    email: "info@bestintlmovers.com",
     url: "https://bestintlmovers.com/",
   },
   areaServed: [{ "@type": "Country", name: "Pakistan" }, { "@type": "Place", name: "Worldwide" }],
@@ -25,7 +25,7 @@ const DoorToDoorCargoPakistan = () => (
     keywords="door to door cargo pakistan, door to door shipping pakistan, door to door delivery pakistan"
     urlPath="/door-to-door-cargo-pakistan/"
     h1="Door to Door Cargo Service Pakistan"
-    heroSubtext="End-to-end logistics from your doorstep in Pakistan to consignee delivery abroad—or import coordination inbound—with clear milestones and proactive updates."
+    heroSubtext="End-to-end logistics from your doorstep in Pakistan to consignee delivery abroadâ€”or import coordination inboundâ€”with clear milestones and proactive updates."
     breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "Door to door cargo" }]}
     schema={serviceSchema}
     faqs={doorToDoorCargoPakistanFaqs}

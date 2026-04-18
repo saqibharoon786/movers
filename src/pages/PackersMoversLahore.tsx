@@ -10,7 +10,7 @@ const serviceSchema = {
     "@type": "LocalBusiness",
     name: "Best International Movers & Logistics",
     telephone: "0300-9130211",
-    email: "saqibharoonharoon@gmail.com",
+    email: "info@bestintlmovers.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Lahore",

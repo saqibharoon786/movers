@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ContactFooter from "@/components/ContactFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -26,7 +26,7 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO {...seoConfig.contact} />
+      <SEO {...seoConfig.contact} urlPath="/contact" />
       <Navbar />
       <div className="pt-32 pb-20">
         <div className="container mx-auto px-4">
@@ -63,16 +63,26 @@ const ContactPage = () => {
                 <input type="text" placeholder="Approximate Volume (CBM) or Number of Rooms" className="w-full bg-navy-mid border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-colors" />
                 <textarea rows={4} placeholder="Tell us about your move..." className="w-full bg-navy-mid border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-colors resize-none" />
                 <button type="submit" className="w-full py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold text-lg flex items-center justify-center gap-2 hover:shadow-[0_0_40px_-5px_hsl(var(--gold)/0.5)] transition-all duration-300">
-                  {submitted ? "Quote Requested! ✓" : <><Send size={18} /> Request Free Quote</>}
+                  {submitted ? "Quote Requested! âœ“" : <><Send size={18} /> Request Free Quote</>}
                 </button>
               </form>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }} className="lg:col-span-2 space-y-6">
               {[
-                { icon: Phone, title: "Call / WhatsApp", text: "0300-9130211" },
-                { icon: Mail, title: "Email Us", text: "saqibharoonharoon@gmail.com" },
-                { icon: Clock, title: "Working Hours", text: "Mon - Sat: 8:00 AM - 8:00 PM\nSun: Emergency Only" },
+                { icon: MapPin, title: "Offices", text: "Rawalpindi | Islamabad | Lahore | Peshawar" },
+                { icon: Phone, title: "Phone / WhatsApp", text: "0300-9130211" },
+                { icon: Mail, title: "Email Us", text: "info@bestintlmovers.com" },
+                {
+                  icon: Clock,
+                  title: "Hours",
+                  text: "Monday to Saturday 8:00 AM — 8:00 PM\nSunday: Emergency Only",
+                },
+                {
+                  icon: MessageCircle,
+                  title: "Response guarantee",
+                  text: "We aim to respond within 2 hours during business hours.",
+                },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 group">
                   <div className="w-12 h-12 flex-shrink-0 rounded-lg bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors">

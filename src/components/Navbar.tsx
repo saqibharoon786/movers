@@ -103,7 +103,7 @@ const Navbar = () => {
     >
       <div className="hidden lg:flex items-center justify-center gap-6 py-2 bg-navy-light/80 text-xs text-muted-foreground border-b border-border">
         <span className="flex items-center gap-1"><Phone size={12} className="text-gold" /> 0300-9130211</span>
-        <span className="flex items-center gap-1"><Mail size={12} className="text-gold" /> saqibharoonharoon@gmail.com</span>
+        <span className="flex items-center gap-1"><Mail size={12} className="text-gold" /> info@bestintlmovers.com</span>
         <span>Mon - Sat: 8:00 AM - 8:00 PM</span>
       </div>
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
@@ -190,7 +190,7 @@ const Navbar = () => {
                               ))}
                             </div>
                             <div className="mt-6 pt-4 border-t border-border">
-                              <Link to="/services" className="text-gold text-sm font-medium hover:underline flex items-center gap-1">View All Services →</Link>
+                              <Link to="/services" className="text-gold text-sm font-medium hover:underline flex items-center gap-1">View All Services â†’</Link>
                             </div>
                           </div>
                           <div className="lg:col-span-2">

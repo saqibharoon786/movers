@@ -19,7 +19,7 @@ const movingCompanySchema = {
   name: "Best International Movers & Logistics",
   url: "https://bestintlmovers.com/",
   telephone: "+923009130211",
-  email: "saqibharoonharoon@gmail.com",
+  email: "info@bestintlmovers.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Islamabad",
@@ -37,7 +37,7 @@ const PackersMoversIslamabad = () => (
     keywords="packers and movers in islamabad, movers islamabad, house shifting islamabad, relocation services islamabad, packing services islamabad"
     urlPath="/packers-and-movers-islamabad/"
     h1="Packers and Movers in Islamabad"
-    heroSubtext="Islamabad’s high-intent moving page—trained packers, numbered inventories, covered trucks, and sector expertise from F-6 to Bahria Enclave."
+    heroSubtext="Islamabadâ€™s high-intent moving pageâ€”trained packers, numbered inventories, covered trucks, and sector expertise from F-6 to Bahria Enclave."
     breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "Packers & movers Islamabad" }]}
     heroImageUrl="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1600"
     heroImageAlt="Professional packers loading boxes for home shifting in Islamabad"

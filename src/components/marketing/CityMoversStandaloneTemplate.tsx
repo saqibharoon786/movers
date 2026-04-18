@@ -44,7 +44,7 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
       "@type": "Organization",
       name: "Best International Movers & Logistics",
       telephone: "+923009130211",
-      email: "saqibharoonharoon@gmail.com",
+      email: "info@bestintlmovers.com",
       url: "https://bestintlmovers.com/",
     },
     areaServed: { "@type": "City", name: config.cityName },
@@ -113,7 +113,7 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
                 rel="noopener noreferrer"
                 className="inline-flex px-8 py-4 rounded-lg border border-gold/40 bg-navy-mid font-bold hover:border-gold hover:bg-navy-light/50 transition-all"
               >
-                📱 WhatsApp Us
+                ðŸ“± WhatsApp Us
               </a>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
@@ -153,9 +153,9 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
               <Link to={config.cargoPagePath} className="text-gold hover:underline">
                 cargo services
               </Link>
-              . Offices: Rawalpindi | Islamabad | Lahore | Peshawar. Hours: Mon–Sat 8:00 AM – 8:00 PM | Sun: Emergency only. Email{" "}
-              <a className="text-gold hover:underline" href="mailto:saqibharoonharoon@gmail.com">
-                saqibharoonharoon@gmail.com
+              . Offices: Rawalpindi | Islamabad | Lahore | Peshawar. Hours: Monâ€“Sat 8:00 AM â€“ 8:00 PM | Sun: Emergency only. Email{" "}
+              <a className="text-gold hover:underline" href="mailto:info@bestintlmovers.com">
+                info@bestintlmovers.com
               </a>
               .
             </p>
@@ -327,7 +327,7 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
                       <a href="tel:03009130211" className="text-gold hover:underline text-base">
                         {PHONE}
                       </a>
-                      <p className="text-muted-foreground text-sm mt-1">Mon–Sat 8 AM – 8 PM</p>
+                      <p className="text-muted-foreground text-sm mt-1">Monâ€“Sat 8 AM â€“ 8 PM</p>
                     </div>
                   </motion.div>
                   <motion.div className="flex gap-4 items-start" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
@@ -443,16 +443,16 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
                 rel="noopener noreferrer" 
                 className="inline-flex px-8 py-4 rounded-lg border border-gold/40 bg-navy-mid font-bold hover:bg-navy-light hover:border-gold transition-all"
               >
-                📱 WhatsApp
+                ðŸ“± WhatsApp
               </a>
               <a 
                 href="tel:03009130211" 
                 className="inline-flex px-8 py-4 rounded-lg border border-gold/40 bg-navy-mid font-bold hover:bg-navy-light hover:border-gold transition-all"
               >
-                ☎️ Call {PHONE}
+                â˜Žï¸ Call {PHONE}
               </a>
             </div>
-            <p className="text-gold text-sm mt-8 font-semibold">✓ 24/7 Support  ✓ Free Survey  ✓ Instant Quote</p>
+            <p className="text-gold text-sm mt-8 font-semibold">âœ“ 24/7 Support  âœ“ Free Survey  âœ“ Instant Quote</p>
           </motion.section>
         </div>
       </div>

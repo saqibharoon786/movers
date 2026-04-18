@@ -29,7 +29,7 @@ const CargoServiceCityTemplate = ({ config }: Props) => {
         "@type": "Organization",
         name: "Best International Movers & Logistics",
         telephone: "+923009130211",
-        email: "saqibharoonharoon@gmail.com",
+        email: "info@bestintlmovers.com",
       },
       areaServed: config.cityName,
     },
@@ -54,7 +54,7 @@ const CargoServiceCityTemplate = ({ config }: Props) => {
           />
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 mb-4 text-gold text-sm font-semibold tracking-widest uppercase">
-              <Globe2 size={18} /> International cargo · {config.cityName}
+              <Globe2 size={18} /> International cargo Â· {config.cityName}
             </div>
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">{config.h1}</h1>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">{config.heroText}</p>
@@ -90,9 +90,9 @@ const CargoServiceCityTemplate = ({ config }: Props) => {
             ))}
           </div>
           <p className="text-center text-muted-foreground mt-8 max-w-3xl mx-auto">
-            Need a lane not listed? We ship to 100+ countries—email{" "}
-            <a className="text-gold hover:underline" href="mailto:saqibharoonharoon@gmail.com">
-              saqibharoonharoon@gmail.com
+            Need a lane not listed? We ship to 100+ countriesâ€”email{" "}
+            <a className="text-gold hover:underline" href="mailto:info@bestintlmovers.com">
+              info@bestintlmovers.com
             </a>{" "}
             or call{" "}
             <a className="text-gold hover:underline" href="tel:03009130211">
@@ -128,7 +128,7 @@ const CargoServiceCityTemplate = ({ config }: Props) => {
         <section className="glass-card rounded-2xl p-8 border border-gold/20">
           <h2 className="text-2xl font-display font-bold mb-4 text-center">Cargo Rates</h2>
           <p className="text-muted-foreground text-center max-w-3xl mx-auto leading-relaxed">
-            We offer competitive rates based on chargeable weight, volume (CBM), service level, and destination country. Seasonal capacity and fuel adjustments can affect pricing—request a formal quote after we review your packing list and delivery address.
+            We offer competitive rates based on chargeable weight, volume (CBM), service level, and destination country. Seasonal capacity and fuel adjustments can affect pricingâ€”request a formal quote after we review your packing list and delivery address.
           </p>
         </section>
 

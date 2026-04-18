@@ -12,7 +12,7 @@ const serviceSchema = {
     "@type": "Organization",
     name: "Best International Movers & Logistics",
     telephone: "+923009130211",
-    email: "saqibharoonharoon@gmail.com",
+    email: "info@bestintlmovers.com",
     url: "https://bestintlmovers.com/",
   },
   areaServed: { "@type": "City", name: "Rawalpindi" },
@@ -25,7 +25,7 @@ const HouseShiftingRawalpindi = () => (
     keywords="house shifting rawalpindi, home shifting rawalpindi, shifting services rawalpindi"
     urlPath="/house-shifting-rawalpindi/"
     h1="House Shifting Services in Rawalpindi"
-    heroSubtext="Local home moves across Rawalpindi’s major housing schemes—professional packing, secure loading, and crews who know gate protocols."
+    heroSubtext="Local home moves across Rawalpindiâ€™s major housing schemesâ€”professional packing, secure loading, and crews who know gate protocols."
     breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "House shifting Rawalpindi" }]}
     schema={serviceSchema}
     faqs={houseShiftingRawalpindiFaqs}

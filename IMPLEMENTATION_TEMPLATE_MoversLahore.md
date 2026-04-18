@@ -15,7 +15,7 @@ const serviceSchema = {
     "@type": "LocalBusiness",
     name: "Best International Movers & Logistics",
     telephone: "+923009130211",
-    email: "saqibharoonharoon@gmail.com",
+    email: "info@bestintlmovers.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Main Boulevard",
@@ -308,8 +308,8 @@ const MoversLahore = () => {
           WhatsApp: +92 300 9130211
         </a>
         <div className="font-semibold text-lg mt-4">📧 Email</div>
-        <a href="mailto:saqibharoonharoon@gmail.com" className="text-gold hover:underline">
-          saqibharoonharoon@gmail.com
+        <a href="mailto:info@bestintlmovers.com" className="text-gold hover:underline">
+          info@bestintlmovers.com
         </a>
       </div>
     </SeoLandingPageLayout>

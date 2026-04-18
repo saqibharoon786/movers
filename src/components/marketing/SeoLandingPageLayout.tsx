@@ -72,7 +72,7 @@ const SeoLandingPageLayout = ({
     name: "Best International Movers & Logistics",
     url: `${SITE_URL}${path}`,
     telephone: "+92-300-9130211",
-    email: "saqibharoonharoon@gmail.com",
+    email: "info@bestintlmovers.com",
     areaServed: ["Islamabad", "Rawalpindi", "Lahore", "Karachi", "Pakistan"],
     address: {
       "@type": "PostalAddress",
@@ -256,7 +256,7 @@ const SeoLandingPageLayout = ({
         <section className="mt-16 not-prose glass-card rounded-2xl p-8 border border-gold/20 text-center">
           <h2 className="text-2xl font-display font-bold text-foreground mb-3">Ready to get started?</h2>
           <p className="text-muted-foreground mb-6">
-            Best International Movers & Logistics · {PHONE} · saqibharoonharoon@gmail.com · Mon–Sat 8:00 AM – 8:00 PM
+            Best International Movers & Logistics Â· {PHONE} Â· info@bestintlmovers.com Â· Monâ€“Sat 8:00 AM â€“ 8:00 PM
           </p>
           <Link to="/contact" className="inline-flex px-8 py-3 rounded-lg gold-gradient-bg text-primary-foreground font-bold">
             Request a free quote

@@ -24,7 +24,7 @@ const CustomsClearanceIslamabad = () => {
         "@type": "Organization",
         name: "Best International Movers & Logistics",
         telephone: "+923009130211",
-        email: "saqibharoonharoon@gmail.com",
+        email: "info@bestintlmovers.com",
       },
       areaServed: "Islamabad",
     },
@@ -46,7 +46,7 @@ const CustomsClearanceIslamabad = () => {
             <FileCheck className="text-gold mx-auto mb-4" size={40} />
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">Customs Clearance Services in Islamabad</h1>
             <p className="text-lg text-muted-foreground mb-8">
-              Import and export documentation, duty management support, and practical guidance for smooth crossings—backed by 15+ years of logistics experience.
+              Import and export documentation, duty management support, and practical guidance for smooth crossingsâ€”backed by 15+ years of logistics experience.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="tel:03009130211" className="inline-flex px-8 py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold gap-2">
@@ -84,9 +84,9 @@ const CustomsClearanceIslamabad = () => {
             .
           </p>
           <p>
-            Offices: Rawalpindi | Islamabad | Lahore | Peshawar. Hours: Mon–Sat 8:00 AM – 8:00 PM | Sun: Emergency only. Email{" "}
-            <a className="text-gold hover:underline" href="mailto:saqibharoonharoon@gmail.com">
-              saqibharoonharoon@gmail.com
+            Offices: Rawalpindi | Islamabad | Lahore | Peshawar. Hours: Monâ€“Sat 8:00 AM â€“ 8:00 PM | Sun: Emergency only. Email{" "}
+            <a className="text-gold hover:underline" href="mailto:info@bestintlmovers.com">
+              info@bestintlmovers.com
             </a>
             .
           </p>

@@ -12,7 +12,7 @@ const serviceSchema = {
     "@type": "Organization",
     name: "Best International Movers & Logistics",
     telephone: "+923009130211",
-    email: "saqibharoonharoon@gmail.com",
+    email: "info@bestintlmovers.com",
     url: "https://bestintlmovers.com/",
   },
   areaServed: { "@type": "City", name: "Islamabad" },
@@ -25,7 +25,7 @@ const HouseShiftingIslamabad = () => (
     keywords="house shifting islamabad, home shifting islamabad, house shifting services islamabad"
     urlPath="/house-shifting-islamabad/"
     h1="House Shifting Services in Islamabad"
-    heroSubtext="Sector-to-sector home moves with trained crews, optional full packing, and clear quotes—F, G, E, DHA, Bahria Enclave, and diplomatic zones."
+    heroSubtext="Sector-to-sector home moves with trained crews, optional full packing, and clear quotesâ€”F, G, E, DHA, Bahria Enclave, and diplomatic zones."
     breadcrumbItems={[{ label: "Services", to: "/services" }, { label: "House shifting Islamabad" }]}
     schema={serviceSchema}
     faqs={houseShiftingIslamabadFaqs}

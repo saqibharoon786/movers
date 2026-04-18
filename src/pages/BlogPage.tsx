@@ -166,7 +166,7 @@ const BlogPage = () => {
   if (!blog) {
     return (
       <div className="min-h-screen bg-background">
-        <SEO {...seoConfig.blog} />
+        <SEO {...seoConfig.blog} urlPath="/blog" />
         <Navbar />
         <div className="pt-32 pb-20 container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
@@ -204,7 +204,7 @@ const BlogPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO title={blog.title} description={blog.excerpt} />
+      <SEO title={blog.title} description={blog.excerpt} urlPath={`/blog/${blog.slug}`} />
       <BlogSchema title={blog.title} date={blog.date} />
       <Navbar />
       <div className="pt-32 pb-20">

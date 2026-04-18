@@ -3,58 +3,58 @@ import { Star } from "lucide-react";
 
 export const packersMoversLahoreFaqs = [
   { q: "Who offers reliable packers and movers in Lahore?", a: "Choose teams with written quotes, trained packers, insured options, and sector experience. Best International Movers & Logistics serves major Lahore districts with 15+ years of operations." },
-  { q: "Do you cover DHA and Bahria Town Lahore?", a: "Yes—both master-planned communities with truck routing planned around gate protocols and wide furniture pieces." },
-  { q: "Can you move during Ramadan or weekends?", a: "Yes—schedule early; weekend slots fill quickly in Johar Town and Gulberg." },
-  { q: "Do you pack kitchens and fragile décor?", a: "Yes—double-walled cartons, dish packs, and custom crating for high-value art when needed." },
-  { q: "How are prices estimated?", a: "Volume, access, floors, packing depth, and distance—free survey first." },
-  { q: "Is storage available between homes?", a: "Yes—short-term bridging while possession dates align." },
-  { q: "Can offices in Gulberg or Johar Town relocate at night?", a: "Yes—after-hours corporate moves reduce business downtime." },
+  { q: "Do you cover DHA and Bahria Town Lahore?", a: "Yesâ€”both master-planned communities with truck routing planned around gate protocols and wide furniture pieces." },
+  { q: "Can you move during Ramadan or weekends?", a: "Yesâ€”schedule early; weekend slots fill quickly in Johar Town and Gulberg." },
+  { q: "Do you pack kitchens and fragile dÃ©cor?", a: "Yesâ€”double-walled cartons, dish packs, and custom crating for high-value art when needed." },
+  { q: "How are prices estimated?", a: "Volume, access, floors, packing depth, and distanceâ€”free survey first." },
+  { q: "Is storage available between homes?", a: "Yesâ€”short-term bridging while possession dates align." },
+  { q: "Can offices in Gulberg or Johar Town relocate at night?", a: "Yesâ€”after-hours corporate moves reduce business downtime." },
   { q: "What items are restricted?", a: "Cash, jewellery, hazardous materials, and illegal goods." },
-  { q: "Do you dismantle beds and wardrobes?", a: "Yes—with labelled hardware bags for fast reassembly." },
-  { q: "How far ahead should I book?", a: "1–2 weeks ideal; peak seasons earlier." },
-  { q: "International moves from Lahore?", a: "Yes—inventory lists and export packing; we coordinate sea and air export legs with our freight team." },
-  { q: "Contact details?", a: "0300-9130211, WhatsApp wa.me/923009130211, saqibharoonharoon@gmail.com." },
+  { q: "Do you dismantle beds and wardrobes?", a: "Yesâ€”with labelled hardware bags for fast reassembly." },
+  { q: "How far ahead should I book?", a: "1â€“2 weeks ideal; peak seasons earlier." },
+  { q: "International moves from Lahore?", a: "Yesâ€”inventory lists and export packing; we coordinate sea and air export legs with our freight team." },
+  { q: "Contact details?", a: "0300-9130211, WhatsApp wa.me/923009130211, info@bestintlmovers.com." },
 ];
 
 const SECTIONS: { h2: string; paras: string[] }[] = [
   {
     h2: "Packers and movers in Lahore: scale and nuance",
     paras: [
-      "Lahore’s urban fabric stretches from colonial-era Gulberg lanes to DHA’s grid, Bahria Town’s boulevards, and Johar Town’s bustling apartment stacks. Packers and movers in Lahore must handle humidity swings that soften tape adhesion, monsoon drizzle that punishes uncovered loads, and wedding-season traffic that turns Ring Road timing into strategy. We do not treat Lahore like a generic map pin—we plan truck class, crew size, and packing depth against your micro-location.",
-      "Best International Movers & Logistics brings the same discipline used for international sea containers to local Lahore homes: numbered inventories, room-wise labelling, and supervisors who stop damage before it starts. With 5,000+ clients and 15+ years of operations, we know that word-of-mouth in Lahore travels fast—every move is a brand moment.",
+      "Lahoreâ€™s urban fabric stretches from colonial-era Gulberg lanes to DHAâ€™s grid, Bahria Townâ€™s boulevards, and Johar Townâ€™s bustling apartment stacks. Packers and movers in Lahore must handle humidity swings that soften tape adhesion, monsoon drizzle that punishes uncovered loads, and wedding-season traffic that turns Ring Road timing into strategy. We do not treat Lahore like a generic map pinâ€”we plan truck class, crew size, and packing depth against your micro-location.",
+      "Best International Movers & Logistics brings the same discipline used for international sea containers to local Lahore homes: numbered inventories, room-wise labelling, and supervisors who stop damage before it starts. With 5,000+ clients and 15+ years of operations, we know that word-of-mouth in Lahore travels fastâ€”every move is a brand moment.",
     ],
   },
   {
     h2: "Areas we serve across Lahore",
     paras: [
-      "Gulberg and MM Alam corridors host retail offices and upscale apartments where elevator slots and basement ramps matter. Garden Town and Model Town feature mature trees and sometimes narrow side streets—our teams scout turning radii before committing a 22-foot box. Johar Town and Wapda Town see high-density family moves; we often sequence packing over two days to keep living spaces usable until the night before truck load.",
+      "Gulberg and MM Alam corridors host retail offices and upscale apartments where elevator slots and basement ramps matter. Garden Town and Model Town feature mature trees and sometimes narrow side streetsâ€”our teams scout turning radii before committing a 22-foot box. Johar Town and Wapda Town see high-density family moves; we often sequence packing over two days to keep living spaces usable until the night before truck load.",
       "DHA Lahore phases (including popular blocks near commercial markets) require respectful gate interactions and parking discipline. Bahria Town Lahore moves may involve longer internal drives; we coordinate with security and plan for shuttle trucks if a main road truck cannot reach a cul-de-sac. Faisal Town, Township, LDA Avenue, Allama Iqbal Town, and Sabzazar each bring school-zone timing issues we factor into start times.",
-      "Cantt-adjacent zones and Cavalry Ground moves sometimes involve older homes with heavy wooden doors and tight stairwells—extra sliders and manpower beat heroic lifts that dent plaster. If your area is not listed, call anyway; Lahore’s neighbourhoods evolve quickly and we update routing weekly.",
+      "Cantt-adjacent zones and Cavalry Ground moves sometimes involve older homes with heavy wooden doors and tight stairwellsâ€”extra sliders and manpower beat heroic lifts that dent plaster. If your area is not listed, call anyway; Lahoreâ€™s neighbourhoods evolve quickly and we update routing weekly.",
     ],
   },
   {
     h2: "Residential packing and moving services",
     paras: [
       "Full home packing, partial packing (kitchen-only or fragile-only), furniture disassembly and reassembly, appliance securing (not internal servicing), mattress bags, wardrobe cartons with hanging rails optional, and post-move debris collection on request. High-rise apartments in Gulberg and Johar Town get floor captains who manage lift windows and protect common-area marble with masonite.",
-      "Villas in DHA and Bahria may include outdoor furniture, planters, and barbecue islands—we wrap porous stone against staining and pad metal frames to prevent scratching tiled patios.",
+      "Villas in DHA and Bahria may include outdoor furniture, planters, and barbecue islandsâ€”we wrap porous stone against staining and pad metal frames to prevent scratching tiled patios.",
     ],
   },
   {
     h2: "Corporate and office relocations",
     paras: [
-      "Office packers and movers in Lahore need workstation mapping, cable discipline, and departmental colour codes. We label monitors to desk numbers, pack CPUs in anti-static wrap where appropriate, and sequence IT cages so helpdesks can reconnect quickly. After-hours and weekend packs keep Monday mornings functional—especially for agencies near MM Alam and corporate floors in Gulberg II/III.",
+      "Office packers and movers in Lahore need workstation mapping, cable discipline, and departmental colour codes. We label monitors to desk numbers, pack CPUs in anti-static wrap where appropriate, and sequence IT cages so helpdesks can reconnect quickly. After-hours and weekend packs keep Monday mornings functionalâ€”especially for agencies near MM Alam and corporate floors in Gulberg II/III.",
     ],
   },
   {
-    h2: "Materials that survive Lahore’s climate",
+    h2: "Materials that survive Lahoreâ€™s climate",
     paras: [
-      "Humidity demands burst-tested tape and mould-resistant cartons for long storage bridging. We use cellular glass kits, dish barrels, foam corners, stretch wrap for fabric, and acid-free tissue for metals that tarnish. Fine art and mirrors may move in crates if values warrant it—survey photos help us decide.",
+      "Humidity demands burst-tested tape and mould-resistant cartons for long storage bridging. We use cellular glass kits, dish barrels, foam corners, stretch wrap for fabric, and acid-free tissue for metals that tarnish. Fine art and mirrors may move in crates if values warrant itâ€”survey photos help us decide.",
     ],
   },
   {
     h2: "Fleet, labour, and safety",
     paras: [
-      "Covered trucks shield monsoon mist; crews carry dollies, straps, blankets, and toolkits. Supervisors brief teams on client-specific rules—shoe covers indoors, prayer break timing, and no smoking policies. IDs remain visible; cash and jewellery stay with clients in hand-carried bags.",
+      "Covered trucks shield monsoon mist; crews carry dollies, straps, blankets, and toolkits. Supervisors brief teams on client-specific rulesâ€”shoe covers indoors, prayer break timing, and no smoking policies. IDs remain visible; cash and jewellery stay with clients in hand-carried bags.",
     ],
   },
   {
@@ -80,20 +80,20 @@ const SECTIONS: { h2: string; paras: string[] }[] = [
     h2: "Commercial moves without Monday chaos",
     paras: [
       "Retail rollouts in MM Alam and corporate floors in Gulberg II need cable photos before disconnect, numbered monitor maps, and IT sign-off sequences. We colour-code departments, shrink-wrap chair stacks, and label server-room cages so Monday morning helpdesks recognise their world again.",
-      "After-hours packs cost more in labour but save revenue—quote both scenarios during survey so finance can compare downtime math honestly.",
+      "After-hours packs cost more in labour but save revenueâ€”quote both scenarios during survey so finance can compare downtime math honestly.",
     ],
   },
   {
     h2: "Comparing quotes: apples to apples",
     paras: [
-      "Two-page quotations that look cheaper often omit cartons, stair labour, or night premiums. Ask whether the rate assumes you packed everything, whether blankets are included, and whether the truck is covered. A higher subtotal with transparent line items frequently lands below a vague “package deal” once reality adds up.",
-      "We encourage clients to share competitor quotes—when ethical, we explain material differences without trashing rivals. Your goal is predictable total cost, not a heroic Day 1 number that unravels when the crew discovers a fourth-floor walk-up not mentioned on WhatsApp. Ask whether fuel surcharges or return-empty legs are embedded—Lahore’s sprawl makes deadhead kilometres a real cost driver.",
+      "Two-page quotations that look cheaper often omit cartons, stair labour, or night premiums. Ask whether the rate assumes you packed everything, whether blankets are included, and whether the truck is covered. A higher subtotal with transparent line items frequently lands below a vague â€œpackage dealâ€ once reality adds up.",
+      "We encourage clients to share competitor quotesâ€”when ethical, we explain material differences without trashing rivals. Your goal is predictable total cost, not a heroic Day 1 number that unravels when the crew discovers a fourth-floor walk-up not mentioned on WhatsApp. Ask whether fuel surcharges or return-empty legs are embeddedâ€”Lahoreâ€™s sprawl makes deadhead kilometres a real cost driver.",
     ],
   },
   {
     h2: "Book packers and movers in Lahore",
     paras: [
-      "Call 0300-9130211 or WhatsApp wa.me/923009130211 with your town, date window, and room count. Email photos to saqibharoonharoon@gmail.com for faster estimates. Written quotes follow surveys—physical or video for overseas owners.",
+      "Call 0300-9130211 or WhatsApp wa.me/923009130211 with your town, date window, and room count. Email photos to info@bestintlmovers.com for faster estimates. Written quotes follow surveysâ€”physical or video for overseas owners.",
     ],
   },
 ];
@@ -102,7 +102,7 @@ export function PackersMoversLahoreBody() {
   return (
     <>
       <p className="lead text-xl text-foreground/90 not-prose mb-8">
-        <strong>Packers and movers in Lahore</strong> for apartments, villas, and offices—Gulberg to Bahria, DHA to Johar Town—with survey-based quotes and export-quality packing options. Also see{" "}
+        <strong>Packers and movers in Lahore</strong> for apartments, villas, and officesâ€”Gulberg to Bahria, DHA to Johar Townâ€”with survey-based quotes and export-quality packing options. Also see{" "}
         <Link to="/movers-lahore">movers Lahore</Link>.
       </p>
       {SECTIONS.map((s) => (
@@ -118,11 +118,11 @@ export function PackersMoversLahoreBody() {
         <h2 className="text-2xl font-display font-bold text-foreground mb-6">Lahore client testimonials</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {[
-            { name: "Hassan A.", area: "DHA Phase 5", text: "Villa move completed in two days—wardrobes dismantled perfectly and reassembled without drama." },
+            { name: "Hassan A.", area: "DHA Phase 5", text: "Villa move completed in two daysâ€”wardrobes dismantled perfectly and reassembled without drama." },
             { name: "Nida K.", area: "Gulberg III", text: "Fragile kitchen packed like export cargo. Labels made unpacking embarrassingly easy." },
             { name: "Bilal R.", area: "Johar Town", text: "Fair pricing after survey. Crew showed up on time and finished before Maghrib as promised." },
-            { name: "Sana T.", area: "Bahria Town", text: "Long internal route inside Bahria—team coordinated with security and still hit the schedule." },
-            { name: "Omer F.", area: "Model Town", text: "Office move over weekend; desks mapped to floor plan—IT was back online Monday morning." },
+            { name: "Sana T.", area: "Bahria Town", text: "Long internal route inside Bahriaâ€”team coordinated with security and still hit the schedule." },
+            { name: "Omer F.", area: "Model Town", text: "Office move over weekend; desks mapped to floor planâ€”IT was back online Monday morning." },
           ].map((t) => (
             <div key={t.name} className="glass-card rounded-xl p-5 border border-border">
               <div className="flex gap-1 mb-3">

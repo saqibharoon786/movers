@@ -81,12 +81,12 @@ const PrivacyPolicyPage = () => {
 
             <h2>7. Contact Us for Privacy Concerns</h2>
             <p>
-              If you have any questions or concerns whatsoever regarding this Privacy Policy, please reach out to us at <a href="mailto:saqibharoonharoon@gmail.com" className="text-gold hover:underline">saqibharoonharoon@gmail.com</a>.
+              If you have any questions or concerns whatsoever regarding this Privacy Policy, please reach out to us at <a href="mailto:info@bestintlmovers.com" className="text-gold hover:underline">info@bestintlmovers.com</a>.
             </p>
           </div>
           
           <div className="mt-8 text-center">
-            <Link to="/" className="text-gold hover:underline">← Return to Home</Link>
+            <Link to="/" className="text-gold hover:underline">â† Return to Home</Link>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import type { AirSeaCityConfig, CargoCityConfig, CourierCityConfig } from "./logisticsLocalTypes";
 
 const cargoProcess = [
-  { title: "Quote & booking", description: "Share dimensions, weight, commodity, and destination—we confirm service and timeline." },
+  { title: "Quote & booking", description: "Share dimensions, weight, commodity, and destinationâ€”we confirm service and timeline." },
   { title: "Pickup & packing", description: "Optional on-site packing or dock-ready handover with labels and invoices." },
   { title: "Export documentation", description: "Pakistan export paperwork aligned to your commodity and destination requirements." },
   { title: "Main carriage", description: "Air or sea movement with milestone tracking and partner handoffs." },
@@ -20,7 +20,7 @@ export const cargoIslamabadConfig: CargoCityConfig = {
   },
   h1: "International Cargo Service in Islamabad",
   heroText:
-    "Air cargo, sea freight (FCL/LCL), express courier, and door-to-door logistics from Islamabad to global markets—with customs clearance support.",
+    "Air cargo, sea freight (FCL/LCL), express courier, and door-to-door logistics from Islamabad to global marketsâ€”with customs clearance support.",
   pickupNote: "Pickup across Islamabad including Blue Area, sectors, DHA, and Bahria Enclave.",
   destinations: ["Dubai", "Abu Dhabi", "UK", "USA", "Canada", "Saudi Arabia", "Australia", "Qatar", "Germany", "Malaysia"],
   serviceTypes: [
@@ -32,14 +32,14 @@ export const cargoIslamabadConfig: CargoCityConfig = {
   ],
   processSteps: cargoProcess,
   faqs: [
-    { q: "Do you clear customs in Islamabad?", a: "Yes—we support export documentation and coordinate clearance steps with licensed processes." },
+    { q: "Do you clear customs in Islamabad?", a: "Yesâ€”we support export documentation and coordinate clearance steps with licensed processes." },
     { q: "Can you pick up from my home?", a: "Yes, door pickup is available across Islamabad with scheduled crews." },
-    { q: "How fast is air cargo?", a: "Transit depends on destination and service—request a lane-specific timeline." },
+    { q: "How fast is air cargo?", a: "Transit depends on destination and serviceâ€”request a lane-specific timeline." },
     { q: "Do you handle commercial cargo?", a: "Yes, with commercial invoices, packing lists, and HS guidance where needed." },
   ],
   introParagraphs: [
     "Islamabad is a strategic origin for international cargo thanks to air connectivity and overland links to major Pakistani seaports. Best International Movers & Logistics provides air cargo, sea cargo, express courier, FCL containers, and LCL groupage with disciplined documentation and milestone tracking. Whether you are a business shipping samples or a family exporting household goods, we align service level to your budget and delivery date.",
-    "Our network includes partnerships with Maersk Line, Emirates SkyCargo, MSC Shipping, DHL Global, Hapag-Lloyd, and DB Schenker—supporting reliable capacity during peak seasons. With 15+ years of experience and 15,000+ shipments completed, we emphasize transparent quotes, insured options, and responsive support Mon–Sat 8:00 AM – 8:00 PM (Sun: emergencies).",
+    "Our network includes partnerships with Maersk Line, Emirates SkyCargo, MSC Shipping, DHL Global, Hapag-Lloyd, and DB Schenkerâ€”supporting reliable capacity during peak seasons. With 15+ years of experience and 15,000+ shipments completed, we emphasize transparent quotes, insured options, and responsive support Monâ€“Sat 8:00 AM â€“ 8:00 PM (Sun: emergencies).",
     "For specialized lanes, explore our ",
   ],
 };
@@ -56,7 +56,7 @@ export const cargoRawalpindiConfig: CargoCityConfig = {
   },
   h1: "International Cargo Service in Rawalpindi",
   heroText:
-    "Door pickup across Rawalpindi with worldwide air and sea options—ideal for Bahria Town, Satellite Town, and commercial corridors.",
+    "Door pickup across Rawalpindi with worldwide air and sea optionsâ€”ideal for Bahria Town, Satellite Town, and commercial corridors.",
   pickupNote: "Popular pickups: Bahria Town, Satellite Town, PWD, Gulraiz, Chaklala, and surrounding areas.",
   destinations: ["Dubai", "Abu Dhabi", "UK", "USA", "Canada", "Saudi Arabia", "Australia", "Qatar", "Germany", "Malaysia"],
   serviceTypes: [
@@ -68,13 +68,13 @@ export const cargoRawalpindiConfig: CargoCityConfig = {
   ],
   processSteps: cargoProcess,
   faqs: [
-    { q: "Do you pick up in Bahria Town?", a: "Yes—Bahria Town and Satellite Town are frequent pickup zones for our crews." },
+    { q: "Do you pick up in Bahria Town?", a: "Yesâ€”Bahria Town and Satellite Town are frequent pickup zones for our crews." },
     { q: "Can you combine packing and cargo?", a: "Yes, add professional packing for export-safe handling." },
     { q: "How do I get rates?", a: "WhatsApp 923009130211 or submit the contact form with weight/CBM." },
     { q: "Do you handle commercial invoices?", a: "Yes, for business cargo we align documents to destination import rules." },
   ],
   introParagraphs: [
-    "Rawalpindi’s residential and commercial density makes it a major origin point for international cargo. Best International Movers & Logistics offers air cargo, sea cargo, express courier, FCL, and LCL services with pickup teams familiar with Bahria Town, Satellite Town, and central corridors. Export documentation is prepared to support Pakistan outbound requirements and destination import expectations.",
+    "Rawalpindiâ€™s residential and commercial density makes it a major origin point for international cargo. Best International Movers & Logistics offers air cargo, sea cargo, express courier, FCL, and LCL services with pickup teams familiar with Bahria Town, Satellite Town, and central corridors. Export documentation is prepared to support Pakistan outbound requirements and destination import expectations.",
     "Clients benefit from 15+ years of operational experience, 5000+ happy clients, and partnerships across leading carriers. We prioritize transparent pricing, optional insurance, and proactive communication while your shipment moves from Rawalpindi to global hubs.",
     "Pair cargo with ",
   ],
@@ -93,8 +93,8 @@ function airSeaIntro(city: string, mode: "air" | "sea"): string[] {
       : `Sea freight from ${city} is the economical choice for larger volumes. We support FCL and LCL programs, export clearance coordination, and sailing schedules aligned to major trade lanes. Sea is commonly selected for full household moves, bulky machinery, and recurring commercial shipments.`;
   return [
     common,
-    `With 15+ years of experience, 100+ countries served, and partnerships including Maersk Line, Emirates SkyCargo, MSC Shipping, DHL Global, Hapag-Lloyd, and DB Schenker, we focus on insured options and transparent quotes. Contact 0300-9130211 or saqibharoonharoon@gmail.com for lane-specific guidance.`,
-    `We also provide customs clearance, courier, and door-to-door services—see related pages below for ${city}.`,
+    `With 15+ years of experience, 100+ countries served, and partnerships including Maersk Line, Emirates SkyCargo, MSC Shipping, DHL Global, Hapag-Lloyd, and DB Schenker, we focus on insured options and transparent quotes. Contact 0300-9130211 or info@bestintlmovers.com for lane-specific guidance.`,
+    `We also provide customs clearance, courier, and door-to-door servicesâ€”see related pages below for ${city}.`,
   ];
 }
 
@@ -133,9 +133,9 @@ export const airIslamabadConfig: AirSeaCityConfig = {
     { factor: "Packaging", air: "Strict dims/weight", sea: "More flexible" },
   ],
   faqs: [
-    { q: "How fast is air freight from Islamabad?", a: "Lane-specific—most major hubs are reachable within express air windows; ask for exact transit." },
+    { q: "How fast is air freight from Islamabad?", a: "Lane-specificâ€”most major hubs are reachable within express air windows; ask for exact transit." },
     { q: "Can you pick up from my apartment?", a: "Yes, with crew access coordination." },
-    { q: "Do you handle DG cargo?", a: "Some commodities require special approvals—share MSDS/details for review." },
+    { q: "Do you handle DG cargo?", a: "Some commodities require special approvalsâ€”share MSDS/details for review." },
     { q: "How do I compare vs sea?", a: "Use the table on this page or request a hybrid plan." },
   ],
   introParagraphs: airSeaIntro("Islamabad", "air"),
@@ -163,7 +163,7 @@ export const airRawalpindiConfig: AirSeaCityConfig = {
   })),
   comparisonRows: airIslamabadConfig.comparisonRows,
   faqs: [
-    { q: "Do you pick up in Bahria Town?", a: "Yes—one of our most common pickup zones." },
+    { q: "Do you pick up in Bahria Town?", a: "Yesâ€”one of our most common pickup zones." },
     { q: "Is door-to-door available?", a: "Yes, depending on destination service level." },
     { q: "How do I get a quote?", a: "WhatsApp 923009130211 with weight and dimensions." },
     { q: "Can you pack for air?", a: "Yes, export packing add-ons are available." },
@@ -201,7 +201,7 @@ export const seaIslamabadConfig: AirSeaCityConfig = {
   ],
   comparisonRows: airIslamabadConfig.comparisonRows,
   faqs: [
-    { q: "LCL vs FCL?", a: "LCL shares container space; FCL gives a dedicated container—choose based on volume." },
+    { q: "LCL vs FCL?", a: "LCL shares container space; FCL gives a dedicated containerâ€”choose based on volume." },
     { q: "How long is transit?", a: "Destination-dependent; we provide lane-specific estimates in quotes." },
     { q: "Do you handle household goods?", a: "Yes, including inventory lists for customs." },
     { q: "Pickup in Islamabad?", a: "Yes, with inland transport to port as needed." },
@@ -229,9 +229,9 @@ export const seaRawalpindiConfig: AirSeaCityConfig = {
   comparisonRows: seaIslamabadConfig.comparisonRows,
   faqs: [
     { q: "Pickup from Bahria Town?", a: "Yes." },
-    { q: "Can I ship furniture?", a: "Yes—export packing recommended." },
+    { q: "Can I ship furniture?", a: "Yesâ€”export packing recommended." },
     { q: "Customs help?", a: "Yes, documentation support for export processes." },
-    { q: "Quote timing?", a: "Usually within 24–48 hours after details are shared." },
+    { q: "Quote timing?", a: "Usually within 24â€“48 hours after details are shared." },
   ],
   introParagraphs: airSeaIntro("Rawalpindi", "sea"),
 };
@@ -257,20 +257,20 @@ export const courierIslamabadConfig: CourierCityConfig = {
     { title: "Door pickup", description: "Scheduled collection from your Islamabad address." },
   ],
   faqs: [
-    { q: "Do you ship documents to the UK?", a: "Yes—share contents for compliance review." },
-    { q: "Can I send a laptop?", a: "Some destinations restrict batteries—confirm before booking." },
-    { q: "Pickup same day?", a: "Subject to crew availability—call 0300-9130211." },
+    { q: "Do you ship documents to the UK?", a: "Yesâ€”share contents for compliance review." },
+    { q: "Can I send a laptop?", a: "Some destinations restrict batteriesâ€”confirm before booking." },
+    { q: "Pickup same day?", a: "Subject to crew availabilityâ€”call 0300-9130211." },
     { q: "Tracking?", a: "Yes, milestone updates are provided for supported products." },
   ],
   introParagraphs: [
     "International courier from Islamabad is the fastest way to move documents and small parcels globally. Best International Movers & Logistics offers express and economy options with door pickup, compliant labeling, and tracking support. Typical destinations include UAE, UK, USA, Canada, and 200+ countries through partner networks.",
-    "We serve Islamabad households, law firms, universities, exporters, and ecommerce sellers who need reliable handoffs. With Mon–Sat 8:00 AM – 8:00 PM operations (Sun: emergencies), you can schedule pickups that match your workday.",
+    "We serve Islamabad households, law firms, universities, exporters, and ecommerce sellers who need reliable handoffs. With Monâ€“Sat 8:00 AM â€“ 8:00 PM operations (Sun: emergencies), you can schedule pickups that match your workday.",
     "For larger freight, pair courier with our ",
   ],
 };
 
 courierIslamabadConfig.introParagraphs[2] =
-  "For larger freight, pair courier with our Islamabad air freight and cargo service pages—or request a combined plan for documents by courier and bulk by sea.";
+  "For larger freight, pair courier with our Islamabad air freight and cargo service pagesâ€”or request a combined plan for documents by courier and bulk by sea.";
 
 export const courierRawalpindiConfig: CourierCityConfig = {
   urlPath: "/international-courier-rawalpindi",
@@ -292,9 +292,9 @@ export const courierRawalpindiConfig: CourierCityConfig = {
   })),
   faqs: [
     { q: "Pickup in Satellite Town?", a: "Yes." },
-    { q: "Express to Dubai?", a: "Available—confirm cutoff times when booking." },
+    { q: "Express to Dubai?", a: "Availableâ€”confirm cutoff times when booking." },
     { q: "Commercial samples?", a: "Yes with invoices where required." },
-    { q: "Contact?", a: "saqibharoonharoon@gmail.com or WhatsApp 923009130211." },
+    { q: "Contact?", a: "info@bestintlmovers.com or WhatsApp 923009130211." },
   ],
   introParagraphs: [
     "Rawalpindi clients use our international courier desk for passports, contracts, university packets, and ecommerce parcels. We provide express and economy lanes with compliant packaging guidance and scheduled pickups in major housing schemes.",

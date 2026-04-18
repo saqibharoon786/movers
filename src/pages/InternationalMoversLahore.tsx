@@ -19,7 +19,7 @@ const movingCompanySchema = {
   name: "Best International Movers & Logistics",
   url: "https://bestintlmovers.com/",
   telephone: "+923009130211",
-  email: "saqibharoonharoon@gmail.com",
+  email: "info@bestintlmovers.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lahore",

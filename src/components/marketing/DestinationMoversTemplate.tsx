@@ -35,7 +35,7 @@ const DestinationMoversTemplate = ({ config }: Props) => {
       "@type": "Organization",
       name: "Best International Movers & Logistics",
       telephone: "+923009130211",
-      email: "saqibharoonharoon@gmail.com",
+      email: "info@bestintlmovers.com",
       url: "https://bestintlmovers.com/",
     },
     areaServed: config.serviceSchemaAreaServed.map((name) => ({
@@ -145,15 +145,15 @@ const DestinationMoversTemplate = ({ config }: Props) => {
                 <Link to="/blog/air-freight-vs-sea-freight-pakistan" className="text-gold hover:underline">
                   Air vs sea freight from Pakistan
                 </Link>
-                {" · "}
+                {" Â· "}
                 <Link to="/blog/customs-regulations-pakistan-2025" className="text-gold hover:underline">
                   Pakistan customs for international moving
                 </Link>
-                {" · "}
+                {" Â· "}
                 <Link to="/blog/tips-for-stress-free-international-move" className="text-gold hover:underline">
                   Stress-free international move tips
                 </Link>
-                {" · "}
+                {" Â· "}
                 <Link to="/blog/moving-from-pakistan-to-dubai-guide" className="text-gold hover:underline">
                   Pakistan to Dubai guide
                 </Link>
@@ -192,8 +192,8 @@ const DestinationMoversTemplate = ({ config }: Props) => {
                   Peshawar
                 </Link>
                 . Call <a className="text-gold hover:underline" href="tel:03009130211">{PHONE_DISPLAY}</a> or email{" "}
-                <a className="text-gold hover:underline" href="mailto:saqibharoonharoon@gmail.com">
-                  saqibharoonharoon@gmail.com
+                <a className="text-gold hover:underline" href="mailto:info@bestintlmovers.com">
+                  info@bestintlmovers.com
                 </a>{" "}
                 for a detailed plan.
               </p>
