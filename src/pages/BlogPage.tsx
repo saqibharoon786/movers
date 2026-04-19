@@ -7,6 +7,18 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const blogs = [
   {
+    slug: "packers-and-movers-islamabad-guide",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
+    title: "Packers and Movers in Islamabad: Complete Guide to Safe & Affordable House Shifting (2025)",
+    date: "Apr 2025",
+    category: "Moving Guides",
+    author: "Best International Movers",
+    readTime: "11 min read",
+    excerpt:
+      "Planning to shift in Islamabad? Costs, tips, red flags, checklists and how to get a free survey — plus how to choose trusted packers and movers in Islamabad.",
+    content: "",
+  },
+  {
     slug: "tips-for-stress-free-international-move",
     img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
     title: "10 Tips for a Stress-Free International Move from Pakistan",

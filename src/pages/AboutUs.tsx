@@ -10,6 +10,34 @@ import { seoConfig } from "@/seoConfig";
 
 const partners = ["Maersk", "MSC", "Emirates SkyCargo", "DHL", "Hapag-Lloyd", "DB Schenker"];
 
+const aboutLocalBusinessLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Best International Movers & Logistics",
+  image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
+  "@id": "https://bestintlmovers.com/about-us",
+  url: "https://bestintlmovers.com",
+  telephone: "+923009130211",
+  email: "info@bestintlmovers.com",
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Commercial Market, Satellite Town",
+    addressLocality: "Rawalpindi",
+    addressRegion: "Punjab",
+    addressCountry: "PK",
+  },
+  areaServed: ["Pakistan", "UAE", "United Kingdom", "United States", "Canada"],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "08:00",
+      closes: "20:00",
+    },
+  ],
+};
+
 const offices = [
   { city: "Rawalpindi", address: "Commercial Market, Satellite Town, Rawalpindi" },
   { city: "Islamabad", address: "Blue Area, Jinnah Avenue, Islamabad" },
@@ -20,7 +48,7 @@ const offices = [
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-background">
-      <SEO {...seoConfig.about} urlPath="/about-us" />
+      <SEO {...seoConfig.about} urlPath="/about-us" schema={aboutLocalBusinessLd} />
       <Navbar />
       <section className="pt-28 lg:pt-36 pb-16 bg-navy-light border-b border-border">
         <div className="container mx-auto px-4">
@@ -142,6 +170,36 @@ const AboutUs = () => {
               </div>
             ))}
           </div>
+        </section>
+
+        <section className="glass-card rounded-2xl p-8 md:p-10 border border-border">
+          <h2 className="text-3xl font-display font-bold mb-4">What &quot;Quality Moving&quot; Means in Practice</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Quality is not a slogan on a truck — it is a documented process. Before we dispatch crews, we confirm access
+            windows, elevator reservations where needed, and the exact packing standard for each room. During loading we
+            photograph high-value pieces, seal cartons with serialized labels, and reconcile counts against your
+            inventory sheet. At destination, the same discipline continues: placement by room, reassembly checks, and a
+            short sign-off checklist so nothing is left ambiguous.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Our coordinators speak plainly about timelines, duties exposure, and insurance limits. If your move pairs
+            household goods with commercial samples, we separate documentation paths early so customs teams see a clean
+            file. If you are comparing modes, we will explain when{" "}
+            <Link to="/services/air-freight" className="text-gold hover:underline">
+              air freight
+            </Link>{" "}
+            is worth the premium versus{" "}
+            <Link to="/services/sea-freight" className="text-gold hover:underline">
+              sea freight
+            </Link>{" "}
+            for bulk — and we put the rationale in writing so your finance team can approve confidently.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Families across Islamabad, Rawalpindi, Lahore, and Peshawar use us for repeat moves because the experience is
+            predictable: same survey depth, same labeling system, same escalation path if a flight rolls or a sailing
+            shifts. That predictability is why enterprises trust us with employee relocations and seasonal project cargo
+            alike.
+          </p>
         </section>
 
         <section className="glass-card rounded-2xl p-8 border border-border">

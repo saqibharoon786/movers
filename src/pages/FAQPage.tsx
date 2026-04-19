@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
 import ContactFooter from "@/components/ContactFooter";
@@ -20,23 +21,104 @@ const faqs = [
   { q: "What happens if something gets damaged during the move?", a: "All shipments are insured. In the rare event of damage, our claims team processes your claim quickly and fairly. We document everything before and after the move for your protection." },
 ];
 
+const faqPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 const FAQPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Packers Movers FAQ Pakistan | Trusted Support"
-        description="Packers and movers FAQ in Pakistan for pricing, insurance, timelines, and city coverage. Call or WhatsApp 0300-9130211 for expert guidance."
-        keywords="packers movers faq pakistan, moving questions pakistan, relocation help pakistan"
-        urlPath="/faq/"
+        title="FAQ | Moving & Cargo Questions Answered | Best Intl Movers"
+        description="Frequently asked questions about international moving, cargo, customs clearance and home shifting from Pakistan. Get expert answers from Best Intl Movers."
+        keywords="moving faq pakistan, cargo questions, customs clearance faq, packers movers faq, international relocation help"
+        urlPath="/faq"
+        schema={faqPageSchema}
       />
       <Navbar />
       <div className="pt-32 pb-20">
         <div className="container mx-auto px-4 max-w-3xl">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
             <span className="text-gold font-semibold text-sm tracking-widest uppercase">FAQ</span>
-            <h1 className="text-3xl md:text-5xl font-display font-bold mt-3 mb-4">Frequently Asked <span className="gold-gradient-text">Questions</span></h1>
-            <p className="text-muted-foreground max-w-xl mx-auto">Find answers to common questions about our international moving services.</p>
+            <h1 className="text-3xl md:text-5xl font-display font-bold mt-3 mb-4">
+              Moving &amp; Cargo <span className="gold-gradient-text">FAQ</span> — Pakistan
+            </h1>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Clear answers on timelines, insurance, customs, packing, and pricing. Call{" "}
+              <a href="tel:03009130211" className="text-gold hover:underline">
+                0300-9130211
+              </a>{" "}
+              or WhatsApp for a free survey.
+            </p>
           </motion.div>
+
+          <section className="max-w-3xl mx-auto mb-14 space-y-5 text-muted-foreground text-sm leading-relaxed">
+            <h2 className="text-xl font-display font-semibold text-foreground">How to use this FAQ</h2>
+            <p>
+              Whether you are planning a{" "}
+              <Link to="/services/international-moving" className="text-gold hover:underline">
+                full international move
+              </Link>
+              , comparing{" "}
+              <Link to="/services/air-freight" className="text-gold hover:underline">
+                air freight
+              </Link>{" "}
+              with{" "}
+              <Link to="/services/sea-freight" className="text-gold hover:underline">
+                sea freight
+              </Link>
+              , or booking{" "}
+              <Link to="/packers-and-movers-islamabad" className="text-gold hover:underline">
+                packers and movers in Islamabad
+              </Link>
+              , the topics below explain how we work, what is included, and what you should prepare before move day.
+            </p>
+            <p>
+              For route-specific planning, open{" "}
+              <Link to="/pakistan-to-dubai-movers" className="text-gold hover:underline">
+                Pakistan to Dubai movers
+              </Link>
+              ,{" "}
+              <Link to="/pakistan-to-uk-movers" className="text-gold hover:underline">
+                Pakistan to UK movers
+              </Link>
+              , or{" "}
+              <Link to="/cargo-service-islamabad" className="text-gold hover:underline">
+                cargo service Islamabad
+              </Link>
+              . If you need storage between addresses, review{" "}
+              <Link to="/services/secure-storage" className="text-gold hover:underline">
+                secure storage
+              </Link>{" "}
+              and our{" "}
+              <Link to="/services/customs-clearance" className="text-gold hover:underline">
+                customs clearance
+              </Link>{" "}
+              scope before you finalize dates.
+            </p>
+            <h2 className="text-xl font-display font-semibold text-foreground pt-2">Why documentation matters</h2>
+            <p>
+              Most delays are documentation issues, not freight capacity. Keep passports, visas, inventory lists, and
+              valuation sheets consistent across every form. If you are unsure about HS codes or restricted items, ask
+              early — corrections at the port cost more than corrections at the kitchen table.
+            </p>
+            <h2 className="text-xl font-display font-semibold text-foreground">Get a tailored answer</h2>
+            <p>
+              Every shipment is different. Use this page for orientation, then request a written quote from our team. We
+              operate from Rawalpindi, Islamabad, Lahore, and Peshawar with the same standards for packing, labeling, and
+              insurance. When you are ready, visit{" "}
+              <Link to="/contact" className="text-gold hover:underline">
+                Contact
+              </Link>{" "}
+              or message us on WhatsApp — we respond quickly during business hours.
+            </p>
+          </section>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
             <Accordion type="single" collapsible className="space-y-3">
@@ -48,6 +130,22 @@ const FAQPage = () => {
               ))}
             </Accordion>
           </motion.div>
+
+          <section className="mt-16 glass-card rounded-2xl p-8 border border-gold/20 text-center max-w-3xl mx-auto">
+            <h2 className="text-2xl font-display font-bold text-foreground mb-3">Still have questions?</h2>
+            <p className="text-muted-foreground mb-6">
+              Call <strong className="text-foreground">0300-9130211</strong> — our coordinators explain insurance, routes,
+              and timelines in plain language.
+            </p>
+            <a
+              href="https://wa.me/923009130211?text=Hi%2C%20I%20have%20a%20question%20from%20your%20FAQ%20page."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex px-8 py-3 rounded-lg gold-gradient-bg text-primary-foreground font-bold"
+            >
+              WhatsApp Us
+            </a>
+          </section>
         </div>
       </div>
       <ContactFooter />

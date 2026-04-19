@@ -13,10 +13,11 @@ export const cargoIslamabadConfig: CargoCityConfig = {
   cityName: "Islamabad",
   breadcrumbLabel: "Cargo Islamabad",
   seo: {
-    title: "Cargo Service Islamabad | International Cargo Islamabad",
+    title: "International Cargo Service in Islamabad | Fast & Reliable Shipping",
     description:
-      "International cargo services from Islamabad to UAE, UK, USA, Canada, Australia & worldwide. Air & sea freight, customs clearance, door-to-door. Get free quote!",
-    keywords: "cargo islamabad, international cargo islamabad, air cargo islamabad, sea freight islamabad",
+      "Best international cargo service in Islamabad. Air, sea & door-to-door cargo with fast delivery, secure handling & affordable rates. Get a free quote today.",
+    keywords:
+      "international cargo service in islamabad, cargo islamabad, air cargo islamabad, sea freight islamabad, door to door cargo islamabad",
   },
   h1: "International Cargo Service in Islamabad",
   heroText:

@@ -10,9 +10,17 @@ const distDir = path.resolve(__dirname, "..", "dist");
 const sitemapPath = path.join(distDir, "sitemap.xml");
 const appPath = path.resolve(__dirname, "..", "src", "App.tsx");
 
+/** Match canonical URLs: no trailing slash except homepage. */
 const normalizePath = (route) => {
-  if (route === "/") return route;
-  return route.endsWith("/") ? route : `${route}/`;
+  if (!route || route === "/") return "/";
+  const withLeading = route.startsWith("/") ? route : `/${route}`;
+  return withLeading.replace(/\/+$/, "") || "/";
+};
+
+const toLoc = (route) => {
+  const p = normalizePath(route);
+  if (p === "/") return `${siteUrl}/`;
+  return `${siteUrl}${p}`;
 };
 
 const extractStaticRoutesFromApp = () => {
@@ -52,7 +60,7 @@ if (!fs.existsSync(distDir)) {
 const today = new Date().toISOString().split("T")[0];
 const urlSet = routes
   .map((route) => {
-    const loc = route === "/" ? `${siteUrl}/` : `${siteUrl}${route}`;
+    const loc = toLoc(route);
     return `  <url>
     <loc>${loc}</loc>
     <lastmod>${today}</lastmod>

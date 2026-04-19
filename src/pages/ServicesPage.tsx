@@ -9,12 +9,12 @@ import { seoConfig } from "@/seoConfig";
 
 const allServices = [
   { slug: "international-moving", icon: Globe, title: "International Moving", desc: "Complete door-to-door relocation services across 100+ countries with expert handling.", longDesc: "Our international moving service provides a comprehensive, end-to-end relocation experience. From the moment you contact us, our dedicated move coordinators handle every detail — from packing and loading at your current home to customs clearance, shipping, and delivery at your new destination. We specialize in household goods, personal effects, and full home relocations across 100+ countries.", features: ["Door-to-door service worldwide", "Dedicated move coordinator", "Full packing & unpacking", "Customs clearance included", "Insurance coverage", "Real-time shipment tracking"], heroImg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1920", faqs: [{q:"How long does international moving take?", a:"It varies by destination and freight method. Air freight takes 5-10 days, while sea freight can take 4-8 weeks."}, {q:"Do you handle customs clearance?", a:"Yes, we provide completely managed customs clearance services in both the origin and destination countries."}, {q:"What items cannot be shipped?", a:"Restrictions vary by country, but generally forbid perishables, hazardous materials, and certain plants/animals."}], related: ["professional-packing", "customs-clearance"] },
-  { slug: "professional-packing", icon: Package, title: "Professional Packing", desc: "Premium packing materials and white-glove service for your most precious belongings.", longDesc: "Our professional packing teams use industry-leading materials and techniques to ensure every item is protected during transit. From delicate china and artwork to bulky furniture, our trained packers handle it all with precision and care. We use eco-friendly, acid-free materials and custom crating for high-value items.", features: ["Eco-friendly packing materials", "Custom crating for fragile items", "Wardrobe boxes for clothing", "Furniture disassembly & reassembly", "Labeling & inventory system", "Unpacking service at destination"], heroImg: "https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg?auto=compress&cs=tinysrgb&w=1920", faqs: [{q:"Do you provide the packing materials?", a:"Yes, we bring all necessary high-quality materials including specialized boxes, bubble wrap, and crating."}, {q:"How long does packing take?", a:"A standard 2-3 bedroom house usually takes 1-2 days to pack completely."}, {q:"Is there an unpacking service?", a:"Absolutely, we also provide unpacking and debris removal services at your new destination."}], related: ["international-moving", "secure-storage"] },
-  { slug: "secure-storage", icon: Warehouse, title: "Secure Storage", desc: "Climate-controlled, 24/7 monitored storage facilities for short and long-term needs.", longDesc: "Whether you need temporary storage during your move or long-term warehousing solutions, our state-of-the-art facilities offer complete peace of mind. All locations feature climate control, 24/7 CCTV monitoring, fire suppression systems, and restricted access for maximum security.", features: ["Climate-controlled warehouses", "24/7 CCTV surveillance", "Short & long-term options", "Inventory management", "Easy access scheduling", "Full insurance coverage"], heroImg: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=1920", faqs: [{q:"How long can I store my items?", a:"We offer both short-term (weekly/monthly) and long-term (yearly) storage solutions tailored to your needs."}, {q:"Is my storage insured?", a:"Yes, all stored items are fully insured against fire, theft, and damage while in our facility."}, {q:"Can I access my items during storage?", a:"Yes, you can access your belongings with 24 hours prior notice to our facility manager."}], related: ["professional-packing", "international-moving"] },
+  { slug: "professional-packing", icon: Package, title: "Professional Packing", desc: "Premium packing materials and white-glove service for your most precious belongings.", longDesc: "Our professional packing teams use industry-leading materials and techniques to ensure every item is protected during transit. From delicate china and artwork to bulky furniture, our trained packers handle it all with precision and care. We use eco-friendly, acid-free materials and custom crating for high-value items.", features: ["Eco-friendly packing materials", "Custom crating for fragile items", "Wardrobe boxes for clothing", "Furniture disassembly & reassembly", "Labeling & inventory system", "Unpacking service at destination"], heroImg: "https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg?auto=compress&cs=tinysrgb&w=1920", faqs: [{q:"Do you provide the packing materials?", a:"Yes, we bring all necessary high-quality materials including specialized boxes, bubble wrap, and crating."}, {q:"How long does packing take?", a:"A standard 2-3 bedroom house usually takes 1-2 days to pack completely."}, {q:"Is there an unpacking service?", a:"Absolutely, we also provide unpacking and debris removal services at your new destination."}, {q:"How do you protect artwork and mirrors?", a:"We use foam corners, glassine layers, and export crates sized to the piece. Each crate is labeled with orientation arrows and fragile handling notes for loaders."}, {q:"Can you pack only part of my home?", a:"Yes. Partial packing is common when clients self-pack clothes but want professionals on kitchen glass and electronics. We mark scope in writing so pricing stays transparent."}], related: ["international-moving", "secure-storage"] },
+  { slug: "secure-storage", icon: Warehouse, title: "Secure Storage", desc: "Climate-controlled, 24/7 monitored storage facilities for short and long-term needs.", longDesc: "Whether you need temporary storage during your move or long-term warehousing solutions, our state-of-the-art facilities offer complete peace of mind. All locations feature climate control, 24/7 CCTV monitoring, fire suppression systems, and restricted access for maximum security.", features: ["Climate-controlled warehouses", "24/7 CCTV surveillance", "Short & long-term options", "Inventory management", "Easy access scheduling", "Full insurance coverage"], heroImg: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=1920", faqs: [{q:"How long can I store my items?", a:"We offer both short-term (weekly/monthly) and long-term (yearly) storage solutions tailored to your needs."}, {q:"Is my storage insured?", a:"Yes, all stored items are fully insured against fire, theft, and damage while in our facility."}, {q:"Can I access my items during storage?", a:"Yes, you can access your belongings with 24 hours prior notice to our facility manager."}, {q:"What items are best suited for climate-controlled storage?", a:"Wood furniture, leather, electronics, documents, and artwork benefit most from stable humidity. We advise climate control whenever storage exceeds a few weeks in peak summer."}, {q:"How is storage priced?", a:"Pricing is based on volume (CBM or pallet positions), duration, and handling frequency. Written quotes list in/out fees so there are no surprises."}], related: ["professional-packing", "international-moving"] },
   { slug: "vehicle-shipping", icon: Car, title: "Vehicle Shipping", desc: "Safe and insured international vehicle transport via enclosed or open carriers.", longDesc: "We provide safe, reliable international vehicle shipping services for cars, motorcycles, and specialty vehicles. Choose between Roll-on/Roll-off (RoRo) or enclosed container transport based on your needs and budget. Every vehicle is fully insured during transit.", features: ["RoRo & container shipping", "Enclosed transport available", "Full transit insurance", "Door-to-port or door-to-door", "All vehicle types accepted", "Customs documentation handled"], heroImg: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=1920", faqs: [{q:"Can I pack items in my car?", a:"For safety and customs reasons, it is strictly prohibited to pack personal items inside a vehicle being shipped."}, {q:"Do you pick up from my home?", a:"Yes, we offer door-to-port and door-to-door services depending on your preference."}, {q:"Is my car insured during shipping?", a:"Yes, full coverage transit insurance is included to protect against any unexpected damage."}], related: ["international-moving", "customs-clearance"] },
   { slug: "air-freight", icon: Plane, title: "Air Freight", desc: "Fast international air cargo from Islamabad, Lahore, and Karachi to 100+ countries.", longDesc: "When time matters more than cost, air freight is your answer. Best International Movers offers fast and reliable air freight services from Islamabad (ISB), Lahore (LHE), and Karachi (KHI) airports to destinations worldwide. We work with leading airlines including Emirates SkyCargo, Qatar Airways Cargo, Turkish Cargo, and PIA Cargo to help your shipment move on the earliest practical flight.", features: ["Personal effects & urgent household moves", "Commercial goods, samples & business documents", "Pharmaceuticals & temperature-controlled cargo", "Electronics & high-value items with insurance options", "E-commerce & time-sensitive international delivery", "AWB tracking with WhatsApp milestone updates"], heroImg: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920", faqs: [{q:"How fast is air freight from Pakistan to the UAE?", a:"Many UAE lanes move in about 2-3 business days depending on flight space and documentation readiness."}, {q:"Is there a minimum shipment size?", a:"No minimum — even a single carton can move by air when airline piece rules are met."}, {q:"How do I track my air shipment?", a:"We share AWB-based tracking and proactive WhatsApp updates during business hours."}], related: ["sea-freight", "customs-clearance"] },
   { slug: "sea-freight", icon: Ship, title: "Sea Freight", desc: "FCL & LCL ocean freight from Karachi Port and Port Qasim to global destinations.", longDesc: "Sea freight is the most cost-effective way to ship large volumes of goods internationally. At Best International Movers, we offer both Full Container Load (FCL) and Less than Container Load (LCL) sea freight services from Pakistan's major ports — primarily Karachi Port and Port Qasim — to destinations across the globe.", features: ["Direct partnerships with Maersk, MSC, Hapag-Lloyd", "Weekly sailings from Karachi toward Jebel Ali, Felixstowe, Rotterdam, Halifax & more", "In-house customs brokerage for Pakistan export documentation", "Real-time container tracking from origin port to destination", "Climate-controlled storage while awaiting vessel departure", "Door-to-door coordination with transparent quotes"], heroImg: "https://images.pexels.com/photos/163726/belgium-antwerp-shipping-container-163726.jpeg?auto=compress&cs=tinysrgb&w=1920", faqs: [{q:"What is the difference between FCL and LCL?", a:"FCL means you pay for an entire 20ft or 40ft container — best for full household or office moves. LCL means you share container space and pay by volume (CBM), ideal for partial shipments."}, {q:"How long does sea freight take from Pakistan?", a:"Transit varies by lane and consolidation, but many Dubai-bound services fall in roughly 2-3 weeks for LCL groupage and slightly longer for FCL depending on sailing and destination port."}, {q:"Are port charges included in a door-to-door quote?", a:"When quoted door-to-door, we spell out origin, ocean, and destination handling so you can compare apples to apples — ask for a written scope."}], related: ["air-freight", "customs-clearance"] },
-  { slug: "customs-clearance", icon: FileCheck, title: "Customs Clearance", desc: "Expert customs brokerage ensuring smooth border crossings and compliance.", longDesc: "Navigating international customs regulations can be complex. Our licensed customs brokers handle all documentation, duties, taxes, and compliance requirements in both origin and destination countries. We ensure your shipment clears customs quickly and without delays.", features: ["Licensed customs brokers", "Duty & tax calculation", "Import/export documentation", "Regulatory compliance", "Quarantine clearance", "Trade agreement benefits"], heroImg: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1920", faqs: [{q:"Do I need to be present for customs clearance?", a:"Generally no, our brokers handle clearance on your behalf with the proper power of attorney."}, {q:"How long does clearance take?", a:"Normally 2-4 days, provided all documentation is accurate and there are no unexpected customs hold-ups."}, {q:"Who pays the duties and taxes?", a:"We calculate and pay destination duties and taxes on your behalf, which are invoiced separately or included in the master quote."}], related: ["international-moving", "sea-freight"] },
+  { slug: "customs-clearance", icon: FileCheck, title: "Customs Clearance", desc: "Expert customs brokerage ensuring smooth border crossings and compliance.", longDesc: "Navigating international customs regulations can be complex. Our licensed customs brokers handle all documentation, duties, taxes, and compliance requirements in both origin and destination countries. We ensure your shipment clears customs quickly and without delays.", features: ["Licensed customs brokers", "Duty & tax calculation", "Import/export documentation", "Regulatory compliance", "Quarantine clearance", "Trade agreement benefits"], heroImg: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1920", faqs: [{q:"Do I need to be present for customs clearance?", a:"Generally no, our brokers handle clearance on your behalf with the proper power of attorney."}, {q:"How long does clearance take?", a:"Normally 2-4 days, provided all documentation is accurate and there are no unexpected customs hold-ups."}, {q:"Who pays the duties and taxes?", a:"We calculate and pay destination duties and taxes on your behalf, which are invoiced separately or included in the master quote."}, {q:"Which documents do exporters from Pakistan need most often?", a:"Commercial invoice, packing list, exporter profile, and destination-specific permits for restricted goods. We prepare templates and validate HS codes before submission."}, {q:"Can you coordinate clearance at destination as well?", a:"Yes. We work with vetted agents in major hubs (UAE, UK, North America, GCC) so import clearance aligns with your delivery appointment."}], related: ["international-moving", "sea-freight"] },
   { slug: "last-mile-delivery", icon: Truck, title: "Last Mile Delivery", desc: "Precision delivery and unpacking at your new home, wherever in the world.", longDesc: "The last mile is the most important. Our delivery teams ensure your belongings are carefully transported from port or warehouse to your new home. We handle unpacking, furniture assembly, and placement so you can start enjoying your new space immediately.", features: ["Scheduled delivery windows", "Furniture assembly", "Debris removal", "Appliance installation", "Room-by-room placement", "Post-delivery follow-up"], heroImg: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=1920", faqs: [{q:"Will you reassemble my furniture?", a:"Yes, full reassembly of beds, wardrobes, and standard furniture is included in our white-glove service."}, {q:"Do you remove packing debris?", a:"Absolutely, we clear out all empty boxes and packing materials after unpacking on the same day."}, {q:"Is there an extra charge for stairs/elevators?", a:"Normally included, but complex access (like 5th floor no elevator) may require an extra handling fee."}], related: ["professional-packing", "international-moving"] },
 ];
 
@@ -24,6 +24,24 @@ const locations = [
   { city: "Lahore", address: "Main Boulevard, Gulberg III, Lahore" },
   { city: "Peshawar", address: "University Road, Peshawar" },
 ];
+
+function buildServiceSchema(service: (typeof allServices)[number]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `${service.title} — Best International Movers & Logistics`,
+    serviceType: service.title,
+    description: service.desc,
+    url: `https://bestintlmovers.com/services/${service.slug}`,
+    provider: {
+      "@type": "Organization",
+      name: "Best International Movers & Logistics",
+      url: "https://bestintlmovers.com",
+      telephone: "+923009130211",
+    },
+    areaServed: { "@type": "Country", name: "Pakistan" },
+  };
+}
 
 const ServicesPage = () => {
   const { slug } = useParams();
@@ -96,7 +114,7 @@ const ServicesPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO {...serviceSeo} urlPath={`/services/${service.slug}`} />
+      <SEO {...serviceSeo} urlPath={`/services/${service.slug}`} schema={buildServiceSchema(service)} />
       <Navbar />
       <div className="pt-32 pb-20">
         <div className="container mx-auto px-4">
@@ -137,7 +155,7 @@ const ServicesPage = () => {
 
             {service.slug === 'international-moving' && (
               <div className="glass-card rounded-xl p-6 mb-10 text-muted-foreground border border-gold/20">
-                <p>We also offer <Link to="/services/professional-packing/" className="text-gold hover:underline">professional packing services</Link> and <Link to="/services/customs-clearance/" className="text-gold hover:underline">customs clearance assistance</Link> for your international move.</p>
+                <p>We also offer <Link to="/services/professional-packing" className="text-gold hover:underline">professional packing services</Link> and <Link to="/services/customs-clearance" className="text-gold hover:underline">customs clearance assistance</Link> for your international move.</p>
               </div>
             )}
             
@@ -177,11 +195,11 @@ const ServicesPage = () => {
                 <div className="glass-card rounded-xl p-6 text-muted-foreground border border-gold/20">
                   <p>
                     Need faster delivery? See{" "}
-                    <Link to="/services/air-freight/" className="text-gold hover:underline">
+                    <Link to="/services/air-freight" className="text-gold hover:underline">
                       air freight services
                     </Link>
                     . Need paperwork support? Our{" "}
-                    <Link to="/services/customs-clearance/" className="text-gold hover:underline">
+                    <Link to="/services/customs-clearance" className="text-gold hover:underline">
                       customs clearance team
                     </Link>{" "}
                     is ready to help.
@@ -225,10 +243,134 @@ const ServicesPage = () => {
                 <div className="glass-card rounded-xl p-6 text-muted-foreground border border-gold/20">
                   <p>
                     Moving larger volumes economically? Compare{" "}
-                    <Link to="/services/sea-freight/" className="text-gold hover:underline">
+                    <Link to="/services/sea-freight" className="text-gold hover:underline">
                       sea freight services
                     </Link>{" "}
                     and ask about hybrid plans (air for essentials, sea for bulk).
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {service.slug === "professional-packing" && (
+              <div className="space-y-10 mb-10">
+                <div className="glass-card rounded-xl p-8 border border-border">
+                  <h2 className="text-2xl font-display font-bold text-foreground mb-4">Professional packing for Pakistan exports</h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Packing is the insurance policy you can see. Our teams work to export standards — double-wall cartons,
+                    serialized labels, and photo logs for high-value pieces — because most damage happens at hand-offs, not
+                    mid-ocean. Whether you are moving a full villa in Islamabad or consolidating cartons for{" "}
+                    <Link to="/services/air-freight" className="text-gold hover:underline">
+                      air freight
+                    </Link>
+                    , we align carton weights with airline piece rules and keep liquids, batteries, and personal documents
+                    separated to reduce inspection friction.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    We also coordinate with{" "}
+                    <Link to="/services/customs-clearance" className="text-gold hover:underline">
+                      customs clearance
+                    </Link>{" "}
+                    so your packing list matches commercial invoices line-for-line. If you need short holding between exit
+                    clean and flight date, pair packing with{" "}
+                    <Link to="/services/secure-storage" className="text-gold hover:underline">
+                      secure storage
+                    </Link>{" "}
+                    so cartons stay sealed in a humidity-stable room instead of a garage.
+                  </p>
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">Room-by-room workflow</h3>
+                  <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+                    <li>Kitchen: double-wrapped glass, partitioned dish packs, and sealed spice drawers to avoid odor transfer.</li>
+                    <li>Bedrooms: wardrobe cartons for hanging clothes, mattress bags, and photo maps for reassembly.</li>
+                    <li>Living areas: corner guards on furniture, stretch wrap on upholstered pieces, and crating for TVs &amp; art.</li>
+                  </ul>
+                </div>
+                <div className="glass-card rounded-xl p-8 border border-border">
+                  <h2 className="text-2xl font-display font-bold text-foreground mb-4">When to book professional packers</h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Book at least a week ahead for large homes, and earlier during Ramazan or year-end corporate rotations.
+                    If you are also booking{" "}
+                    <Link to="/packers-and-movers-islamabad" className="text-gold hover:underline">
+                      packers and movers in Islamabad
+                    </Link>{" "}
+                    for local legs, ask for one coordinator so labels stay consistent from origin residence to export dock.
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {service.slug === "secure-storage" && (
+              <div className="space-y-10 mb-10">
+                <div className="glass-card rounded-xl p-8 border border-border">
+                  <h2 className="text-2xl font-display font-bold text-foreground mb-4">Secure storage that fits your move timeline</h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Storage is often the bridge between lease end dates, visa issuance, and vessel sailings. Our facilities
+                    emphasize climate stability, restricted access, and inventory accuracy — because a misplaced carton
+                    during storage is as costly as a dented crate in transit. We accept professionally packed goods from our
+                    crews or pre-packed cartons after inspection so insurance stays valid.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Link storage with{" "}
+                    <Link to="/services/international-moving" className="text-gold hover:underline">
+                      international moving
+                    </Link>{" "}
+                    plans when your new address abroad is not yet confirmed. We can stage goods, then release to{" "}
+                    <Link to="/services/sea-freight" className="text-gold hover:underline">
+                      sea freight
+                    </Link>{" "}
+                    or air once documents and bookings align — you keep one invoice chain instead of juggling multiple
+                    vendors.
+                  </p>
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">Access, audits, and accountability</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Access visits are scheduled with security escorts. Inventory audits can be monthly for long-term
+                    corporate archives or on-demand before export dispatch. Call{" "}
+                    <a href="tel:03009130211" className="text-gold hover:underline">
+                      0300-9130211
+                    </a>{" "}
+                    to discuss pallet vs CBM pricing for commercial storage.
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {service.slug === "customs-clearance" && (
+              <div className="space-y-10 mb-10">
+                <div className="glass-card rounded-xl p-8 border border-border">
+                  <h2 className="text-2xl font-display font-bold text-foreground mb-4">Customs clearance without guesswork</h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Clearance is a paperwork sport. We normalize product descriptions, HS codes, and values across your
+                    invoice, packing list, and shipping instructions so Pakistan export filings and destination import filings
+                    tell the same story. That consistency reduces holds, demurrage, and painful back-and-forth with brokers
+                    who only see partial files.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Pair clearance with{" "}
+                    <Link to="/services/sea-freight" className="text-gold hover:underline">
+                      sea freight
+                    </Link>{" "}
+                    for household moves or{" "}
+                    <Link to="/cargo-service-islamabad" className="text-gold hover:underline">
+                      cargo from Islamabad
+                    </Link>{" "}
+                    when your journey starts in the capital region. For personal effects declarations, we coach you on
+                    reasonable valuations and supporting documents so you do not overpay duties at destination.
+                  </p>
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">Compliance checkpoints we run early</h3>
+                  <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+                    <li>Restricted commodities screening (batteries, liquids, powders, dual-use electronics).</li>
+                    <li>Certificate alignment for food, cosmetics, and wood packaging (ISPM-15) where applicable.</li>
+                    <li>Power of attorney and broker appointment letters filed before cargo handover.</li>
+                  </ul>
+                </div>
+                <div className="glass-card rounded-xl p-6 text-muted-foreground border border-gold/20">
+                  <p>
+                    Need a duty estimate before you commit? Use our{" "}
+                    <Link to="/custom-duty-calculator" className="text-gold hover:underline">
+                      custom duty calculator
+                    </Link>{" "}
+                    and share the output with your coordinator — we will sanity-check assumptions against recent lanes to
+                    UAE, UK, and North America.
                   </p>
                 </div>
               </div>
@@ -299,9 +441,22 @@ const ServicesPage = () => {
             <div className="text-center bg-navy-light/50 p-8 rounded-2xl border border-gold/20">
               <p className="text-gold font-semibold mb-2">Starting from PKR 15,000</p>
               <p className="text-muted-foreground text-sm mb-6">Contact us for a customized quote based on your exact requirements.</p>
-              <a href={`https://wa.me/923009130211?text=Hello!%20I%20need%20a%20quote%20for%20${service.title}`} target="_blank" rel="noopener noreferrer" className="inline-flex px-8 py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold text-lg items-center gap-2 hover:shadow-[0_0_40px_-5px_hsl(var(--gold)/0.5)] transition-all">
-                Get Free Quote for {service.title} <ArrowRight size={18} />
-              </a>
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3">
+                <a
+                  href={`https://wa.me/923009130211?text=Hello!%20I%20need%20a%20quote%20for%20${service.title}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex px-8 py-4 rounded-lg gold-gradient-bg text-primary-foreground font-bold text-lg items-center gap-2 hover:shadow-[0_0_40px_-5px_hsl(var(--gold)/0.5)] transition-all"
+                >
+                  Get Free Quote for {service.title} <ArrowRight size={18} />
+                </a>
+                <a
+                  href="tel:03009130211"
+                  className="inline-flex px-8 py-4 rounded-lg border border-gold/40 text-gold font-bold text-lg items-center gap-2 hover:bg-gold/10"
+                >
+                  Call 0300-9130211
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>

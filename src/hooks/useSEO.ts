@@ -1,4 +1,5 @@
 import { useLayoutEffect } from "react";
+import { computeSeoHead, toCanonicalUrl, SEO_SITE_URL } from "@/utils/seoHead";
 
 interface SEOProps {
   title: string;
@@ -14,39 +15,16 @@ interface SEOProps {
   twitterImage?: string;
   /** When true, sets robots noindex,nofollow (e.g. legal pages). */
   noindex?: boolean;
+  /**
+   * When false, title/meta/canonical/OG/Twitter are not written to document.head
+   * (use react-helmet-async `<Helmet>` instead). JSON-LD is always injected.
+   */
+  renderMetaInDom?: boolean;
 }
 
-const SITE_URL = "https://bestintlmovers.com";
-const DEFAULT_SOCIAL_IMAGE =
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200";
 const BUSINESS_PHONE = "+92-300-9130211";
 const BUSINESS_EMAIL = "info@bestintlmovers.com";
 const BUSINESS_HOURS = ["Mo-Sa 08:00-20:00"];
-
-const toTitleCase = (value: string) =>
-  value
-    .split(" ")
-    .filter(Boolean)
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-
-const pathToLabel = (path: string) => {
-  const trimmed = path.replace(/^\/|\/$/g, "");
-  if (!trimmed) return "Pakistan";
-  const segments = trimmed.split("/").filter(Boolean);
-  const last = segments[segments.length - 1].replace(/-/g, " ");
-  return toTitleCase(last);
-};
-
-const clip = (value: string, max: number) => {
-  if (value.length <= max) return value;
-  return `${value.slice(0, max - 1).trimEnd()}…`;
-};
-
-const normalizePath = (path: string) => {
-  if (path === "/") return path;
-  return path.endsWith("/") ? path : `${path}/`;
-};
 
 export const useSEO = ({
   title,
@@ -58,90 +36,79 @@ export const useSEO = ({
   ogImageAlt,
   twitterImage,
   noindex,
+  renderMetaInDom = true,
 }: SEOProps) => {
   useLayoutEffect(() => {
-    const normalizedPath = normalizePath(urlPath || window.location.pathname);
-    const routeLabel = pathToLabel(normalizedPath);
+    const pathnameFallback = typeof window !== "undefined" ? window.location.pathname : "/";
+    const head = computeSeoHead({
+      title,
+      description,
+      keywords,
+      urlPath,
+      pathnameFallback,
+      ogImage,
+      ogImageAlt,
+      twitterImage,
+      noindex,
+    });
+    const normalizedPath = head.normalizedPath;
+    const fullUrl = head.fullUrl;
 
-    /** Titles with a pipe are full SEO titles — do not append route suffix (avoids wrong tab titles on blog/service pages). */
-    const isFullSeoTitle = title.includes("|");
-    const titleHasRoute = title.toLowerCase().includes(routeLabel.toLowerCase());
-    const seoTitleBase =
-      isFullSeoTitle || titleHasRoute || normalizedPath === "/" ? title : `${title} | ${routeLabel}`;
-    const seoTitle = clip(seoTitleBase, 60);
+    if (renderMetaInDom) {
+      document.title = head.seoTitle;
 
-    const cta = "Call or WhatsApp 0300-9130211.";
-    const descriptionHasRoute = description.toLowerCase().includes(routeLabel.toLowerCase());
-    const descriptionWithRoute =
-      normalizedPath === "/" || descriptionHasRoute
-        ? description
-        : `${description} ${routeLabel} relocation support in Pakistan.`;
-    const descriptionWithCta = descriptionWithRoute.includes("0300-9130211")
-      ? descriptionWithRoute
-      : `${descriptionWithRoute} ${cta}`;
-    const seoDescription = clip(descriptionWithCta, 160);
+      const setMeta = (name: string, content: string, property = false) => {
+        const selector = property ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+        const existing = Array.from(document.head.querySelectorAll(selector));
+        let tag = existing[0] as HTMLMetaElement | undefined;
+        for (let i = 1; i < existing.length; i += 1) {
+          existing[i].remove();
+        }
+        if (!tag) {
+          tag = document.createElement("meta");
+          if (property) tag.setAttribute("property", name);
+          else tag.setAttribute("name", name);
+          document.head.appendChild(tag);
+        }
+        tag.setAttribute("content", content);
+      };
 
-    // Basic Meta
-    document.title = seoTitle;
-    
-    const setMeta = (name: string, content: string, property = false) => {
-      const selector = property ? `meta[property="${name}"]` : `meta[name="${name}"]`;
-      const existing = Array.from(document.head.querySelectorAll(selector));
-      let tag = existing[0] as HTMLMetaElement | undefined;
-      for (let i = 1; i < existing.length; i += 1) {
-        existing[i].remove();
+      setMeta("description", head.seoDescription);
+      setMeta("keywords", head.keywords);
+      setMeta("robots", head.robots);
+
+      const canonicalNodes = Array.from(document.head.querySelectorAll('link[rel="canonical"]'));
+      let canonical = canonicalNodes[0] as HTMLLinkElement | undefined;
+      for (let i = 1; i < canonicalNodes.length; i += 1) {
+        canonicalNodes[i].remove();
       }
-      if (!tag) {
-        tag = document.createElement('meta');
-        if (property) tag.setAttribute('property', name);
-        else tag.setAttribute('name', name);
-        document.head.appendChild(tag);
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.setAttribute("rel", "canonical");
+        document.head.appendChild(canonical);
       }
-      tag.setAttribute('content', content);
-    };
+      canonical.setAttribute("href", fullUrl);
 
-    setMeta('description', seoDescription);
-    setMeta('keywords', keywords);
-    setMeta('robots', noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large');
-    
-    // Canonical
-    const fullUrl = `${SITE_URL}${normalizedPath}`;
-    const canonicalNodes = Array.from(document.head.querySelectorAll('link[rel="canonical"]'));
-    let canonical = canonicalNodes[0] as HTMLLinkElement | undefined;
-    for (let i = 1; i < canonicalNodes.length; i += 1) {
-      canonicalNodes[i].remove();
+      setMeta("og:type", "website", true);
+      setMeta("og:url", fullUrl, true);
+      setMeta("og:title", head.seoTitle, true);
+      setMeta("og:description", head.seoDescription, true);
+      setMeta("og:image", head.selectedOgImage, true);
+      setMeta("og:image:width", "1200", true);
+      setMeta("og:image:height", "630", true);
+      if (head.ogImageAlt) setMeta("og:image:alt", head.ogImageAlt, true);
+      setMeta("og:site_name", "Best International Movers & Logistics", true);
+      setMeta("og:locale", "en_PK", true);
+
+      setMeta("twitter:card", "summary_large_image");
+      setMeta("twitter:title", head.seoTitle);
+      setMeta("twitter:description", head.seoDescription);
+      setMeta("twitter:image", head.twitterImage);
     }
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute('href', fullUrl);
-    
-    // Open Graph
-    setMeta('og:type', 'website', true);
-    setMeta('og:url', fullUrl, true);
-    setMeta('og:title', seoTitle, true);
-    setMeta('og:description', seoDescription, true);
-    const selectedOgImage = ogImage || DEFAULT_SOCIAL_IMAGE;
-    setMeta('og:image', selectedOgImage, true);
-    setMeta('og:image:width', '1200', true);
-    setMeta('og:image:height', '630', true);
-    if (ogImageAlt) setMeta('og:image:alt', ogImageAlt, true);
-    setMeta('og:site_name', 'Best International Movers & Logistics', true);
-    setMeta('og:locale', 'en_PK', true);
-    
-    // Twitter/WhatsApp
-    setMeta('twitter:card', 'summary_large_image');
-    setMeta('twitter:title', seoTitle);
-    setMeta('twitter:description', seoDescription);
-    setMeta('twitter:image', twitterImage || selectedOgImage);
-    
-    // Schema Logic
-    const oldSchema = document.getElementById('page-schema');
+
+    const oldSchema = document.getElementById("page-schema");
     if (oldSchema) oldSchema.remove();
-    
-    // Create breadcrumbs automatically
+
     const breadcrumbs = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -150,7 +117,7 @@ export const useSEO = ({
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: `${SITE_URL}/`,
+          item: `${SEO_SITE_URL}/`,
         },
       ],
     };
@@ -165,17 +132,16 @@ export const useSEO = ({
         "@type": "ListItem",
         position: itemNumber++,
         name: p.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase()),
-        item: `${SITE_URL}${currentPath}/`,
+        item: toCanonicalUrl(currentPath),
       } as any);
     });
 
-    // Keep business identity consistent across all pages for snippets.
     const organizationSchema = {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "@id": `${SITE_URL}/#organization`,
+      "@id": `${SEO_SITE_URL}/#organization`,
       name: "Best International Movers & Logistics",
-      url: `${SITE_URL}/`,
+      url: `${SEO_SITE_URL}/`,
       telephone: BUSINESS_PHONE,
       email: BUSINESS_EMAIL,
       contactPoint: [
@@ -202,5 +168,7 @@ export const useSEO = ({
     script.id = "page-schema";
     script.text = JSON.stringify(combinedSchema);
     document.head.appendChild(script);
-  }, [title, description, keywords, urlPath, schema, ogImage, ogImageAlt, twitterImage, noindex]);
+  }, [title, description, keywords, urlPath, schema, ogImage, ogImageAlt, twitterImage, noindex, renderMetaInDom]);
 };
+
+export { toCanonicalUrl, normalizeSeoPath } from "@/utils/seoHead";

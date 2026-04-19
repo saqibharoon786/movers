@@ -1,0 +1,2 @@
+# Netlify: force apex host (301). Vercel users rely on vercel.json instead.
+https://www.bestintlmovers.com/* https://bestintlmovers.com/:splat 301!

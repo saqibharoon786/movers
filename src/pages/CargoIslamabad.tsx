@@ -1,6 +1,5 @@
-import CargoServiceCityTemplate from "@/components/marketing/CargoServiceCityTemplate";
-import { cargoIslamabadConfig } from "@/data/logisticsLocalData";
+import CargoServiceIslamabad from "@/components/marketing/CargoServiceIslamabad";
 
-const CargoIslamabad = () => <CargoServiceCityTemplate config={cargoIslamabadConfig} />;
+const CargoIslamabad = () => <CargoServiceIslamabad />;
 
 export default CargoIslamabad;
