@@ -188,7 +188,7 @@ const DestinationMoversTemplate = ({ config }: Props) => {
                   Lahore
                 </Link>
                 , and{" "}
-                <Link to="/movers-peshawar" className="text-gold hover:underline">
+                <Link to="/movers-and-packers-in-peshawar" className="text-gold hover:underline">
                   Peshawar
                 </Link>
                 . Call <a className="text-gold hover:underline" href="tel:03009130211">{PHONE_DISPLAY}</a> or email{" "}

@@ -13,6 +13,8 @@ const SITE_URL = "https://bestintlmovers.com";
 
 export type LandingFaq = { q: string; a: string };
 
+export type SeoLandingVisualSkin = "default" | "rwpHome" | "rwpPackers";
+
 type Props = {
   title: string;
   description: string;
@@ -21,6 +23,8 @@ type Props = {
   h1: string;
   heroSubtext: string;
   breadcrumbItems: BreadcrumbItem[];
+  /** Distinct hero/content accents so Rawalpindi landings do not look identical */
+  visualSkin?: SeoLandingVisualSkin;
   /** Optional hero illustration above content (city/service specific) */
   heroImageUrl?: string;
   heroImageAlt?: string;
@@ -29,6 +33,8 @@ type Props = {
   ogImageAlt?: string;
   /** Service, LocalBusiness, Article, or array; FAQPage added automatically when faqs set */
   schema?: Record<string, unknown> | Record<string, unknown>[];
+  /** Optional full-width strip above article prose (e.g. city-specific stats/cards) */
+  topDecor?: ReactNode;
   children: ReactNode;
   faqs?: LandingFaq[];
   faqSectionTitle?: string;
@@ -42,11 +48,13 @@ const SeoLandingPageLayout = ({
   h1,
   heroSubtext,
   breadcrumbItems,
+  visualSkin = "default",
   heroImageUrl,
   heroImageAlt,
   ogImage,
   ogImageAlt,
   schema,
+  topDecor,
   children,
   faqs,
   faqSectionTitle = "Frequently Asked Questions",
@@ -106,10 +114,38 @@ const SeoLandingPageLayout = ({
     twitterImage: ogImage || heroImageUrl,
   });
 
+  const heroSectionClass =
+    visualSkin === "rwpHome"
+      ? "pt-28 lg:pt-36 pb-14 bg-gradient-to-br from-amber-950/55 via-navy-light to-background border-b border-amber-900/35"
+      : visualSkin === "rwpPackers"
+        ? "pt-28 lg:pt-36 pb-14 bg-gradient-to-tr from-slate-950 via-navy-mid/95 to-navy-light border-b border-cyan-900/25"
+        : "pt-28 lg:pt-36 pb-12 bg-navy-light border-b border-border";
+
+  const contentRailClass =
+    visualSkin === "rwpHome"
+      ? "border-l-4 border-amber-500/45 pl-5 md:pl-8 -ml-1 md:-ml-0"
+      : visualSkin === "rwpPackers"
+        ? "border-l-4 border-cyan-500/40 pl-5 md:pl-8 -ml-1 md:-ml-0"
+        : "";
+
+  const faqCardClass =
+    visualSkin === "rwpHome"
+      ? "glass-card rounded-xl p-5 border border-amber-800/35 bg-amber-950/15"
+      : visualSkin === "rwpPackers"
+        ? "glass-card rounded-xl p-5 border border-cyan-900/35 bg-cyan-950/15"
+        : "glass-card rounded-xl p-5 border border-border";
+
+  const bottomCtaClass =
+    visualSkin === "rwpHome"
+      ? "mt-16 not-prose glass-card rounded-2xl p-8 border border-amber-700/30 text-center bg-amber-950/10"
+      : visualSkin === "rwpPackers"
+        ? "mt-16 not-prose glass-card rounded-2xl p-8 border border-cyan-800/30 text-center bg-cyan-950/10"
+        : "mt-16 not-prose glass-card rounded-2xl p-8 border border-gold/20 text-center";
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <section className="pt-28 lg:pt-36 pb-12 bg-navy-light border-b border-border">
+      <section className={heroSectionClass}>
         <div className="container mx-auto px-4">
           <PageBreadcrumb className="mb-6" items={breadcrumbItems} />
           <div className="max-w-4xl">
@@ -144,12 +180,13 @@ const SeoLandingPageLayout = ({
       </section>
 
       <div className="container mx-auto px-4 py-14 max-w-4xl">
+        {topDecor ? <div className="not-prose mb-12">{topDecor}</div> : null}
         <div
-          className="prose prose-invert prose-lg max-w-none
+          className={`prose prose-invert prose-lg max-w-none
           prose-headings:font-display prose-headings:text-foreground
           prose-p:text-muted-foreground prose-p:leading-relaxed
           prose-li:text-muted-foreground prose-strong:text-foreground
-          prose-a:text-gold prose-table:text-sm"
+          prose-a:text-gold prose-table:text-sm ${contentRailClass}`}
         >
           {children}
         </div>
@@ -175,7 +212,7 @@ const SeoLandingPageLayout = ({
             <h2 className="text-3xl font-display font-bold text-foreground mb-8">{faqSectionTitle}</h2>
             <div className="space-y-4">
               {faqs.map((f) => (
-                <div key={f.q} className="glass-card rounded-xl p-5 border border-border">
+                <div key={f.q} className={faqCardClass}>
                   <h3 className="font-semibold text-foreground mb-2 text-base">{f.q}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{f.a}</p>
                 </div>
@@ -199,7 +236,7 @@ const SeoLandingPageLayout = ({
             <Link to="/movers-lahore" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
               Movers in Lahore
             </Link>
-            <Link to="/movers-peshawar" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+            <Link to="/movers-and-packers-in-peshawar" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
               Movers in Peshawar
             </Link>
             <Link to="/blog" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
@@ -253,10 +290,10 @@ const SeoLandingPageLayout = ({
           </p>
         </section>
 
-        <section className="mt-16 not-prose glass-card rounded-2xl p-8 border border-gold/20 text-center">
+        <section className={bottomCtaClass}>
           <h2 className="text-2xl font-display font-bold text-foreground mb-3">Ready to get started?</h2>
           <p className="text-muted-foreground mb-6">
-            Best International Movers & Logistics Â· {PHONE} Â· info@bestintlmovers.com Â· Monâ€“Sat 8:00 AM â€“ 8:00 PM
+            Best International Movers & Logistics · {PHONE} · info@bestintlmovers.com · Mon–Sat 8:00 AM – 8:00 PM
           </p>
           <Link to="/contact" className="inline-flex px-8 py-3 rounded-lg gold-gradient-bg text-primary-foreground font-bold">
             Request a free quote

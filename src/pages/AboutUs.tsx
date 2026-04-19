@@ -217,8 +217,8 @@ const AboutUs = () => {
             <Link to="/movers-lahore" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
               Lahore moving company page
             </Link>
-            <Link to="/movers-peshawar" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
-              International movers Peshawar
+            <Link to="/movers-and-packers-in-peshawar" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+              Movers and packers Peshawar
             </Link>
             <Link to="/pakistan-to-dubai-movers" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
               Dubai relocation from Pakistan

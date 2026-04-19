@@ -119,7 +119,7 @@ const blogs = [
 <p>Strong movers provide document templates, ownership declarations, and destination compliance notes before dispatch. This is where most failed relocations break down.</p>
 
 <h3>4) City Operations</h3>
-<p>Choose teams with active coverage where you actually live: <a href="/movers-islamabad">Islamabad</a>, <a href="/movers-rawalpindi">Rawalpindi</a>, <a href="/movers-lahore">Lahore</a>, and <a href="/movers-peshawar">Peshawar</a>.</p>
+<p>Choose teams with active coverage where you actually live: <a href="/movers-islamabad">Islamabad</a>, <a href="/movers-rawalpindi">Rawalpindi</a>, <a href="/movers-lahore">Lahore</a>, and <a href="/movers-and-packers-in-peshawar">Peshawar</a>.</p>
 
 <h3>5) Cost Transparency</h3>
 <p>Use the <a href="/custom-duty-calculator">import duty estimator</a> before final quote approval and ask for separate line-items for origin handling, freight, destination charges, and insurance.</p>
@@ -163,7 +163,7 @@ const blogs = [
 <p>For heavy household moves, coordinate packing with <a href="/services/sea-freight">sea freight planning</a>. For urgent shipments, use <a href="/services/air-freight">air freight options</a>. If the move includes dutiable items, pre-calculate with the <a href="/custom-duty-calculator">custom duty calculator</a>.</p>
 
 <h2>City-Level Support in Pakistan</h2>
-<p>Our packing teams work from <a href="/movers-islamabad">Islamabad</a>, <a href="/movers-rawalpindi">Rawalpindi</a>, <a href="/movers-lahore">Lahore</a>, and <a href="/movers-peshawar">Peshawar</a>. You can also review our <a href="/services/professional-packing">professional packing service page</a> for scope details and add-ons.</p>`
+<p>Our packing teams work from <a href="/movers-islamabad">Islamabad</a>, <a href="/movers-rawalpindi">Rawalpindi</a>, <a href="/movers-lahore">Lahore</a>, and <a href="/movers-and-packers-in-peshawar">Peshawar</a>. You can also review our <a href="/services/professional-packing">professional packing service page</a> for scope details and add-ons.</p>`
   },
 ];
 

@@ -62,7 +62,7 @@ const Index = () => {
             <Link to="/movers-lahore" className="rounded-md border border-border px-3 py-2 hover:border-gold/40 hover:text-gold">
               Packers and Movers Lahore
             </Link>
-            <Link to="/movers-peshawar" className="rounded-md border border-border px-3 py-2 hover:border-gold/40 hover:text-gold">
+            <Link to="/movers-and-packers-in-peshawar" className="rounded-md border border-border px-3 py-2 hover:border-gold/40 hover:text-gold">
               Peshawar Moving Services
             </Link>
             <Link to="/about-us" className="rounded-md border border-border px-3 py-2 hover:border-gold/40 hover:text-gold">

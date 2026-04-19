@@ -258,7 +258,7 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
                   <Link to="/movers-lahore" className="px-4 py-2 rounded-lg bg-navy-mid border border-gold/20 text-sm text-gold hover:border-gold hover:bg-navy-light transition-all">
                     Lahore
                   </Link>
-                  <Link to="/movers-peshawar" className="px-4 py-2 rounded-lg bg-navy-mid border border-gold/20 text-sm text-gold hover:border-gold hover:bg-navy-light transition-all">
+                  <Link to="/movers-and-packers-in-peshawar" className="px-4 py-2 rounded-lg bg-navy-mid border border-gold/20 text-sm text-gold hover:border-gold hover:bg-navy-light transition-all">
                     Peshawar
                   </Link>
                 </div>
@@ -281,7 +281,7 @@ const CityMoversStandaloneTemplate = ({ config }: Props) => {
               <Link to="/movers-lahore" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
                 Packers and movers Lahore
               </Link>
-              <Link to="/movers-peshawar" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
+              <Link to="/movers-and-packers-in-peshawar" className="rounded-lg border border-border px-4 py-3 hover:border-gold/40 hover:text-gold">
                 Movers and packers Peshawar
               </Link>
               <Link to="/custom-duty-calculator" className="rounded-lg border border-gold/30 px-4 py-3 text-gold hover:bg-gold/10">

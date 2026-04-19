@@ -19,7 +19,7 @@ const locations = [
   { city: "Rawalpindi", slug: "movers-rawalpindi" },
   { city: "Islamabad", slug: "movers-islamabad" },
   { city: "Lahore", slug: "movers-lahore" },
-  { city: "Peshawar", slug: "movers-peshawar" },
+  { city: "Peshawar", slug: "movers-and-packers-in-peshawar" },
 ];
 
 const localLandingPages = [
@@ -29,9 +29,9 @@ const localLandingPages = [
   { label: "Home Shifting Islamabad", to: "/home-shifting-islamabad" },
   { label: "Home Shifting Rawalpindi", to: "/home-shifting-rawalpindi" },
   { label: "Movers Lahore", to: "/movers-lahore" },
-  { label: "Movers Peshawar", to: "/movers-peshawar" },
+  { label: "Movers & Packers Peshawar", to: "/movers-and-packers-in-peshawar" },
   { label: "Cargo Service Islamabad", to: "/international-cargo-islamabad" },
-  { label: "Shipping Companies Pakistan", to: "/shipping-companies-pakistan" },
+  { label: "Top Shipping Companies Pakistan", to: "/top-shipping-companies-in-pakistan" },
   { label: "Pakistan Cargo Services", to: "/pakistan-cargo-services" },
   { label: "Custom Duty Calculator", to: "/custom-duty-calculator" },
   { label: "FAQ Hub Pakistan", to: "/faqs-packers-movers-pakistan" },

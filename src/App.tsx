@@ -32,7 +32,7 @@ const PakistanToMalaysia = lazy(() => import("./pages/PakistanToMalaysia.tsx"));
 const MoversIslamabad = lazy(() => import("./pages/MoversIslamabad.tsx"));
 const MoversRawalpindi = lazy(() => import("./pages/MoversRawalpindi.tsx"));
 const MoversLahore = lazy(() => import("./pages/MoversLahore.tsx"));
-const MoversPeshawar = lazy(() => import("./pages/MoversPeshawar.tsx"));
+const MoversAndPackersInPeshawar = lazy(() => import("./pages/MoversAndPackersInPeshawar.tsx"));
 const CargoIslamabad = lazy(() => import("./pages/CargoIslamabad.tsx"));
 const CargoRawalpindi = lazy(() => import("./pages/CargoRawalpindi.tsx"));
 const AirFreightIslamabad = lazy(() => import("./pages/AirFreightIslamabad.tsx"));
@@ -54,8 +54,10 @@ const PackersMoversLahore = lazy(() => import("./pages/PackersMoversLahore.tsx")
 const PackersMoversRawalpindi = lazy(() => import("./pages/PackersMoversRawalpindi.tsx"));
 const HomeShiftingIslamabad = lazy(() => import("./pages/HomeShiftingIslamabad.tsx"));
 const HomeShiftingRawalpindi = lazy(() => import("./pages/HomeShiftingRawalpindi.tsx"));
+const HomeShiftingServicesInRawalpindi = lazy(() => import("./pages/HomeShiftingServicesInRawalpindi.tsx"));
+const PackersAndMoversInRawalpindi = lazy(() => import("./pages/PackersAndMoversInRawalpindi.tsx"));
 const InternationalCargoIslamabad = lazy(() => import("./pages/InternationalCargoIslamabad.tsx"));
-const ShippingCompaniesPakistan = lazy(() => import("./pages/ShippingCompaniesPakistan.tsx"));
+const TopShippingCompaniesInPakistan = lazy(() => import("./pages/TopShippingCompaniesInPakistan.tsx"));
 const PakistanCargoServices = lazy(() => import("./pages/PakistanCargoServices.tsx"));
 const CustomDutyCalculator = lazy(() => import("./pages/CustomDutyCalculator.tsx"));
 const AboutUs = lazy(() => import("./pages/AboutUs.tsx"));
@@ -145,7 +147,8 @@ const App = () => (
           <Route path="/movers-islamabad" element={<MoversIslamabad />} />
           <Route path="/movers-rawalpindi" element={<MoversRawalpindi />} />
           <Route path="/movers-lahore" element={<MoversLahore />} />
-          <Route path="/movers-peshawar" element={<MoversPeshawar />} />
+          <Route path="/movers-and-packers-in-peshawar" element={<MoversAndPackersInPeshawar />} />
+          <Route path="/movers-peshawar" element={<Navigate to="/movers-and-packers-in-peshawar" replace />} />
           <Route path="/international-movers-from-islamabad" element={<InternationalMoversIslamabad />} />
           <Route path="/international-movers-in-lahore" element={<InternationalMoversLahore />} />
 
@@ -171,8 +174,11 @@ const App = () => (
           <Route path="/packers-and-movers-rawalpindi" element={<PackersMoversRawalpindi />} />
           <Route path="/home-shifting-islamabad" element={<HomeShiftingIslamabad />} />
           <Route path="/home-shifting-rawalpindi" element={<HomeShiftingRawalpindi />} />
+          <Route path="/home-shifting-services-in-rawalpindi" element={<HomeShiftingServicesInRawalpindi />} />
+          <Route path="/packers-and-movers-in-rawalpindi" element={<PackersAndMoversInRawalpindi />} />
           <Route path="/international-cargo-islamabad" element={<InternationalCargoIslamabad />} />
-          <Route path="/shipping-companies-pakistan" element={<ShippingCompaniesPakistan />} />
+          <Route path="/top-shipping-companies-in-pakistan" element={<TopShippingCompaniesInPakistan />} />
+          <Route path="/shipping-companies-pakistan" element={<Navigate to="/top-shipping-companies-in-pakistan" replace />} />
           <Route path="/pakistan-cargo-services" element={<PakistanCargoServices />} />
           <Route path="/custom-duty-calculator" element={<CustomDutyCalculator />} />
           <Route path="/international-movers-pakistan" element={<Navigate to="/international-movers-pakistan/" replace />} />

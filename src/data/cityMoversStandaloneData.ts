@@ -182,7 +182,7 @@ export const lahoreMoversConfig: CityMoversStandaloneConfig = {
 };
 
 export const peshawarMoversConfig: CityMoversStandaloneConfig = {
-  urlPath: "/movers-peshawar",
+  urlPath: "/movers-and-packers-in-peshawar",
   cityName: "Peshawar",
   breadcrumbPage: "Movers Peshawar",
   cargoPagePath: "/cargo-service-rawalpindi",
