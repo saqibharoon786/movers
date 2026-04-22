@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 40 20% 92%;
+    --card: 222 40% 10%;
+    --card-foreground: 40 20% 92%;
+    --muted: 222 30% 14%;
+    --muted-foreground: 220 15% 55%;
+    --border: 222 25% 18%;
+    --radius: 0.5rem;
+    --gold: 40 60% 58%;
+    --gold-light: 40 70% 72%;
+    --gold-dark: 40 50% 42%;
+    --navy: 222 47% 6%;
+    --navy-light: 222 35% 12%;
+    --navy-mid: 222 30% 16%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+
+  .prose-page {
+    @apply max-w-3xl space-y-4 text-muted-foreground leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-gold px-5 py-3 text-sm font-semibold text-navy shadow transition hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-md border border-gold/40 bg-transparent px-5 py-3 text-sm font-semibold text-gold transition hover:border-gold hover:bg-gold/10;
+  }
+}

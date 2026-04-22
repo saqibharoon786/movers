@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakistan to Dubai Movers | International Moving Company | Best Intl Movers</title>
+    <meta name="description" content="Pakistan's #1 international moving company. Door-to-door service to UAE, UK, USA, Canada & 100+ countries. 5000+ families moved. Free quote: 0300-9130211">
+    
+    <!-- Caching & Compression hints -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate" />
+    <meta http-equiv="accept-encoding" content="gzip, deflate, br" />
+    
+    <!-- Preconnect to Google Fonts & external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    
+    <!-- Preload Critical Assets (LCP) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" as="style" />
+    <link rel="preload" href="/src/assets/hero-1.jpg" as="image" />
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="liHgcLYTQaZBtDx1MNgH1ABPZSa2ugS4hKQNAwLsNCo" />
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-99JXG3N9ZN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-99JXG3N9ZN');
+
+      // Track Quote Form Submit
+      document.addEventListener('DOMContentLoaded', function() {
+        var form = document.querySelector('form');
+        if(form) {
+          form.addEventListener('submit', function() {
+            gtag('event', 'form_submit', {
+              'event_category': 'Quote Form',
+              'event_label': 'Free Quote Request'
+            });
+          });
+        }
+
+        // Track WhatsApp Click
+        var waBtn = document.querySelector('a[href*="whatsapp"]');
+        if(waBtn) {
+          waBtn.addEventListener('click', function() {
+            gtag('event', 'whatsapp_click', {
+              'event_category': 'WhatsApp',
+              'event_label': 'WhatsApp Button'
+            });
+          });
+        }
+        
+        // Track Phone Number Click
+        var phoneBtns = document.querySelectorAll('a[href^="tel:"]');
+        phoneBtns.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            gtag('event', 'phone_click', {
+              'event_category': 'Phone',
+              'event_label': 'Phone Call'
+            });
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
