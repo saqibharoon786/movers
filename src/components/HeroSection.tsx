@@ -7,8 +7,8 @@ const heroImage = hero1;
 
 const trustItems = [
   { icon: Users, text: "5,000+ Happy Families" },
-  { icon: Globe, text: "100+ Countries Served" },
-  { icon: Clock, text: "15+ Years Experience" },
+  { icon: Globe, text: "200+ Countries Served" },
+  { icon: Clock, text: "20+ Years Experience" },
   { icon: Award, text: "98% Client Satisfaction" },
 ];
 
@@ -55,7 +55,7 @@ const HeroSection = () => {
         </picture>
       </motion.div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/60 to-navy/90" />
+      <div className="absolute insets-0 bg-gradient-to-b from-navy/80 via-navy/60 to-navy/90" />
       <div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-transparent to-navy/40" />
 
       {[...Array(6)].map((_, i) => (
